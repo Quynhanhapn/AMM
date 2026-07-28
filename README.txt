@@ -3,9 +3,9 @@ AMM GERMANY NUTRITION – STATIC BILINGUAL WEBSITE
 
 Main files
 - index.html: Vietnamese homepage
-- en/index.html: English homepage
-- assets/site.css: shared responsive styling
-- assets/site.js: mobile navigation, reveal effects, contact dialog and mailto form
+- index-en.html: English homepage
+- site.css: shared responsive styling
+- site.js: mobile navigation, reveal effects, contact dialog and mailto form
 - robots.txt, sitemap.xml, 404.html: SEO/deployment essentials
 
 Current official contact details applied
