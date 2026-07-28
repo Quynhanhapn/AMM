@@ -1,17 +1,33 @@
-AMM GERMANY NUTRITION – PHIÊN BẢN PHẲNG (KHÔNG CÓ FOLDER)
+AMM GERMANY NUTRITION – STATIC BILINGUAL WEBSITE
+================================================
 
-Bản này giữ nguyên thiết kế của “website AMM đã cập nhật đầy đủ” và chỉ thực hiện các chỉnh sửa đã yêu cầu:
-- Toàn bộ file nằm ngoài cùng, không có assets/ hoặc en/.
-- Trang tiếng Việt: index.html
-- Trang tiếng Anh: index-en.html
-- Section 2 bám sát ảnh mô phỏng: chữ bên trái, ảnh nhà máy 5:4 ở giữa, 6 số liệu bên phải.
-- Hiệu ứng Section 2: chữ từ trái, ảnh hiện dần từ dưới, số liệu từ phải.
-- 6 logo: Ingredia, Tetra Pak, ABIC, Eurofins, VDA, ISO 22000.
-- CTA cuối trang dùng ảnh nền “Bạn đang tìm kiếm một đối tác”.
+Main files
+- index.html: Vietnamese homepage
+- index-en.html: English homepage
+- site.css: shared responsive styling
+- site.js: mobile navigation, reveal effects, contact dialog and mailto form
+- robots.txt, sitemap.xml, 404.html: SEO/deployment essentials
 
-CÁCH UP GITHUB
-1. Giải nén file ZIP.
-2. Mở thư mục vừa giải nén.
-3. Chọn toàn bộ file bên trong và kéo lên thư mục gốc repository.
-4. Không upload cả thư mục ngoài cùng.
-5. Commit changes và chờ Vercel tự triển khai.
+Current official contact details applied
+- Company: CÔNG TY CỔ PHẦN QUỐC TẾ AMM – GERMANY NUTRITION
+- Hotline: 1800 888 626
+- Website: https://ammnutrition.vn/
+- Email: cskh@ammnutrition.vn
+- Address: Khu công nghiệp Đồng Văn I, Phường Đồng Văn, Tỉnh Ninh Bình, Việt Nam
+
+Deployment
+1. Upload the entire folder to a GitHub repository.
+2. Import the repository into Vercel as a static site.
+3. Assign ammnutrition.vn and www.ammnutrition.vn in Vercel Domains.
+4. Keep the same folder structure so image and English-page links remain valid.
+
+Items still requiring final material from AMM
+- Official 90-second factory video URL/file.
+- Official high-resolution logos for partners/certifications (Ingredia, Tetra Pak, ABIC, VDA, ISO) if logo display is desired instead of text badges.
+- English-language company profile PDF; the English page currently links to the Vietnamese profile and labels it “VI PDF”.
+- Final news article URLs/content and publication dates.
+- Optional official Google Maps pin/coordinates for a precise map embed.
+- Optional real R&D laboratory/team images to replace the conceptual science artwork in some cards.
+
+Contact form note
+The static form opens the visitor's email application addressed to cskh@ammnutrition.vn. For direct server-side submissions, connect the form to a Vercel Function or another form endpoint later.
