@@ -904,3 +904,15 @@ h3 { font-size: clamp(1rem, 1.15vw, 1.25rem); line-height: 1.25; }
   .cta-shell { background-position: 68% center; }
   .cta-grid p { max-width: 88%; }
 }
+
+/* ===== Homepage fixes v2 backup ===== */
+.site-footer { margin-top: 0 !important; }
+#contact .cta-grid { grid-template-columns: minmax(0,1.4fr) minmax(280px,.6fr) !important; }
+#contact .cta-actions { display:flex !important; flex-direction:column !important; flex-wrap:nowrap !important; align-items:flex-start !important; gap:12px !important; }
+#contact .cta-actions .btn { width:auto !important; min-width:285px; }
+#ingredient .colosferrin-card { grid-template-columns:minmax(0,1.55fr) minmax(120px,.58fr) minmax(28%,.82fr) !important; }
+#ingredient .colosferrin-text { grid-column:1 !important; }
+#ingredient .certificate-stage { grid-column:2 !important; justify-content:flex-start !important; max-width:none !important; margin:0 !important; }
+#ingredient .certificate-stage img { max-width:145px !important; }
+@media(max-width:980px){#ingredient .colosferrin-card{grid-template-columns:minmax(0,1fr) minmax(110px,.38fr)!important}#contact .cta-grid{grid-template-columns:1fr!important}}
+@media(max-width:760px){#ingredient .colosferrin-card{grid-template-columns:1fr!important}#ingredient .colosferrin-text,#ingredient .certificate-stage{grid-column:1!important}#contact .cta-actions{align-items:stretch!important}#contact .cta-actions .btn{width:100%!important;min-width:0}}

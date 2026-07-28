@@ -33,6 +33,91 @@
   <script>document.documentElement.classList.add('js')</script>
   <link rel="stylesheet" href="site.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://ammnutrition.vn/#organization","name":"AMM Germany Nutrition","legalName":"CÔNG TY CỔ PHẦN QUỐC TẾ AMM – GERMANY NUTRITION","url":"https://ammnutrition.vn/","logo":{"@type":"ImageObject","url":"https://ammnutrition.vn/amm-logo.png"},"image":"https://ammnutrition.vn/og-cover.jpg","email":"cskh@ammnutrition.vn","telephone":"1800888626","address":{"@type":"PostalAddress","streetAddress":"Khu công nghiệp Đồng Văn I","addressLocality":"Phường Đồng Văn","addressRegion":"Tỉnh Ninh Bình","addressCountry":"VN"},"contactPoint":{"@type":"ContactPoint","telephone":"1800888626","contactType":"customer service","availableLanguage":["Vietnamese","English"]}},{"@type":"WebSite","@id":"https://ammnutrition.vn/#website","url":"https://ammnutrition.vn/","name":"AMM Germany Nutrition","publisher":{"@id":"https://ammnutrition.vn/#organization"},"inLanguage":["vi-VN","en"]},{"@type":"WebPage","@id":"https://ammnutrition.vn/en/#webpage","url":"https://ammnutrition.vn/en/","name":"AMM Germany Nutrition | Nutrition research, manufacturing and partnership solutions","description":"AMM Germany Nutrition provides nutrition research, formula development and modern manufacturing solutions, supporting OEM/ODM partners from concept to finished product.","isPartOf":{"@id":"https://ammnutrition.vn/#website"},"about":{"@id":"https://ammnutrition.vn/#organization"},"inLanguage":"en"}]}</script>
+
+<style id="amm-homepage-fixes-v2">
+/* Bản sửa khóa trực tiếp trong HTML để không phụ thuộc cache site.css */
+html, body { margin: 0 !important; }
+
+/* Không tạo dải trống giữa các khối được yêu cầu */
+.hero,
+#about,
+#rd,
+#ingredient,
+#contact,
+.site-footer {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.hero + #about,
+#about + #rd,
+#rd + #ingredient,
+#contact + .site-footer {
+  margin-top: 0 !important;
+}
+.site-footer { margin-top: 0 !important; }
+
+/* Section 3: nội dung + chứng nhận chỉ dùng khoảng 2/3 chiều rộng,
+   chừa khoảng 1/3 bên phải thông thoáng */
+#ingredient .colosferrin-card {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.55fr) minmax(120px, .58fr) minmax(28%, .82fr) !important;
+  align-items: center !important;
+  gap: clamp(14px, 1.8vw, 24px) !important;
+}
+#ingredient .colosferrin-text { grid-column: 1 !important; }
+#ingredient .certificate-stage {
+  grid-column: 2 !important;
+  justify-content: flex-start !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+#ingredient .certificate-stage img {
+  width: 100% !important;
+  max-width: 145px !important;
+  height: auto !important;
+}
+
+/* Section 9: nút tải hồ sơ nằm ngay dưới nút đăng ký */
+#contact .cta-grid {
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, .6fr) !important;
+}
+#contact .cta-actions {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  gap: 12px !important;
+}
+#contact .cta-actions .btn {
+  width: auto !important;
+  min-width: 285px;
+}
+
+@media (max-width: 980px) {
+  #ingredient .colosferrin-card {
+    grid-template-columns: minmax(0, 1fr) minmax(110px, .38fr) !important;
+  }
+  #ingredient .colosferrin-text { grid-column: 1 !important; }
+  #ingredient .certificate-stage { grid-column: 2 !important; }
+  #contact .cta-grid { grid-template-columns: 1fr !important; }
+}
+
+@media (max-width: 760px) {
+  #ingredient .colosferrin-card { grid-template-columns: 1fr !important; }
+  #ingredient .colosferrin-text,
+  #ingredient .certificate-stage { grid-column: 1 !important; }
+  #ingredient .certificate-stage {
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+  #contact .cta-actions { align-items: stretch !important; }
+  #contact .cta-actions .btn {
+    width: 100% !important;
+    min-width: 0;
+  }
+}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -174,15 +259,15 @@
     <div class="ingredient-copy reveal">
       <p class="section-kicker">Ingredients and nutrition solutions</p>
       <h2 id="ingredient-title">Ingredients selected on a scientific basis</h2>
-      <p class="lead">AMM works with trusted global suppliers and selects ingredients based on origin, quality, safety and scientifically supported effectiveness.</p>
+      <p class="lead">AMM partners with reputable global suppliers and selects ingredients based on quality, safety and scientifically supported effectiveness.</p>
       <a class="btn btn-primary" href="#quality">Explore featured ingredients <span class="arrow">→</span></a>
     </div>
     <div class="colosferrin-card reveal">
       <div class="colosferrin-text">
         <h3 class="colo-title" id="colosferrin">Colosferrin® – Ingredia, France</h3>
-        <p class="muted">Colosferrin® is an exclusive bovine colostrum complex combining IgG antibodies and Lactoferrin, two important bioactive proteins that support immunity and iron absorption.</p>
+        <p class="muted">Colosferrin® is an exclusive bovine colostrum complex combining IgG antibodies and Lactoferrin, two important bioactive proteins supporting immune function and iron absorption.</p>
         <div class="metric-chips"><div class="metric-chip"><svg aria-hidden="true"><use href="#i-shield"></use></svg><span>IgG ≥ 38%</span></div><div class="metric-chip"><svg aria-hidden="true"><use href="#i-droplet"></use></svg><span>Lactoferrin ≥ 0.6%</span></div></div>
-        <p class="colo-origin">Origin: France&nbsp;&nbsp;|&nbsp;&nbsp;Standard: European quality standards</p>
+        <p class="colo-origin">Origin: France&nbsp;&nbsp;|&nbsp;&nbsp;Standard: European standards</p>
       </div>
       <figure class="certificate-stage"><img src="colosferrin-certificate-standee.png" width="754" height="840" alt="Exclusive Colosferrin distribution cooperation certificate between AMM and Ingredia, France" loading="lazy"></figure>
     </div>

@@ -33,6 +33,91 @@
   <script>document.documentElement.classList.add('js')</script>
   <link rel="stylesheet" href="site.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://ammnutrition.vn/#organization","name":"AMM Germany Nutrition","legalName":"CÔNG TY CỔ PHẦN QUỐC TẾ AMM – GERMANY NUTRITION","url":"https://ammnutrition.vn/","logo":{"@type":"ImageObject","url":"https://ammnutrition.vn/amm-logo.png"},"image":"https://ammnutrition.vn/og-cover.jpg","email":"cskh@ammnutrition.vn","telephone":"1800888626","address":{"@type":"PostalAddress","streetAddress":"Khu công nghiệp Đồng Văn I","addressLocality":"Phường Đồng Văn","addressRegion":"Tỉnh Ninh Bình","addressCountry":"VN"},"contactPoint":{"@type":"ContactPoint","telephone":"1800888626","contactType":"customer service","availableLanguage":["Vietnamese","English"]}},{"@type":"WebSite","@id":"https://ammnutrition.vn/#website","url":"https://ammnutrition.vn/","name":"AMM Germany Nutrition","publisher":{"@id":"https://ammnutrition.vn/#organization"},"inLanguage":["vi-VN","en"]},{"@type":"WebPage","@id":"https://ammnutrition.vn/#webpage","url":"https://ammnutrition.vn/","name":"AMM Germany Nutrition | Nghiên cứu, sản xuất và giải pháp dinh dưỡng","description":"AMM Germany Nutrition nghiên cứu, phát triển công thức và sản xuất các giải pháp dinh dưỡng ứng dụng công nghệ hiện đại; đồng hành cùng đối tác OEM/ODM từ ý tưởng đến thành phẩm.","isPartOf":{"@id":"https://ammnutrition.vn/#website"},"about":{"@id":"https://ammnutrition.vn/#organization"},"inLanguage":"vi-VN"}]}</script>
+
+<style id="amm-homepage-fixes-v2">
+/* Bản sửa khóa trực tiếp trong HTML để không phụ thuộc cache site.css */
+html, body { margin: 0 !important; }
+
+/* Không tạo dải trống giữa các khối được yêu cầu */
+.hero,
+#about,
+#rd,
+#ingredient,
+#contact,
+.site-footer {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.hero + #about,
+#about + #rd,
+#rd + #ingredient,
+#contact + .site-footer {
+  margin-top: 0 !important;
+}
+.site-footer { margin-top: 0 !important; }
+
+/* Section 3: nội dung + chứng nhận chỉ dùng khoảng 2/3 chiều rộng,
+   chừa khoảng 1/3 bên phải thông thoáng */
+#ingredient .colosferrin-card {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.55fr) minmax(120px, .58fr) minmax(28%, .82fr) !important;
+  align-items: center !important;
+  gap: clamp(14px, 1.8vw, 24px) !important;
+}
+#ingredient .colosferrin-text { grid-column: 1 !important; }
+#ingredient .certificate-stage {
+  grid-column: 2 !important;
+  justify-content: flex-start !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+#ingredient .certificate-stage img {
+  width: 100% !important;
+  max-width: 145px !important;
+  height: auto !important;
+}
+
+/* Section 9: nút tải hồ sơ nằm ngay dưới nút đăng ký */
+#contact .cta-grid {
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, .6fr) !important;
+}
+#contact .cta-actions {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  gap: 12px !important;
+}
+#contact .cta-actions .btn {
+  width: auto !important;
+  min-width: 285px;
+}
+
+@media (max-width: 980px) {
+  #ingredient .colosferrin-card {
+    grid-template-columns: minmax(0, 1fr) minmax(110px, .38fr) !important;
+  }
+  #ingredient .colosferrin-text { grid-column: 1 !important; }
+  #ingredient .certificate-stage { grid-column: 2 !important; }
+  #contact .cta-grid { grid-template-columns: 1fr !important; }
+}
+
+@media (max-width: 760px) {
+  #ingredient .colosferrin-card { grid-template-columns: 1fr !important; }
+  #ingredient .colosferrin-text,
+  #ingredient .certificate-stage { grid-column: 1 !important; }
+  #ingredient .certificate-stage {
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+  #contact .cta-actions { align-items: stretch !important; }
+  #contact .cta-actions .btn {
+    width: 100% !important;
+    min-width: 0;
+  }
+}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
