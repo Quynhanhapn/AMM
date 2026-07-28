@@ -402,7 +402,7 @@ p { margin: 0; }
   color: #fff;
   background:
     linear-gradient(90deg, rgba(4,43,101,.97), rgba(4,72,154,.95)),
-    url("images/liquid-line-tetrapak.webp") center / cover no-repeat;
+    url("liquid-line-tetrapak.webp") center / cover no-repeat;
 }
 .quality-shell h2, .quality-shell h3, .quality-shell .section-kicker { color: #fff; }
 .quality-grid { display: grid; grid-template-columns: .78fr 1.35fr .87fr; gap: 36px; align-items: center; }
@@ -445,7 +445,7 @@ p { margin: 0; }
   z-index: -1;
   inset: 0 0 0 auto;
   width: 31%;
-  background: linear-gradient(90deg, rgba(238,248,255,1), rgba(238,248,255,.16)), url("images/abic-signing.webp") center / cover no-repeat;
+  background: linear-gradient(90deg, rgba(238,248,255,1), rgba(238,248,255,.16)), url("abic-signing.webp") center / cover no-repeat;
   opacity: .36;
 }
 .solutions-layout { display: grid; grid-template-columns: .92fr 2.08fr; gap: 38px; align-items: start; }
@@ -798,13 +798,7 @@ h2 { font-size: clamp(1.65rem, 2.05vw, var(--heading-max)); line-height: 1.16; }
 h3 { font-size: clamp(1rem, 1.15vw, 1.25rem); line-height: 1.25; }
 .section-kicker { margin-bottom: 8px; }
 
-/* Hero follows the native wide banner proportion instead of being enlarged vertically */
-.hero {
-  min-height: 0;
-  aspect-ratio: 5 / 1;
-  max-height: 420px;
-  background: #eaf6ff;
-}
+/* Hero: comfortable full height so heading, lead, buttons never get clipped */
 .hero-media img {
   object-fit: cover;
   object-position: 50% 38%;
@@ -874,7 +868,6 @@ h3 { font-size: clamp(1rem, 1.15vw, 1.25rem); line-height: 1.25; }
 .cta-actions { max-width: 330px; }
 
 @media (max-width: 1200px) {
-  .hero { aspect-ratio: 4.25 / 1; max-height: 430px; }
   .hero-copy { width: 49%; }
   .overview-grid { grid-template-columns: 1fr 1.05fr; }
   .capacity-panel { grid-column: 1 / -1; }
