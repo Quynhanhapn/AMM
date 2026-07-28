@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://amm.vn/sitemap.xml
+
+Sitemap: https://ammnutrition.vn/sitemap.xml
