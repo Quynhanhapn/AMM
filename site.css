@@ -817,7 +817,7 @@ h3 { font-size: clamp(1rem, 1.15vw, 1.25rem); line-height: 1.25; }
 /* Hero: comfortable full height so heading, lead, buttons never get clipped */
 .hero-media img {
   object-fit: cover;
-  object-position: 50% 38%;
+  object-position: center center;;
 }
 .hero-content {
   min-height: 100%;
