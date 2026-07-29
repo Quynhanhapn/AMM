@@ -821,14 +821,14 @@ h3 { font-size: clamp(1rem, 1.15vw, 1.25rem); line-height: 1.25; }
 
 .hero h1 {
   max-width: 760px;
-  line-height: 1.8;
+  line-height: 1.65;
 }
 
 .hero .lead {
   max-width: 650px;
   margin-top: 30px;
   font-size: clamp(.9rem, 1vw, 1.03rem);
-  line-height: 1.8;
+  line-height: 1.65;
 } 
 .hero .actions { margin-top: 16px; }
 .hero-trust { display: none; }
