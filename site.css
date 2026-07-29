@@ -950,7 +950,7 @@ h3 { font-size: clamp(1rem, 1.15vw, 1.25rem); line-height: 1.25; }
 
 #ingredient .colosferrin-card{
   width:min(100%,780px)!important;
-  justify-self:center!important;
+  justify-self:start!important;
   display:grid!important;
   grid-template-columns:minmax(0,1fr) 155px!important;
   align-items:center!important;
