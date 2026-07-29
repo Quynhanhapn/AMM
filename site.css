@@ -224,7 +224,7 @@ p { margin: 0; }
 }
 .hero-content { position: relative; z-index: 2; display: flex; min-height: inherit; align-items: center; padding: 72px 0; }
 .hero-copy { width: min(760px, 46%); }
-.hero h1 { max-width: 690px; line-height: 1.22; }
+.hero h1 { max-width: 790px; line-height: 1.22; }
 .hero .lead { max-width: 620px; margin-top: 26px; }
 .hero .actions { margin-top: 34px; }
 .hero-trust { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 34px; }
