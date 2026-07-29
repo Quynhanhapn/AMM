@@ -58,7 +58,9 @@ button { color: inherit; }
 
 .container { width: min(var(--container), calc(100% - 44px)); margin-inline: auto; }
 .section { position: relative; padding: 0; }
-.section-pad { padding: clamp(44px, 4.8vw, 78px) 0; }
+.section-pad {
+padding: clamp(24px, 2.5vw, 40px) 0;
+}
 /* Section 1 */
 .about-intro.section-pad{
     padding:24px 0 16px;
