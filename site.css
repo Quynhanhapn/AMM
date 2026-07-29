@@ -819,7 +819,7 @@ h3 { font-size: clamp(1rem, 1.15vw, 1.25rem); line-height: 1.25; }
 }
 .hero-content {
   min-height: 100%;
-  padding: clamp(24px, 3vw, 46px) 0;
+  padding: 24px 0 0;
 }
 .hero-copy { width: min(760px, 52%); }
 
