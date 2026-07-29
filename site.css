@@ -937,9 +937,8 @@ h3 { font-size: clamp(1rem, 1.15vw, 1.25rem); line-height: 1.25; }
 /* AMM HOMEPAGE LAYOUT V3 */
 #ingredient .ingredient-grid{grid-template-columns:minmax(430px,.72fr) minmax(0,1.48fr)!important;column-gap:clamp(18px,2.1vw,38px)!important}
 #ingredient .ingredient-copy{max-width:535px!important}
-#ingredient .ingredient-copy h2,#ingredient .ingredient-copy .lead{max-width:520px!important}
-#ingredient .ingredient-copy .lead{max-width:460px!important;font-size:.88rem!important;line-height:1.55!important;
-#ingredient .colosferrin-card{width:min(100%,780px)!important;justify-self:center!important;display:grid!important;grid-template-columns:minmax(0,1fr) 155px!important;align-items:center!important;gap:clamp(18px,1.8vw,28px)!important;padding:clamp(22px,2vw,30px)!important}
+#ingredient .ingredient-copy h2,#ingredient .ingredient-copy .lead{max-width:420px!important}
+#ingredient .colosferrin-card{width:min(100%,680px)!important;justify-self:center!important;display:grid!important;grid-template-columns:minmax(0,1fr) 155px!important;align-items:center!important;gap:clamp(18px,1.8vw,28px)!important;padding:clamp(22px,2vw,30px)!important}
 #ingredient .colosferrin-text{grid-column:1!important;min-width:0!important}
 #ingredient .colosferrin-card .muted{max-width:590px!important}
 #ingredient .certificate-stage{grid-column:2!important;justify-content:center!important;width:155px!important;max-width:155px!important;margin:0!important}
