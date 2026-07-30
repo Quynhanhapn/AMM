@@ -361,7 +361,7 @@ p { margin: 0; }
 .ingredient-shell::before { width: 250px; height: 250px; right: -80px; top: -90px; box-shadow: -90px 110px 0 -112px rgba(49, 151, 225, .5), -185px 40px 0 -116px rgba(49, 151, 225, .5); }
 .ingredient-shell::after { width: 150px; height: 150px; left: -90px; bottom: -80px; }
 .ingredient-shell {
-  background: linear-gradient(90deg, rgba(255,255,255,.94) 0%, rgba(255,255,255,.8) 30%, rgba(232,244,252,.55) 60%, rgba(232,244,252,.3) 100%), url("ingredient-bg-v2.png") center / cover no-repeat;
+  background: linear-gradient(90deg, rgba(255,255,255,.9) 0%, rgba(255,255,255,.6) 30%, rgba(232,244,252,.3) 60%, rgba(232,244,252,.05) 100%), url("ingredient-bg-v2.png") center / cover no-repeat;
 }
 .ingredient-grid { display: grid; grid-template-columns: .82fr 1.34fr; gap: clamp(24px, 3vw, 48px); align-items: center; }
 .ingredient-copy h2 { font-size: clamp(1.6rem, 2.3vw, 2.6rem); }
