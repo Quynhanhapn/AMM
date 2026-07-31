@@ -35,6 +35,126 @@
     {"@type":"WebPage","@id":"https://ammnutrition.vn/nguyen-lieu-noi-bat.html#webpage","url":"https://ammnutrition.vn/nguyen-lieu-noi-bat.html","name":"Nguyên liệu nổi bật | AMM Germany Nutrition","description":"Colosferrin® và danh mục nguyên liệu dinh dưỡng nổi bật của AMM.","breadcrumb":{"@id":"https://ammnutrition.vn/nguyen-lieu-noi-bat.html#breadcrumb"},"inLanguage":"vi-VN"}
   ]}
   </script>
+
+<style id="ingredients-premium-overrides">
+/* Khối Colosferrin cao cấp */
+.ingredients-page__feature--premium{
+  overflow:hidden;
+  border:1px solid rgba(93,171,239,.34);
+  border-radius:28px;
+  background:linear-gradient(135deg,#fff 0%,#fbfdff 55%,#f1f8ff 100%);
+  box-shadow:0 18px 50px rgba(11,73,145,.08);
+}
+.ingredients-page__feature--premium > h2{
+  max-width:1280px;
+  margin:0 auto clamp(26px,3vw,42px);
+  padding:0 24px;
+  text-align:center;
+  color:#063f91;
+  font-size:clamp(22px,2vw,36px);
+  line-height:1.22;
+  font-weight:900;
+  letter-spacing:-.02em;
+}
+.ingredients-page__feature--premium > h2 sup{font-size:.52em;top:-.55em;position:relative}
+.ingredients-page__feature-grid--premium{
+  display:grid;
+  grid-template-columns:minmax(0,1.03fr) minmax(0,1.17fr);
+  align-items:stretch;
+  gap:0;
+  min-height:470px;
+}
+.ingredients-page__feature-visual--premium{
+  position:relative;
+  overflow:hidden;
+  min-height:470px;
+  border-radius:24px 0 0 24px;
+  background:#eaf5ff;
+}
+.ingredients-page__feature-visual--premium img{
+  width:100%;height:100%;display:block;object-fit:cover;object-position:center;
+}
+.ingredients-page__feature-visual--premium::after{
+  content:"";position:absolute;z-index:2;inset:0 0 0 auto;width:24%;pointer-events:none;
+  background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.62) 58%,#fff 100%);
+}
+.ingredients-page__feature-info--premium{
+  position:relative;isolation:isolate;display:flex;flex-direction:column;justify-content:center;
+  min-width:0;padding:clamp(28px,4vw,58px) clamp(24px,4vw,64px);
+  background:linear-gradient(110deg,#fff 0%,rgba(247,252,255,.98) 55%,rgba(233,246,255,.96) 100%);
+}
+.ingredients-page__feature-soft-bg{
+  position:absolute;z-index:-1;inset:0;overflow:hidden;pointer-events:none;
+  background:
+    radial-gradient(circle at 18% 20%,rgba(255,255,255,.95) 0 18%,transparent 45%),
+    radial-gradient(circle at 92% 75%,rgba(112,193,255,.16),transparent 38%),
+    linear-gradient(135deg,rgba(255,255,255,.8),rgba(225,243,255,.55));
+}
+.ingredients-page__feature-soft-bg::after{
+  content:"";position:absolute;right:-8%;bottom:-18%;width:72%;height:68%;opacity:.55;
+  background:repeating-radial-gradient(ellipse at center,transparent 0 11px,rgba(70,160,230,.12) 12px 13px,transparent 14px 24px);
+  transform:rotate(-11deg);
+}
+.ingredients-page__ingredia-logo{
+  display:block;width:min(360px,62%);height:auto;object-fit:contain;margin:0 auto clamp(28px,3vw,46px);
+}
+.ingredients-page__feature-info--premium .ingredients-page__feature-metrics{
+  width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.8vw,26px);
+}
+.ingredients-page__feature-info--premium .ingredients-page__feature-metric{
+  min-width:0;text-align:center;display:flex;flex-direction:column;align-items:center;
+}
+.ingredients-page__feature-info--premium .ingredients-page__feature-metric > span{
+  width:clamp(72px,5vw,96px);height:clamp(72px,5vw,96px);display:grid;place-items:center;
+  border:1.5px solid #9ed1ff;border-radius:50%;background:rgba(255,255,255,.86);
+  box-shadow:0 10px 22px rgba(28,103,178,.10);margin-bottom:15px;
+}
+.ingredients-page__feature-info--premium .ingredients-page__feature-metric svg{
+  width:42%;height:42%;display:block;fill:none;stroke:#0861c5;stroke-width:1.8;
+}
+.ingredients-page__feature-info--premium .ingredients-page__feature-flag{
+  overflow:hidden;display:grid!important;grid-template-columns:repeat(3,1fr)!important;padding:0!important;
+}
+.ingredients-page__feature-info--premium .ingredients-page__feature-flag i{height:100%;display:block}
+.ingredients-page__feature-info--premium .ingredients-page__feature-flag i:nth-child(1){background:#123f91}
+.ingredients-page__feature-info--premium .ingredients-page__feature-flag i:nth-child(2){background:#fff}
+.ingredients-page__feature-info--premium .ingredients-page__feature-flag i:nth-child(3){background:#ef3340}
+.ingredients-page__feature-info--premium .ingredients-page__feature-metric strong{
+  color:#063f91;font-size:clamp(18px,1.35vw,26px);line-height:1.2;font-weight:850;
+}
+.ingredients-page__feature-info--premium .ingredients-page__feature-metric small{
+  margin-top:7px;color:#214f87;font-size:clamp(13px,.9vw,17px);line-height:1.3;
+}
+/* Căn chính giữa toàn bộ icon trong các vòng tròn của hero */
+.ingredients-page__hero-metric .ingredients-page__metric-icon{
+  display:grid!important;place-items:center!important;overflow:hidden;
+}
+.ingredients-page__hero-metric .ingredients-page__metric-icon svg{display:block;margin:auto}
+.ingredients-page__hero-metric .ingredients-page__metric-icon--flag{
+  display:grid!important;grid-template-columns:repeat(3,1fr)!important;padding:0!important;
+}
+.ingredients-page__hero-metric .ingredients-page__metric-icon--flag i{display:block;width:100%;height:100%}
+/* CTA chỉ còn đúng 2 dòng trên desktop */
+.ingredients-page__cta-copy h2{font-size:clamp(28px,2.65vw,48px)!important;line-height:1.16!important;letter-spacing:-.025em!important}
+.ingredients-page__cta-copy h2 span{white-space:nowrap}
+@media (max-width:1100px){
+  .ingredients-page__feature-grid--premium{grid-template-columns:1fr}
+  .ingredients-page__feature-visual--premium{min-height:430px;border-radius:22px 22px 0 0}
+  .ingredients-page__feature-visual--premium::after{inset:auto 0 0;width:100%;height:20%;background:linear-gradient(180deg,transparent,#fff)}
+  .ingredients-page__feature-info--premium .ingredients-page__feature-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ingredients-page__cta-copy h2 span{white-space:normal}
+}
+@media (max-width:640px){
+  .ingredients-page__feature--premium{border-radius:20px}
+  .ingredients-page__feature--premium > h2{font-size:22px;padding:0 14px}
+  .ingredients-page__feature-visual--premium{min-height:340px}
+  .ingredients-page__feature-info--premium{padding:30px 18px}
+  .ingredients-page__ingredia-logo{width:min(280px,75%)}
+  .ingredients-page__feature-info--premium .ingredients-page__feature-metrics{gap:22px 10px}
+  .ingredients-page__cta-copy h2{font-size:27px!important}
+}
+</style>
+
 </head>
 <body class="ingredients-page">
 <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
@@ -163,7 +283,7 @@
         </div>
         <div class="ingredients-page__hero-metric">
           <span class="ingredients-page__metric-icon ingredients-page__metric-icon--flag" aria-hidden="true"><i></i><i></i><i></i></span>
-          <div><strong>NHẬP KHẨU</strong><span>TRỰC TIẾP TỪ PHÁP</span></div>
+          <div><strong>NHẬP KHẨU ĐỘC QUYỀN</strong><span>TỪ PHÁP</span></div>
         </div>
       </div>
 
@@ -184,19 +304,20 @@
 
 <div class="ingredients-page__content">
   <div class="ingredients-page__container">
-    <section class="ingredients-page__block ingredients-page__feature" id="ingredients-colosferrin" aria-labelledby="ingredients-feature-title">
-      <h2 id="ingredients-feature-title">COLOSFERRIN – NGUYÊN LIỆU MIỄN DỊCH CAO CẤP NHẬP KHẨU TỪ PHÁP</h2>
-      <div class="ingredients-page__feature-grid">
-        <div class="ingredients-page__feature-visual">
-          <img src="ingredients-colosferrin-visual.webp" width="1122" height="813" loading="lazy" decoding="async" alt="Bát bột Colosferrin nhập khẩu từ Pháp">
+    <section class="ingredients-page__block ingredients-page__feature ingredients-page__feature--premium" id="ingredients-colosferrin" aria-labelledby="ingredients-feature-title">
+      <h2 id="ingredients-feature-title">COLOSFERRIN<sup>®</sup> – TINH HOA DINH DƯỠNG ĐỘC QUYỀN TỪ PHÁP</h2>
+      <div class="ingredients-page__feature-grid ingredients-page__feature-grid--premium">
+        <div class="ingredients-page__feature-visual ingredients-page__feature-visual--premium">
+          <img src="colosferrin-france-premium.png" width="1242" height="1242" loading="lazy" decoding="async" alt="Colosferrin cao cấp nhập khẩu độc quyền từ Pháp">
         </div>
-        <div class="ingredients-page__feature-info">
-          <div class="ingredients-page__wordmark ingredients-page__wordmark--feature" aria-label="Ingredia Dairy Experts"><span>ingredia</span><small>DAIRY EXPERTS</small></div>
+        <div class="ingredients-page__feature-info ingredients-page__feature-info--premium">
+          <div class="ingredients-page__feature-soft-bg" aria-hidden="true"></div>
+          <img class="ingredients-page__ingredia-logo" src="ingredia-dairy-experts.png" width="599" height="333" loading="lazy" decoding="async" alt="Ingredia Dairy Experts">
           <div class="ingredients-page__feature-metrics">
             <div class="ingredients-page__feature-metric"><span><svg aria-hidden="true"><use href="#ing-i-shield"></use></svg></span><strong>38%</strong><small>IgG</small></div>
             <div class="ingredients-page__feature-metric"><span><svg aria-hidden="true"><use href="#ing-i-drop"></use></svg></span><strong>0,6%</strong><small>Lactoferrin</small></div>
             <div class="ingredients-page__feature-metric"><span><svg aria-hidden="true"><use href="#ing-i-filter"></use></svg></span><strong>Microfiltration</strong><small>Công nghệ lọc vi mô</small></div>
-            <div class="ingredients-page__feature-metric"><span class="ingredients-page__feature-flag" aria-hidden="true"><i></i><i></i><i></i></span><strong>Nhập khẩu từ</strong><small>INGREDIA – PHÁP</small></div>
+            <div class="ingredients-page__feature-metric"><span class="ingredients-page__feature-flag" aria-hidden="true"><i></i><i></i><i></i></span><strong>Nhập khẩu độc quyền</strong><small>TỪ PHÁP</small></div>
           </div>
         </div>
       </div>
@@ -246,7 +367,7 @@
   <div class="container ingredients-page__cta-inner">
     <div class="ingredients-page__cta-copy">
       <p class="ingredients-page__cta-tag"><svg aria-hidden="true"><use href="#ing-i-shield"></use></svg> NGUYÊN LIỆU CHẤT LƯỢNG – NỀN TẢNG KHÁC BIỆT</p>
-      <h2 id="ingredients-cta-title">BIẾN NGUYÊN LIỆU CAO CẤP<br>THÀNH LỢI THẾ CẠNH TRANH<br><span>CHO THƯƠNG HIỆU CỦA BẠN</span></h2>
+      <h2 id="ingredients-cta-title">BIẾN NGUYÊN LIỆU CAO CẤP<br><span>THÀNH LỢI THẾ CẠNH TRANH CHO THƯƠNG HIỆU CỦA BẠN</span></h2>
       <p>AMM đồng hành cùng đối tác từ lựa chọn nguyên liệu, nghiên cứu công thức đến sản xuất thành phẩm, tạo nên những sản phẩm dinh dưỡng khác biệt và bền vững.</p>
       <div class="ingredients-page__cta-actions">
         <button class="ingredients-page__button ingredients-page__button--cta-primary" data-contact-type="Tư vấn giải pháp OEM/ODM" data-open-contact type="button">
