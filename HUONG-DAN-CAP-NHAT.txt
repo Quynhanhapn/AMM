@@ -1,15 +1,19 @@
-TRANG NGUYÊN LIỆU NỔI BẬT — AMM
+TRANG TỔNG QUAN NHÀ MÁY - AMM GERMANY NUTRITION
 
-FILE CẦN UPLOAD RA NGOÀI CÙNG (ngang hàng index.html):
-1. nguyen-lieu-noi-bat.html
-2. ingredients-page.css
-3. ingredients-hero-bg-desktop.webp
-4. ingredients-hero-bg-mobile.webp
-5. ingredients-cta-bg-desktop.webp
-6. ingredients-cta-bg-mobile.webp
-7. ingredients-colosferrin-visual.webp
+1. Upload toàn bộ các file dưới đây ra ngoài cùng, ngang hàng với index.html:
 
-GIỮ NGUYÊN CÁC FILE HIỆN CÓ:
+- tong-quan-nha-may.html
+- factory-overview.css
+- factory-overview.js
+- tong-quan-nha-may-hero.jpg
+- phong-rd.jpg
+- kho-nguyen-lieu.jpg
+- day-chuyen-sua-bot.jpg
+- day-chuyen-sua-nuoc-tetra-pak.jpg
+- kho-thanh-pham.jpg
+
+2. Giữ nguyên các file đang có của website:
+
 - site.css
 - site.js
 - amm-logo.webp
@@ -17,14 +21,15 @@ GIỮ NGUYÊN CÁC FILE HIỆN CÓ:
 - flag-gb.svg
 - favicon.ico
 
-VỊ TRÍ ĐỔI TÊN ẢNH:
-- Hero desktop: ingredients-page.css, thuộc tính background-image của .ingredients-page__hero
-- Hero mobile: ingredients-page.css, media query max-width: 767px
-- CTA desktop: ingredients-page.css, background-image của .ingredients-page__cta
-- CTA mobile: ingredients-page.css, media query max-width: 767px
-- Ảnh khối Colosferrin: nguyen-lieu-noi-bat.html, file ingredients-colosferrin-visual.webp
+3. Link menu cần dùng:
 
-Logo Ingredia và toàn bộ icon được dựng bằng HTML/CSS/SVG ngay trong file HTML, không cần thêm file logo hoặc file icon rời.
+<a href="tong-quan-nha-may.html">Tổng quan nhà máy</a>
 
-Trang chỉ gồm đúng: Hero → Colosferrin → Cơ chế tác động → Các nguyên liệu khác → Lý do lựa chọn → CTA → Footer.
-Không có section giới thiệu, quy trình, chứng nhận hay thống kê bổ sung.
+4. Trang đã sử dụng đúng 4 phần:
+
+- Hero tổng quan nhà máy
+- Dải số liệu nổi bật
+- Các khu vực chức năng
+- Dải giá trị và năng lực nhà máy
+
+Không có carousel và không có CTA mới.
