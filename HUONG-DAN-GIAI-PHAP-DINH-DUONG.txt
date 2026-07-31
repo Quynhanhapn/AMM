@@ -1,14 +1,24 @@
-AMM — TRANG GIẢI PHÁP DINH DƯỠNG
+AMM — TRANG GIẢI PHÁP DINH DƯỠNG — BẢN ĐÃ TINH CHỈNH
 
-FILE MỚI
+FILE CHÍNH
 - giai-phap-dinh-duong.html
 - nutrition-solution.css
 - nutrition-solution.js
-- nutrition-solution-hero-desktop.webp (2048 x 746)
+
+ẢNH HERO / CTA
+- nutrition-solution-hero-desktop.webp (1849 x 851) — ảnh mới, căn lấy phần phòng lab bên phải
 - nutrition-solution-hero-mobile.webp (972 x 1619)
 - nutrition-solution-intro.webp (994 x 746)
 - nutrition-solution-cta-desktop.webp (1774 x 887)
 - nutrition-solution-cta-mobile.webp (1092 x 1440)
+
+6 ICON GIẢI PHÁP MỚI
+- nutrition-icon-immunity.webp
+- nutrition-icon-digestion.webp
+- nutrition-icon-height.webp
+- nutrition-icon-brain.webp
+- nutrition-icon-growth.webp
+- nutrition-icon-glucose.webp
 
 FILE ĐÃ CẬP NHẬT LINK MENU
 - index.html
@@ -19,14 +29,11 @@ CÁCH UPLOAD
 1. Giải nén ZIP.
 2. Chọn toàn bộ file bên trong, không kéo cả thư mục ngoài.
 3. Upload ngang hàng với index.html trên GitHub.
-4. Giữ nguyên site.css và site.js hiện tại; trang mới sử dụng lại hai file này.
+4. Giữ nguyên site.css và site.js hiện tại.
 
-LINK MENU
-- Năng lực R&D: nang-luc-rd.html
-- Phát triển công thức: phat-trien-cong-thuc.html
-- Giải pháp dinh dưỡng: giai-phap-dinh-duong.html
-
-LƯU Ý
-- Toàn bộ ảnh và code đặt ngoài cùng, không có folder assets/images.
-- Trang có đúng 7 section theo yêu cầu.
-- Nút CTA dùng form liên hệ hiện tại thông qua data-open-contact.
+ĐÃ TINH CHỈNH
+- Tiêu đề Hero “GIẢI PHÁP DINH DƯỠNG” nằm trên một dòng và nhỏ hơn.
+- Hero desktop dùng ảnh mới, object-position ưu tiên phần phòng lab bên phải.
+- 6 icon giải pháp được thay bằng ảnh thật và phóng lớn rõ ràng.
+- Tiêu đề CTA được giảm kích thước.
+- Toàn bộ file vẫn để ngoài cùng, không có folder assets/images.
