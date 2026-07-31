@@ -1,22 +1,30 @@
-AMM — TICH HOP TRANG NANG LUC R&D VAO BO FILE MOI NHAT
+TRANG NGUYÊN LIỆU NỔI BẬT — AMM
 
-THAY 4 FILE SAU TREN GITHUB:
-- index.html
+FILE CẦN UPLOAD RA NGOÀI CÙNG (ngang hàng index.html):
+1. nguyen-lieu-noi-bat.html
+2. ingredients-page.css
+3. ingredients-hero-bg-desktop.webp
+4. ingredients-hero-bg-mobile.webp
+5. ingredients-cta-bg-desktop.webp
+6. ingredients-cta-bg-mobile.webp
+7. ingredients-colosferrin-visual.webp
+
+GIỮ NGUYÊN CÁC FILE HIỆN CÓ:
 - site.css
-- nang-luc-rd.html
-- rd-page.js
+- site.js
+- amm-logo.webp
+- flag-vn.svg
+- flag-gb.svg
+- favicon.ico
 
-CAC ANH R&D CAN DE CUNG CAP VOI INDEX.HTML:
-- hero-rd-desktop.webp
-- hero-rd-mobile.webp
-- rd-lab-01.webp
-- rd-lab-02.webp
-- rd-lab-03.webp
-- rd-lab-04.webp
-- cta-rd-desktop.webp
-- cta-rd-mobile.webp
+VỊ TRÍ ĐỔI TÊN ẢNH:
+- Hero desktop: ingredients-page.css, thuộc tính background-image của .ingredients-page__hero
+- Hero mobile: ingredients-page.css, media query max-width: 767px
+- CTA desktop: ingredients-page.css, background-image của .ingredients-page__cta
+- CTA mobile: ingredients-page.css, media query max-width: 767px
+- Ảnh khối Colosferrin: nguyen-lieu-noi-bat.html, file ingredients-colosferrin-visual.webp
 
-TUY CHON:
-- amm-rd-brochure.pdf (de nut Tai Brochure R&D hoat dong)
+Logo Ingredia và toàn bộ icon được dựng bằng HTML/CSS/SVG ngay trong file HTML, không cần thêm file logo hoặc file icon rời.
 
-Khong can upload rd-page.css nua vi toan bo style R&D da duoc ghep vao site.css.
+Trang chỉ gồm đúng: Hero → Colosferrin → Cơ chế tác động → Các nguyên liệu khác → Lý do lựa chọn → CTA → Footer.
+Không có section giới thiệu, quy trình, chứng nhận hay thống kê bổ sung.
