@@ -1,0 +1,22 @@
+AMM — TICH HOP TRANG NANG LUC R&D VAO BO FILE MOI NHAT
+
+THAY 4 FILE SAU TREN GITHUB:
+- index.html
+- site.css
+- nang-luc-rd.html
+- rd-page.js
+
+CAC ANH R&D CAN DE CUNG CAP VOI INDEX.HTML:
+- hero-rd-desktop.webp
+- hero-rd-mobile.webp
+- rd-lab-01.webp
+- rd-lab-02.webp
+- rd-lab-03.webp
+- rd-lab-04.webp
+- cta-rd-desktop.webp
+- cta-rd-mobile.webp
+
+TUY CHON:
+- amm-rd-brochure.pdf (de nut Tai Brochure R&D hoat dong)
+
+Khong can upload rd-page.css nua vi toan bo style R&D da duoc ghep vao site.css.
