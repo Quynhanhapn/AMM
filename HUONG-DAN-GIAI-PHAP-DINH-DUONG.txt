@@ -1,0 +1,32 @@
+AMM — TRANG GIẢI PHÁP DINH DƯỠNG
+
+FILE MỚI
+- giai-phap-dinh-duong.html
+- nutrition-solution.css
+- nutrition-solution.js
+- nutrition-solution-hero-desktop.webp (2048 x 746)
+- nutrition-solution-hero-mobile.webp (972 x 1619)
+- nutrition-solution-intro.webp (994 x 746)
+- nutrition-solution-cta-desktop.webp (1774 x 887)
+- nutrition-solution-cta-mobile.webp (1092 x 1440)
+
+FILE ĐÃ CẬP NHẬT LINK MENU
+- index.html
+- nang-luc-rd.html
+- phat-trien-cong-thuc.html
+
+CÁCH UPLOAD
+1. Giải nén ZIP.
+2. Chọn toàn bộ file bên trong, không kéo cả thư mục ngoài.
+3. Upload ngang hàng với index.html trên GitHub.
+4. Giữ nguyên site.css và site.js hiện tại; trang mới sử dụng lại hai file này.
+
+LINK MENU
+- Năng lực R&D: nang-luc-rd.html
+- Phát triển công thức: phat-trien-cong-thuc.html
+- Giải pháp dinh dưỡng: giai-phap-dinh-duong.html
+
+LƯU Ý
+- Toàn bộ ảnh và code đặt ngoài cùng, không có folder assets/images.
+- Trang có đúng 7 section theo yêu cầu.
+- Nút CTA dùng form liên hệ hiện tại thông qua data-open-contact.
