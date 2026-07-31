@@ -1,0 +1,29 @@
+AMM — TRANG PHÁT TRIỂN CÔNG THỨC
+
+CÁC FILE MỚI/CẦN THAY:
+1. phat-trien-cong-thuc.html
+2. formula-page.css
+3. formula-page.js
+4. index.html (đã cập nhật link menu Phát triển công thức)
+5. nang-luc-rd.html (đã cập nhật link menu Phát triển công thức)
+6. Toàn bộ ảnh formula-*.webp
+
+TẤT CẢ FILE ĐỂ NGOÀI CÙNG, CÙNG CẤP VỚI index.html.
+Không tạo thư mục assets hoặc images.
+
+FILE ẢNH:
+- formula-hero-desktop.webp
+- formula-hero-mobile.webp
+- formula-cta-desktop.webp
+- formula-cta-mobile.webp
+- formula-logo-premilac.webp
+- formula-logo-gerllac.webp
+- formula-logo-fidimilk.webp
+- formula-logo-blue-diamond.webp
+- formula-logo-golden.webp
+- formula-logo-green-kids.webp
+
+LƯU Ý:
+- Logo New Wieve Việt Nam chưa được cung cấp nên trang đang hiển thị tên thương hiệu dạng chữ. Khi có logo, thay card text bằng ảnh và giữ nguyên class formula-brand-card.
+- Nút TẢI BROCHURE trỏ tới amm-formula-development-brochure.pdf. Upload PDF đúng tên để nút hoạt động.
+- Trang sử dụng site.css và site.js hiện có; không thay đổi header/footer.

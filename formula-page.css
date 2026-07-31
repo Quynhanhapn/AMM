@@ -1,0 +1,218 @@
+/* =========================================================
+   AMM — PHÁT TRIỂN CÔNG THỨC
+   Toàn bộ style được giới hạn trong .formula-page.
+   ========================================================= */
+.formula-page {
+  --formula-navy: #06377f;
+  --formula-navy-deep: #03285f;
+  --formula-blue: #075fc8;
+  --formula-cyan: #12aeea;
+  --formula-ink: #132943;
+  --formula-muted: #5e7189;
+  --formula-line: #dbe9f6;
+  --formula-ice: #f4f9ff;
+  --formula-white: #fff;
+  --formula-shadow: 0 16px 42px rgba(7, 59, 134, .09);
+  --formula-shadow-hover: 0 22px 54px rgba(7, 59, 134, .16);
+  --formula-radius: 18px;
+  --formula-max: 1320px;
+  overflow-x: clip;
+  background: #fff;
+  color: var(--formula-ink);
+}
+
+.formula-page .formula-main { overflow: hidden; }
+.formula-page .formula-sprite { position: absolute; overflow: hidden; }
+.formula-page .formula-container { width: min(var(--formula-max), calc(100% - 40px)); margin-inline: auto; }
+.formula-page .formula-section { padding: 96px 0; }
+.formula-page .formula-section--white { background: #fff; }
+.formula-page .formula-section--ice { background: linear-gradient(180deg, #f8fbff 0%, #eef7ff 100%); }
+.formula-page .formula-section--stats {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(18,174,234,.10), transparent 24%),
+    radial-gradient(circle at 92% 80%, rgba(7,95,200,.10), transparent 24%),
+    #fff;
+}
+.formula-page .formula-section__heading { max-width: 870px; margin: 0 auto 48px; text-align: center; }
+.formula-page .formula-kicker { margin: 0 0 10px; color: var(--formula-cyan); font-size: .82rem; font-weight: 850; letter-spacing: .095em; text-transform: uppercase; }
+.formula-page .formula-section__title { max-width: 850px; margin: 0 auto; color: var(--formula-navy); font-size: clamp(1.9rem, 2.6vw, 2.55rem); line-height: 1.18; letter-spacing: -.025em; text-wrap: balance; }
+.formula-page .formula-section__intro { max-width: 790px; margin: 16px auto 0; color: var(--formula-muted); font-size: 1rem; }
+.formula-page .formula-nav-active::after { right: 0; }
+
+/* Hero */
+.formula-page .formula-hero { position: relative; min-height: clamp(620px, 43vw, 680px); display: grid; align-items: center; isolation: isolate; overflow: hidden; background: #edf7ff; }
+.formula-page .formula-hero__media,
+.formula-page .formula-hero__media picture,
+.formula-page .formula-hero__media img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.formula-page .formula-hero__media img { object-fit: cover; object-position: center; }
+.formula-page .formula-hero::before { content: ""; position: absolute; z-index: 1; inset: 0; background: linear-gradient(90deg, rgba(255,255,255,.95) 0%, rgba(255,255,255,.86) 31%, rgba(255,255,255,.48) 51%, rgba(255,255,255,.05) 72%); }
+.formula-page .formula-hero::after { content: ""; position: absolute; z-index: 1; left: 5%; bottom: 7%; width: 420px; height: 250px; opacity: .24; background: radial-gradient(circle, rgba(18,174,234,.48) 1px, transparent 1.5px); background-size: 24px 24px; mask-image: radial-gradient(circle at center, #000, transparent 72%); }
+.formula-page .formula-hero__inner { position: relative; z-index: 2; display: flex; align-items: center; min-height: inherit; }
+.formula-page .formula-hero__copy { width: min(620px, 46%); }
+.formula-page .formula-hero__title { margin: 0; color: var(--formula-navy); font-size: clamp(2.4rem, 4.1vw, 4.35rem); line-height: 1.05; letter-spacing: -.045em; text-transform: uppercase; }
+.formula-page .formula-hero__subtitle { max-width: 610px; margin: 22px 0 0; color: var(--formula-blue); font-size: clamp(1.08rem, 1.55vw, 1.45rem); font-weight: 780; line-height: 1.45; text-wrap: balance; }
+.formula-page .formula-hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+
+/* Section 2 */
+.formula-page .formula-basis { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
+.formula-page .formula-basis__card { min-height: 250px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: 30px 20px; border: 1px solid var(--formula-line); border-radius: var(--formula-radius); text-align: center; background: #fff; box-shadow: 0 10px 30px rgba(7,59,134,.06); transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+.formula-page .formula-basis__card:hover { transform: translateY(-6px); border-color: #b7d9f4; box-shadow: var(--formula-shadow-hover); }
+.formula-page .formula-basis__icon { width: 70px; height: 70px; display: grid; place-items: center; margin-bottom: 20px; border-radius: 20px; color: var(--formula-blue); background: linear-gradient(145deg, #fff, #eaf6ff); box-shadow: inset 0 0 0 1px #cfe5f7; transition: color .3s ease, background .3s ease, transform .3s ease; }
+.formula-page .formula-basis__card:hover .formula-basis__icon { color: #fff; background: linear-gradient(145deg, var(--formula-blue), var(--formula-cyan)); transform: scale(1.05); }
+.formula-page .formula-basis__icon svg { width: 34px; height: 34px; }
+.formula-page .formula-basis__card h3 { margin: 0; color: var(--formula-navy); font-size: 1.05rem; line-height: 1.25; }
+.formula-page .formula-basis__card p { margin: 12px 0 0; color: var(--formula-muted); font-size: .88rem; line-height: 1.55; }
+
+/* Section 3 */
+.formula-page .formula-products { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 20px; }
+.formula-page .formula-product-card { position: relative; min-height: 365px; overflow: hidden; padding: 34px 30px; border: 1px solid var(--formula-line); border-radius: 22px; background: rgba(255,255,255,.96); box-shadow: var(--formula-shadow); transition: transform .3s ease, box-shadow .3s ease; }
+.formula-page .formula-product-card::after { content: ""; position: absolute; right: -48px; bottom: -48px; width: 150px; height: 150px; border-radius: 50%; background: radial-gradient(circle, rgba(18,174,234,.16), transparent 67%); }
+.formula-page .formula-product-card:hover { transform: translateY(-6px); box-shadow: var(--formula-shadow-hover); }
+.formula-page .formula-product-card__icon { width: 76px; height: 76px; display: grid; place-items: center; border-radius: 22px; color: #fff; background: linear-gradient(145deg, var(--formula-navy), var(--formula-cyan)); box-shadow: 0 14px 30px rgba(7,95,200,.18); }
+.formula-page .formula-product-card__icon svg { width: 38px; height: 38px; }
+.formula-page .formula-product-card h3 { margin: 24px 0 0; color: var(--formula-navy); font-size: 1.25rem; text-transform: uppercase; }
+.formula-page .formula-product-card ul { margin: 20px 0 0; padding: 0; list-style: none; }
+.formula-page .formula-product-card li { position: relative; padding: 10px 0 10px 25px; border-bottom: 1px dashed #dbe9f6; color: var(--formula-muted); font-size: .92rem; }
+.formula-page .formula-product-card li:last-child { border-bottom: 0; }
+.formula-page .formula-product-card li::before { content: ""; position: absolute; left: 2px; top: 17px; width: 8px; height: 8px; border-radius: 50%; background: var(--formula-cyan); box-shadow: 0 0 0 4px rgba(18,174,234,.12); }
+
+/* Section 4 */
+.formula-page .formula-brands { display: grid; grid-template-columns: repeat(7, minmax(0,1fr)); gap: 14px; align-items: stretch; }
+.formula-page .formula-brand-card { min-height: 150px; display: grid; place-items: center; padding: 22px 16px; overflow: hidden; border: 1px solid var(--formula-line); border-radius: 17px; background: #fff; box-shadow: 0 10px 28px rgba(7,59,134,.06); transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+.formula-page .formula-brand-card:hover { transform: translateY(-6px); border-color: #b8d9f3; box-shadow: var(--formula-shadow-hover); }
+.formula-page .formula-brand-card img { width: 100%; max-width: 150px; max-height: 72px; object-fit: contain; transition: transform .3s ease; }
+.formula-page .formula-brand-card:hover img { transform: scale(1.05); }
+.formula-page .formula-brand-card--premilac { border-color: #bad8f3; background: linear-gradient(145deg, #fff, #f1f8ff); }
+.formula-page .formula-brand-card--premilac img { max-width: 180px; max-height: 86px; }
+.formula-page .formula-brand-card--text { align-content: center; color: var(--formula-navy); font-weight: 900; text-align: center; letter-spacing: .08em; }
+.formula-page .formula-brand-card--text span { font-size: 1.08rem; }
+.formula-page .formula-brand-card--text small { display: block; margin-top: 5px; color: var(--formula-cyan); font-size: .68rem; letter-spacing: .18em; }
+
+/* Section 5 */
+.formula-page .formula-stats { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 18px; }
+.formula-page .formula-stat { min-height: 240px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 30px 20px; border: 1px solid var(--formula-line); border-radius: 20px; text-align: center; background: #fff; box-shadow: 0 10px 30px rgba(7,59,134,.06); transition: transform .3s ease, box-shadow .3s ease; }
+.formula-page .formula-stat:hover { transform: translateY(-6px); box-shadow: var(--formula-shadow-hover); }
+.formula-page .formula-stat__number { color: var(--formula-navy); font-size: clamp(2.7rem, 4vw, 4.3rem); line-height: 1; letter-spacing: -.045em; transition: color .3s ease; }
+.formula-page .formula-stat:hover .formula-stat__number { color: var(--formula-cyan); }
+.formula-page .formula-stat__standard { margin-top: 5px; color: var(--formula-blue); font-size: 1.35rem; font-weight: 850; }
+.formula-page .formula-stat__label { margin-top: 20px; color: var(--formula-muted); font-size: .86rem; font-weight: 800; line-height: 1.5; letter-spacing: .055em; text-transform: uppercase; }
+.formula-page .formula-stat--iso .formula-stat__number { font-size: clamp(2.4rem, 3.5vw, 3.8rem); }
+
+/* Section 6 */
+.formula-page .formula-benefits { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 18px; }
+.formula-page .formula-benefit { min-height: 260px; padding: 28px 20px; border: 1px solid transparent; border-radius: 18px; text-align: center; transition: transform .3s ease, background .3s ease, border-color .3s ease, box-shadow .3s ease; }
+.formula-page .formula-benefit:hover { transform: translateY(-5px); border-color: var(--formula-line); background: #fff; box-shadow: var(--formula-shadow); }
+.formula-page .formula-benefit__icon { width: 78px; height: 78px; display: grid; place-items: center; margin: 0 auto 22px; border: 1px solid #cfe4f7; border-radius: 50%; color: var(--formula-blue); background: #fff; transition: transform .3s ease, color .3s ease, background .3s ease; }
+.formula-page .formula-benefit:hover .formula-benefit__icon { transform: scale(1.07); color: #fff; background: linear-gradient(145deg, var(--formula-blue), var(--formula-cyan)); }
+.formula-page .formula-benefit__icon svg { width: 36px; height: 36px; }
+.formula-page .formula-benefit h3 { margin: 0; color: var(--formula-navy); font-size: 1.05rem; }
+.formula-page .formula-benefit p { margin: 12px 0 0; color: var(--formula-muted); font-size: .86rem; line-height: 1.55; }
+
+/* CTA */
+.formula-page .formula-cta { position: relative; min-height: clamp(360px, 31vw, 470px); display: grid; align-items: center; isolation: isolate; overflow: hidden; background: var(--formula-navy-deep); }
+.formula-page .formula-cta__media,
+.formula-page .formula-cta__media picture,
+.formula-page .formula-cta__media img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.formula-page .formula-cta__media img { object-fit: cover; object-position: center; }
+.formula-page .formula-cta::before { content: ""; position: absolute; z-index: 1; inset: 0; background: linear-gradient(90deg, rgba(3,40,95,.94) 0%, rgba(4,61,132,.82) 36%, rgba(4,61,132,.36) 63%, rgba(3,40,95,.08) 100%); }
+.formula-page .formula-cta__inner { position: relative; z-index: 2; display: flex; align-items: center; min-height: inherit; }
+.formula-page .formula-cta__copy { max-width: 650px; color: #fff; }
+.formula-page .formula-cta__copy h2 { margin: 0; max-width: 650px; color: #fff; font-size: clamp(2rem, 3vw, 3.2rem); line-height: 1.15; text-transform: uppercase; text-wrap: balance; }
+.formula-page .formula-cta__copy p { max-width: 610px; margin: 18px 0 0; color: #e0efff; font-size: 1rem; line-height: 1.65; }
+.formula-page .formula-cta__copy .btn { margin-top: 26px; }
+
+/* Footer compatibility without inline CSS */
+.formula-page .formula-footer__visit { width: auto; min-height: 38px; margin-top: 12px; padding: 7px 14px; }
+.formula-page .formula-footer__address { font-style: normal; }
+.formula-page .formula-footer__map-frame { display: block; border: 0; }
+
+/* Motion */
+.formula-page .formula-reveal { opacity: 1; transform: none; }
+.formula-motion .formula-reveal { opacity: 0; transition: opacity .68s ease, transform .68s ease; }
+.formula-motion .formula-reveal[data-reveal="up"] { transform: translateY(28px); }
+.formula-motion .formula-reveal[data-reveal="left"] { transform: translateX(-34px); }
+.formula-motion .formula-reveal[data-reveal="right"] { transform: translateX(34px); }
+.formula-motion .formula-reveal.is-visible { opacity: 1; transform: translate(0,0); }
+
+@media (max-width: 1180px) {
+  .formula-page .formula-brands { grid-template-columns: repeat(4, minmax(0,1fr)); }
+  .formula-page .formula-benefits { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .formula-page .formula-benefit:nth-child(4),
+  .formula-page .formula-benefit:nth-child(5) { max-width: 100%; }
+}
+
+@media (max-width: 1023px) {
+  .formula-page .formula-section { padding: 80px 0; }
+  .formula-page .formula-basis { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .formula-page .formula-products { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .formula-page .formula-brands { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .formula-page .formula-stats { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .formula-page .formula-hero__copy { width: 52%; }
+}
+
+@media (max-width: 767px) {
+  .formula-page .formula-container { width: min(100% - 24px, var(--formula-max)); }
+  .formula-page .formula-section { padding: 64px 0; }
+  .formula-page .formula-section__heading { margin-bottom: 34px; }
+  .formula-page .formula-section__title { font-size: clamp(1.65rem, 7vw, 2.2rem); }
+  .formula-page .formula-section__intro { font-size: .93rem; }
+
+  .formula-page .formula-hero { min-height: clamp(760px, 190vw, 900px); align-items: start; }
+  .formula-page .formula-hero__media img { object-position: center bottom; }
+  .formula-page .formula-hero::before { background: linear-gradient(180deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.90) 35%, rgba(255,255,255,.42) 56%, rgba(255,255,255,.02) 72%); }
+  .formula-page .formula-hero::after { left: -15%; top: 8%; bottom: auto; width: 360px; height: 240px; }
+  .formula-page .formula-hero__inner { align-items: flex-start; padding-top: 54px; }
+  .formula-page .formula-hero__copy { width: 100%; max-width: 560px; }
+  .formula-page .formula-hero__title { font-size: clamp(2.2rem, 10vw, 3.1rem); }
+  .formula-page .formula-hero__subtitle { max-width: 520px; font-size: 1.02rem; }
+  .formula-page .formula-hero__actions { flex-direction: column; align-items: stretch; margin-top: 24px; }
+  .formula-page .formula-hero__actions .btn { width: 100%; }
+
+  .formula-page .formula-basis { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+  .formula-page .formula-basis__card { min-height: 232px; padding: 24px 14px; }
+  .formula-page .formula-basis__icon { width: 62px; height: 62px; }
+  .formula-page .formula-basis__card h3 { font-size: .96rem; }
+  .formula-page .formula-basis__card p { font-size: .8rem; }
+
+  .formula-page .formula-products { grid-template-columns: 1fr; }
+  .formula-page .formula-product-card { min-height: 0; }
+
+  .formula-page .formula-brands { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 11px; }
+  .formula-page .formula-brand-card { min-height: 128px; padding: 16px 12px; }
+  .formula-page .formula-brand-card img { max-width: 132px; max-height: 62px; }
+  .formula-page .formula-brand-card--premilac img { max-width: 155px; max-height: 74px; }
+
+  .formula-page .formula-stats { gap: 11px; }
+  .formula-page .formula-stat { min-height: 210px; padding: 24px 12px; }
+  .formula-page .formula-stat__number { font-size: clamp(2.3rem, 11vw, 3.4rem); }
+  .formula-page .formula-stat__standard { font-size: 1.05rem; }
+  .formula-page .formula-stat__label { font-size: .72rem; }
+
+  .formula-page .formula-benefits { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; }
+  .formula-page .formula-benefit { min-height: 245px; padding: 24px 12px; }
+  .formula-page .formula-benefit:last-child { grid-column: 1 / -1; width: calc(50% - 5px); justify-self: center; }
+  .formula-page .formula-benefit h3 { font-size: .94rem; }
+  .formula-page .formula-benefit p { font-size: .78rem; }
+
+  .formula-page .formula-cta { min-height: clamp(690px, 185vw, 860px); align-items: start; }
+  .formula-page .formula-cta__media img { object-position: center bottom; }
+  .formula-page .formula-cta::before { background: linear-gradient(180deg, rgba(3,40,95,.93) 0%, rgba(4,61,132,.82) 36%, rgba(4,61,132,.28) 58%, rgba(3,40,95,.04) 75%); }
+  .formula-page .formula-cta__inner { align-items: flex-start; padding-top: 58px; }
+  .formula-page .formula-cta__copy { max-width: 100%; }
+  .formula-page .formula-cta__copy h2 { max-width: 550px; font-size: clamp(1.8rem, 8vw, 2.55rem); }
+  .formula-page .formula-cta__copy p { max-width: 540px; font-size: .92rem; }
+  .formula-page .formula-cta__copy .btn { width: 100%; }
+}
+
+@media (max-width: 360px) {
+  .formula-page .formula-container { width: min(100% - 18px, var(--formula-max)); }
+  .formula-page .formula-basis__card { min-height: 245px; padding-inline: 10px; }
+  .formula-page .formula-basis__card p { font-size: .76rem; }
+  .formula-page .formula-stat { min-height: 205px; }
+  .formula-page .formula-benefit { min-height: 258px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .formula-page *, .formula-page *::before, .formula-page *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+  .formula-motion .formula-reveal { opacity: 1; transform: none; }
+}
