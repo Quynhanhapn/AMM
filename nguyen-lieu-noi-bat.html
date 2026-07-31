@@ -59,15 +59,15 @@
 .ingredients-page__feature--premium > h2 sup{font-size:.52em;top:-.55em;position:relative}
 .ingredients-page__feature-grid--premium{
   display:grid;
-  grid-template-columns:minmax(0,1.03fr) minmax(0,1.17fr);
+  grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);
   align-items:stretch;
   gap:0;
-  min-height:470px;
+  height:520px;
 }
 .ingredients-page__feature-visual--premium{
   position:relative;
   overflow:hidden;
-  min-height:470px;
+  min-height:520px;
   border-radius:24px 0 0 24px;
   background:#eaf5ff;
 }
@@ -78,10 +78,11 @@
   content:"";position:absolute;z-index:2;inset:0 0 0 auto;width:24%;pointer-events:none;
   background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.62) 58%,#fff 100%);
 }
-.ingredients-page__feature-info--premium{
-  position:relative;isolation:isolate;display:flex;flex-direction:column;justify-content:center;
-  min-width:0;padding:clamp(28px,4vw,58px) clamp(24px,4vw,64px);
-  background:linear-gradient(110deg,#fff 0%,rgba(247,252,255,.98) 55%,rgba(233,246,255,.96) 100%);
+.ingredients-page__feature-info--premium{  
+  position:relative;  isolation:isolate;  display:flex;  flex-direction:column;  justify-content:center;
+  min-width:0;  height:520px;  box-sizing:border-box;  padding:28px 32px;  overflow:hidden;
+  background:linear-gradient(    110deg,    #fff 0%,    rgba(247,252,255,.98) 55%,    rgba(233,246,255,.96) 100%  );
+}
 }
 .ingredients-page__feature-soft-bg{
   position:absolute;z-index:-1;inset:0;overflow:hidden;pointer-events:none;
@@ -99,7 +100,10 @@
   display:block;width:min(230px,62%);height:auto;object-fit:contain;margin:0 auto clamp(28px,3vw,46px);
 }
 .ingredients-page__feature-info--premium .ingredients-page__feature-metrics{
-  width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.8vw,26px);
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
 }
 .ingredients-page__feature-info--premium .ingredients-page__feature-metric{
   min-width:0;text-align:center;display:flex;flex-direction:column;align-items:center;
