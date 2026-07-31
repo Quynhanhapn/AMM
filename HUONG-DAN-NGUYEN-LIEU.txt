@@ -1,0 +1,23 @@
+TRANG NGUYÊN LIỆU NỔI BẬT – AMM
+
+Upload toàn bộ file trong thư mục này ra ngoài cùng, ngang hàng với index.html.
+
+File mới:
+- nguyen-lieu-noi-bat.html
+- ingredients-page.css
+- ingredients-page.js
+- ingredients-hero-desktop.webp
+- ingredients-hero-mobile.webp
+- ingredients-colosferrin-visual.webp
+- ingredients-colosferrin-badge.webp
+- ingredients-ingredia-logo.webp
+- ingredients-cta-desktop.webp
+- ingredients-cta-mobile.webp
+
+File HTML đã cập nhật menu:
+- index.html
+- nang-luc-rd.html
+- phat-trien-cong-thuc.html
+- giai-phap-dinh-duong.html
+
+Giữ nguyên site.css và site.js hiện tại.
