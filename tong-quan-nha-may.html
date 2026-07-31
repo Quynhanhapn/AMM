@@ -162,6 +162,18 @@
     .fo-strength__media{aspect-ratio:1.8/1;overflow:hidden;background:#eef5fa}
     .fo-strength__media img{width:100%;height:100%;display:block;object-fit:cover}
 
+
+    /* VALUE BAND */
+    .fo-valueband{padding:0 0 38px;background:linear-gradient(180deg,#f8fbfe 0%,#ffffff 100%)}
+    .fo-valueband__wrap{overflow:hidden;border-radius:0;background:linear-gradient(90deg,#06357a 0%,#0c4594 42%,#1155b0 100%);box-shadow:0 16px 34px rgba(7,59,130,.16)}
+    .fo-valueband__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+    .fo-valueband__item{position:relative;display:grid;grid-template-columns:56px 1fr;gap:18px;align-items:flex-start;padding:28px 30px;color:#fff}
+    .fo-valueband__item:not(:last-child)::after{content:"";position:absolute;top:20px;right:0;bottom:20px;width:1px;background:rgba(255,255,255,.35)}
+    .fo-valueband__icon{display:grid;place-items:center;width:56px;height:56px;opacity:.96}
+    .fo-valueband__icon svg{width:46px;height:46px;color:#fff}
+    .fo-valueband__item h3{margin:0 0 8px;color:#fff;font-size:1.02rem;line-height:1.25;font-weight:900;text-transform:uppercase}
+    .fo-valueband__item p{margin:0;color:rgba(255,255,255,.92);font-size:.82rem;line-height:1.58}
+
     /* ANIMATION */
     [data-fo-reveal]{opacity:1;transform:none}
     .fo-page.fo-motion [data-fo-reveal]{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
@@ -181,6 +193,7 @@
       .fo-partner__content{grid-template-columns:1fr}
       .fo-partner__text{font-size:.84rem}
       .fo-strengths{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .fo-valueband__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
     }
     @media (max-width:900px){
       .fo-hero{min-height:560px}
@@ -239,6 +252,14 @@
       .fo-feature{grid-template-columns:42px 1fr;padding:9px}
       .fo-feature__icon{width:42px;height:42px}
       .fo-strengths{grid-template-columns:1fr}
+      .fo-valueband{padding-bottom:28px}
+      .fo-valueband__grid{grid-template-columns:1fr}
+      .fo-valueband__item{grid-template-columns:48px 1fr;gap:14px;padding:20px 18px}
+      .fo-valueband__item:not(:last-child)::after{top:auto;left:18px;right:18px;bottom:0;width:auto;height:1px}
+      .fo-valueband__icon{width:48px;height:48px}
+      .fo-valueband__icon svg{width:38px;height:38px}
+      .fo-valueband__item h3{font-size:.95rem}
+      .fo-valueband__item p{font-size:.78rem}
       .fo-tech__shell::before{background:url("technology-partners-bg.png") no-repeat right -70px top -10px / 250px auto;opacity:.85}
     }
     @media (max-width:420px){
@@ -500,24 +521,40 @@
     </section>
 
     <!-- SECTION 3: DẢI GIÁ TRỊ VÀ NĂNG LỰC -->
-    <section class="factory-overview-page__values" aria-label="Giá trị và năng lực nhà máy AMM">
-      <div class="container factory-overview-page__value-grid">
-        <article class="factory-overview-page__value-item" data-reveal="up">
-          <svg aria-hidden="true"><use href="#fo-i-globe"></use></svg>
-          <div><h2>TIÊU CHUẨN QUỐC TẾ</h2><p>Nhà máy áp dụng hệ thống quản lý an toàn thực phẩm ISO 22000:2018 và tuân thủ các tiêu chuẩn chất lượng liên quan.</p></div>
-        </article>
-        <article class="factory-overview-page__value-item" data-reveal="up">
-          <svg aria-hidden="true"><use href="#fo-i-shield"></use></svg>
-          <div><h2>KIỂM SOÁT CHẤT LƯỢNG</h2><p>Quy trình kiểm soát chặt chẽ từ nguyên liệu đầu vào, quá trình sản xuất đến thành phẩm cuối cùng.</p></div>
-        </article>
-        <article class="factory-overview-page__value-item" data-reveal="up">
-          <svg aria-hidden="true"><use href="#fo-i-flask"></use></svg>
-          <div><h2>CÔNG NGHỆ HIỆN ĐẠI</h2><p>Đầu tư hệ thống thiết bị tiên tiến, tăng cường tự động hóa và bảo đảm năng suất, chất lượng ổn định.</p></div>
-        </article>
-        <article class="factory-overview-page__value-item" data-reveal="up">
-          <svg aria-hidden="true"><use href="#fo-i-team"></use></svg>
-          <div><h2>ĐỘI NGŨ CHUYÊN NGHIỆP</h2><p>Đội ngũ chuyên gia, kỹ thuật viên và nhân sự giàu kinh nghiệm, tận tâm và không ngừng sáng tạo.</p></div>
-        </article>
+    <section class="fo-valueband" aria-label="Giá trị và năng lực nhà máy AMM">
+      <div class="fo-shell">
+        <div class="fo-valueband__wrap">
+          <div class="fo-valueband__grid">
+            <article class="fo-valueband__item" data-fo-reveal>
+              <span class="fo-valueband__icon" aria-hidden="true"><svg><use href="#fo-i-globe"></use></svg></span>
+              <div>
+                <h3>TIÊU CHUẨN QUỐC TẾ</h3>
+                <p>Nhà máy đạt chứng nhận ISO 22000:2018, tuân thủ các tiêu chuẩn quốc tế trong kiểm soát an toàn thực phẩm và chất lượng sản xuất.</p>
+              </div>
+            </article>
+            <article class="fo-valueband__item" data-fo-reveal>
+              <span class="fo-valueband__icon" aria-hidden="true"><svg><use href="#fo-i-shield"></use></svg></span>
+              <div>
+                <h3>KIỂM SOÁT CHẤT LƯỢNG</h3>
+                <p>Quy trình kiểm soát chặt chẽ từ nguyên liệu đầu vào đến thành phẩm cuối cùng, bảo đảm độ ổn định và tính đồng nhất của sản phẩm.</p>
+              </div>
+            </article>
+            <article class="fo-valueband__item" data-fo-reveal>
+              <span class="fo-valueband__icon" aria-hidden="true"><svg><use href="#fo-i-flask"></use></svg></span>
+              <div>
+                <h3>CÔNG NGHỆ HIỆN ĐẠI</h3>
+                <p>Đầu tư hệ thống thiết bị tiên tiến, tự động hóa cao, giúp nâng cao hiệu suất vận hành và bảo đảm năng suất, chất lượng ổn định.</p>
+              </div>
+            </article>
+            <article class="fo-valueband__item" data-fo-reveal>
+              <span class="fo-valueband__icon" aria-hidden="true"><svg><use href="#fo-i-team"></use></svg></span>
+              <div>
+                <h3>ĐỘI NGŨ CHUYÊN NGHIỆP</h3>
+                <p>Đội ngũ chuyên gia và kỹ thuật viên giàu kinh nghiệm, tận tâm, phối hợp chặt chẽ để vận hành hệ thống sản xuất an toàn và hiệu quả.</p>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
   </main>
