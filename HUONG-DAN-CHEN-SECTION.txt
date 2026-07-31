@@ -1,0 +1,24 @@
+SECTION: TỔ HỢP CÔNG NGHỆ & ĐỐI TÁC CHIẾN LƯỢC TOÀN CẦU
+
+1. Mở file tong-quan-nha-may.html.
+2. Tìm phần kết thúc của section “CÁC KHU VỰC CHỨC NĂNG”.
+3. Chèn toàn bộ nội dung trong file amm-tech-partners-section.html ngay sau section đó.
+4. Section mới phải nằm trước dải:
+   - Tiêu chuẩn quốc tế
+   - Kiểm soát chất lượng
+   - Công nghệ hiện đại
+   - Đội ngũ chuyên nghiệp
+
+5. Gắn CSS trong thẻ <head>:
+   <link rel="stylesheet" href="amm-tech-partners.css">
+
+6. Gắn JavaScript ngay trước </body>:
+   <script src="amm-tech-partners.js" defer></script>
+
+7. Upload các ảnh cùng cấp với file HTML:
+   - tetra-pak-technology.jpg
+   - rieckermann-technology.jpg
+   - dsc-mixing-system.jpg
+   - pegasus-mixer-hd.jpg
+
+Quả địa cầu công nghệ đã được dựng bằng SVG inline, không cần thêm ảnh nền quả địa cầu.
