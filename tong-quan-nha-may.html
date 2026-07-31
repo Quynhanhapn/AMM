@@ -3,102 +3,315 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Tổng quan nhà máy AMM Germany Nutrition</title>
-  <meta name="description" content="Khám phá quy mô, dây chuyền sản xuất, hệ thống R&D, kho nguyên liệu và năng lực kiểm soát chất lượng tại nhà máy AMM Germany Nutrition.">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#073B82">
+  <title>Tổng quan nhà máy | AMM Germany Nutrition</title>
+  <meta name="description" content="Khám phá nhà máy AMM Germany Nutrition, năng lực sản xuất sữa bột, sữa nước, hệ thống R&D, QA/QC và tổ hợp công nghệ cùng các đối tác chiến lược toàn cầu.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#073b82">
   <link rel="canonical" href="https://ammnutrition.vn/tong-quan-nha-may.html">
   <link rel="alternate" hreflang="vi" href="https://ammnutrition.vn/tong-quan-nha-may.html">
+  <link rel="alternate" hreflang="en" href="https://ammnutrition.vn/en/tong-quan-nha-may.html">
   <link rel="alternate" hreflang="x-default" href="https://ammnutrition.vn/tong-quan-nha-may.html">
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="preload" as="image" href="tong-quan-nha-may-hero.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="factory-hero.webp" fetchpriority="high">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="AMM Germany Nutrition">
   <meta property="og:locale" content="vi_VN">
   <meta property="og:url" content="https://ammnutrition.vn/tong-quan-nha-may.html">
-  <meta property="og:title" content="Tổng quan nhà máy AMM Germany Nutrition">
-  <meta property="og:description" content="Khám phá quy mô, dây chuyền sản xuất, hệ thống R&D, kho nguyên liệu và năng lực kiểm soát chất lượng tại nhà máy AMM Germany Nutrition.">
-  <meta property="og:image" content="https://ammnutrition.vn/tong-quan-nha-may-hero.jpg">
+  <meta property="og:title" content="Tổng quan nhà máy | AMM Germany Nutrition">
+  <meta property="og:description" content="Nhà máy AMM ứng dụng công nghệ hiện đại trong nghiên cứu, sản xuất và kiểm soát chất lượng các sản phẩm dinh dưỡng.">
+  <meta property="og:image" content="https://ammnutrition.vn/factory-hero.webp">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="site.css">
-  <link rel="stylesheet" href="factory-overview.css">
-  <script defer src="site.js"></script>
-  <script defer src="factory-overview.js"></script>
+
+  <style>
+    /* =========================================================
+       TỔNG QUAN NHÀ MÁY — CSS riêng, không ảnh hưởng trang khác
+       ========================================================= */
+    .fo-page{
+      --fo-navy:#073b82;
+      --fo-navy-2:#032c68;
+      --fo-blue:#0b65bf;
+      --fo-cyan:#27b8e7;
+      --fo-text:#25384d;
+      --fo-muted:#64778c;
+      --fo-line:#d7e6f2;
+      --fo-soft:#f5faff;
+      --fo-card:#fff;
+      --fo-shadow:0 14px 34px rgba(7,59,130,.09);
+      --fo-max:1380px;
+      color:var(--fo-text);
+      background:#fff;
+      overflow-x:clip;
+    }
+    .fo-page *, .fo-page *::before, .fo-page *::after{box-sizing:border-box}
+    .fo-page img{max-width:100%}
+    .fo-page__sprite{position:absolute;width:0;height:0;overflow:hidden}
+    .fo-shell{width:min(var(--fo-max),calc(100% - 40px));margin-inline:auto}
+    .fo-page .fo-nav-active{color:var(--fo-blue)}
+    .fo-page .fo-nav-active::after{opacity:1;transform:scaleX(1)}
+
+    .fo-breadcrumb{border-bottom:1px solid #edf3f7;background:#fff}
+    .fo-breadcrumb__inner{display:flex;align-items:center;gap:9px;min-height:42px;font-size:.82rem;color:#7d8da0}
+    .fo-breadcrumb a{color:#64778c;text-decoration:none}
+    .fo-breadcrumb a:hover{color:var(--fo-blue)}
+
+    /* HERO */
+    .fo-hero{position:relative;min-height:490px;overflow:hidden;isolation:isolate;background:#eaf5fd}
+    .fo-hero__media{position:absolute;inset:0;z-index:-3}
+    .fo-hero__media img{width:100%;height:100%;object-fit:cover;object-position:58% 50%;display:block;filter:saturate(1.04) contrast(1.02)}
+    .fo-hero::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(255,255,255,.99) 0%,rgba(255,255,255,.97) 27%,rgba(255,255,255,.78) 43%,rgba(255,255,255,.25) 61%,rgba(255,255,255,0) 79%),linear-gradient(180deg,rgba(255,255,255,0) 62%,rgba(255,255,255,.92) 100%)}
+    .fo-hero::after{content:"";position:absolute;left:-80px;top:36px;width:260px;height:260px;border-radius:50%;opacity:.26;background:radial-gradient(circle at 36% 34%,rgba(255,255,255,.95) 0 5%,rgba(72,184,239,.34) 6% 7%,transparent 8%),radial-gradient(circle at 63% 62%,rgba(255,255,255,.92) 0 4%,rgba(72,184,239,.27) 5% 6%,transparent 7%),repeating-radial-gradient(circle at center,transparent 0 28px,rgba(48,146,210,.18) 29px 30px,transparent 31px 54px);pointer-events:none}
+    .fo-hero__inner{min-height:490px;display:flex;align-items:center;padding:54px 0 94px}
+    .fo-hero__copy{width:min(530px,48vw)}
+    .fo-eyebrow{margin:0 0 12px;color:var(--fo-blue);font-weight:800;letter-spacing:.15em;font-size:.8rem;text-transform:uppercase}
+    .fo-hero h1{margin:0;color:var(--fo-navy);font-size:clamp(2.7rem,4.2vw,4.15rem);line-height:1.02;letter-spacing:-.045em;font-weight:850;max-width:620px}
+    .fo-hero h1 span{display:block}
+    .fo-hero__lead{max-width:520px;margin:20px 0 0;font-size:clamp(.98rem,1.15vw,1.08rem);line-height:1.72;color:#2d4055}
+    .fo-hero__actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+
+    /* STATS */
+    .fo-stats-wrap{position:relative;margin-top:-70px;z-index:4}
+    .fo-stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));background:rgba(255,255,255,.94);border:1px solid #d5e5f1;border-radius:22px;box-shadow:0 18px 44px rgba(7,59,130,.12);overflow:hidden;backdrop-filter:blur(12px)}
+    .fo-stat{min-width:0;display:grid;grid-template-columns:48px minmax(0,1fr);gap:14px;align-items:center;padding:24px 22px;position:relative}
+    .fo-stat:not(:last-child)::after{content:"";position:absolute;right:0;top:24px;bottom:24px;width:1px;background:#d8e6f1}
+    .fo-stat__icon{width:46px;height:46px;color:var(--fo-blue)}
+    .fo-stat__value{display:block;color:var(--fo-navy);font-size:clamp(1.08rem,1.4vw,1.55rem);font-weight:850;line-height:1.03;letter-spacing:-.02em;white-space:nowrap}
+    .fo-stat__value small{display:block;margin-top:4px;font-size:.72em;line-height:1.05;font-weight:800;letter-spacing:0}
+    .fo-stat__label{margin:8px 0 0;color:var(--fo-muted);font-size:.82rem;line-height:1.4}
+
+    /* SECTION TITLES */
+    .fo-section{padding:54px 0}
+    .fo-title{text-align:center;margin:0 auto 26px;max-width:980px}
+    .fo-title__kicker{margin:0 0 8px;color:var(--fo-blue);font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .fo-title h2{margin:0;color:var(--fo-navy);font-size:clamp(1.75rem,2.5vw,2.55rem);line-height:1.18;letter-spacing:-.025em}
+    .fo-title p{margin:10px auto 0;max-width:900px;color:#51667c;line-height:1.65;font-size:.96rem}
+
+    /* FUNCTION AREAS */
+    .fo-areas{padding-top:46px;padding-bottom:54px}
+    .fo-areas__heading{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;margin-bottom:24px}
+    .fo-areas__heading span{height:1px;background:linear-gradient(90deg,transparent,#8ebedd)}
+    .fo-areas__heading span:last-child{background:linear-gradient(90deg,#8ebedd,transparent)}
+    .fo-areas__heading h2{margin:0;color:var(--fo-navy);font-size:clamp(1.45rem,2vw,2rem);line-height:1.2;font-weight:850;white-space:nowrap}
+    .fo-areas__grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+    .fo-area{min-width:0;background:#fff;border:1px solid var(--fo-line);border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(7,59,130,.055);transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+    .fo-area:hover{transform:translateY(-5px);box-shadow:var(--fo-shadow);border-color:#9fcae8}
+    .fo-area__media{aspect-ratio:1.35/1;overflow:hidden;background:#eef6fb}
+    .fo-area__media img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .4s ease}
+    .fo-area:hover .fo-area__media img{transform:scale(1.035)}
+    .fo-area__body{padding:14px 14px 16px}
+    .fo-area__body h3{margin:0;color:var(--fo-navy);font-size:.91rem;line-height:1.35;font-weight:850}
+    .fo-area__body p{margin:7px 0 0;color:#5c7085;font-size:.8rem;line-height:1.45}
+
+    /* TECH PARTNERS */
+    .fo-tech{padding:8px 0 62px;background:linear-gradient(180deg,#fff 0%,#f8fbfe 100%)}
+    .fo-tech__shell{position:relative;overflow:hidden;border:1px solid #d6e5f0;border-radius:25px;background:linear-gradient(180deg,rgba(255,255,255,.99),rgba(247,251,255,.98));box-shadow:0 16px 42px rgba(7,59,130,.07);padding:34px 24px 24px}
+    .fo-tech__globe{position:absolute;right:-88px;top:-100px;width:330px;height:330px;border:1px solid rgba(41,141,210,.2);border-radius:50%;opacity:.58;pointer-events:none;background:repeating-radial-gradient(ellipse at center,transparent 0 30px,rgba(40,145,214,.12) 31px 32px,transparent 33px 52px),repeating-linear-gradient(90deg,transparent 0 38px,rgba(40,145,214,.1) 39px 40px,transparent 41px 76px);transform:rotate(-12deg)}
+    .fo-tech__globe::before,.fo-tech__globe::after{content:"";position:absolute;inset:36px;border:1px solid rgba(40,145,214,.22);border-radius:50%;transform:scaleX(.42)}
+    .fo-tech__globe::after{inset:76px 24px;transform:none}
+    .fo-tech__head{position:relative;z-index:1;text-align:center;max-width:1020px;margin:0 auto 26px}
+    .fo-tech__head h2{margin:0;color:var(--fo-navy);font-size:clamp(1.62rem,2.2vw,2.35rem);line-height:1.2;letter-spacing:-.02em}
+    .fo-tech__head h3{margin:8px 0 0;color:#1680c8;font-size:clamp(1rem,1.5vw,1.34rem);line-height:1.3;font-weight:800}
+    .fo-tech__head p{margin:10px auto 0;max-width:900px;color:#53677d;line-height:1.6;font-size:.92rem}
+    .fo-partners{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .fo-partner{min-width:0;background:#fff;border:1px solid #d7e5f0;border-radius:18px;padding:18px;box-shadow:0 8px 22px rgba(7,59,130,.055)}
+    .fo-partner__brand{min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+    .fo-wordmark{font-weight:900;letter-spacing:-.035em;line-height:1;color:#0b3f91;font-size:1.65rem}
+    .fo-wordmark--rieck{color:#c62828;font-size:1.36rem;letter-spacing:-.02em}
+    .fo-wordmark--dsc{font-size:1.58rem;letter-spacing:.02em}
+    .fo-wordmark small{display:block;margin-top:5px;font-size:.42em;letter-spacing:.08em;font-weight:700;color:#5b6d80}
+    .fo-country{display:flex;align-items:center;gap:8px;color:#1f3f6f;font-size:.75rem;font-weight:850;text-transform:uppercase;white-space:nowrap}
+    .fo-flag{width:24px;height:16px;border:1px solid rgba(0,0,0,.08);box-shadow:0 1px 4px rgba(0,0,0,.08);flex:0 0 auto}
+    .fo-flag--se{background:linear-gradient(90deg,transparent 0 29%,#f6c900 29% 39%,transparent 39%),linear-gradient(180deg,#1465a8 0 42%,#f6c900 42% 56%,#1465a8 56%)}
+    .fo-flag--de{background:linear-gradient(#111 0 33.33%,#d00 33.33% 66.66%,#f4cf00 66.66%)}
+    .fo-flag--eu{background:#164194;position:relative}
+    .fo-flag--eu::after{content:"✦";position:absolute;inset:0;display:grid;place-items:center;color:#ffdc32;font-size:11px}
+    .fo-flag--nl{background:linear-gradient(#ae1c28 0 33.33%,#fff 33.33% 66.66%,#21468b 66.66%)}
+    .fo-partner__content{display:grid;grid-template-columns:1.05fr .95fr;gap:14px;align-items:center}
+    .fo-partner__media{aspect-ratio:1.3/1;border-radius:12px;overflow:hidden;background:#eef5fa}
+    .fo-partner__media img{width:100%;height:100%;display:block;object-fit:cover}
+    .fo-partner__text{margin:0;color:#34495e;font-size:.81rem;line-height:1.55}
+
+    .fo-pegasus{position:relative;z-index:1;display:grid;grid-template-columns:1.03fr .97fr;gap:22px;margin-top:16px;padding:18px;border:1px solid #d7e5f0;border-radius:20px;background:#fff;box-shadow:0 8px 24px rgba(7,59,130,.055)}
+    .fo-pegasus__media{min-height:420px;border-radius:15px;overflow:hidden;background:#eef4f8}
+    .fo-pegasus__media img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
+    .fo-pegasus__copy{padding:4px 4px 2px}
+    .fo-pegasus__kicker{margin:0 0 6px;color:#226ba6;font-size:.72rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+    .fo-pegasus__brand{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:8px}
+    .fo-pegasus__brand strong{color:#1477bb;font-size:1.9rem;line-height:.95;letter-spacing:-.03em}
+    .fo-pegasus__brand span{color:var(--fo-navy);font-size:1.45rem;font-weight:900;line-height:1.05}
+    .fo-pegasus__origin{display:flex;align-items:center;gap:9px;color:#203a61;font-size:.78rem;font-weight:850;text-transform:uppercase;margin-bottom:10px}
+    .fo-pegasus__desc{margin:0 0 14px;color:#405469;font-size:.87rem;line-height:1.58}
+    .fo-feature-list{display:grid;gap:9px}
+    .fo-feature{display:grid;grid-template-columns:46px 1fr;gap:12px;align-items:center;padding:10px 12px;border:1px solid #e0ebf4;border-radius:14px;background:linear-gradient(90deg,#fff,#f7fbff)}
+    .fo-feature__icon{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#0c65b7,#073b82);color:#fff;box-shadow:0 7px 16px rgba(7,59,130,.18)}
+    .fo-feature__icon svg{width:25px;height:25px}
+    .fo-feature h4{margin:0;color:var(--fo-navy);font-size:.91rem;line-height:1.3}
+    .fo-feature p{margin:3px 0 0;color:#607286;font-size:.75rem;line-height:1.4}
+
+    .fo-strengths{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:16px}
+    .fo-strength{min-width:0;display:flex;flex-direction:column;border:1px solid #d8e6f1;border-radius:17px;background:#fff;overflow:hidden;box-shadow:0 8px 20px rgba(7,59,130,.05)}
+    .fo-strength__body{padding:16px 16px 12px;flex:1}
+    .fo-strength__head{display:grid;grid-template-columns:38px 1fr;gap:10px;align-items:center}
+    .fo-strength__head svg{width:34px;height:34px;color:var(--fo-blue)}
+    .fo-strength h3{margin:0;color:var(--fo-navy);font-size:.91rem;line-height:1.32}
+    .fo-strength ul{margin:11px 0 0;padding-left:17px;color:#43566a;font-size:.76rem;line-height:1.55}
+    .fo-strength__media{aspect-ratio:1.8/1;overflow:hidden;background:#eef5fa}
+    .fo-strength__media img{width:100%;height:100%;display:block;object-fit:cover}
+
+    /* ANIMATION */
+    [data-fo-reveal]{opacity:1;transform:none}
+    .fo-page.fo-motion [data-fo-reveal]{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+    .fo-page.fo-motion [data-fo-reveal="left"]{transform:translateX(-28px)}
+    .fo-page.fo-motion [data-fo-reveal="right"]{transform:translateX(28px)}
+    .fo-page.fo-motion [data-fo-reveal].is-visible{opacity:1;transform:none}
+
+    /* RESPONSIVE */
+    @media (max-width:1180px){
+      .fo-shell{width:min(var(--fo-max),calc(100% - 30px))}
+      .fo-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .fo-stat:nth-child(3)::after{display:none}
+      .fo-stat:nth-child(-n+3){border-bottom:1px solid #d8e6f1}
+      .fo-stat:nth-child(4){grid-column:span 1}
+      .fo-stat:nth-child(5){grid-column:span 2}
+      .fo-areas__grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .fo-partner__content{grid-template-columns:1fr}
+      .fo-partner__text{font-size:.84rem}
+      .fo-strengths{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media (max-width:900px){
+      .fo-hero{min-height:560px}
+      .fo-hero__inner{min-height:560px;align-items:flex-start;padding-top:54px}
+      .fo-hero__copy{width:min(580px,74vw)}
+      .fo-hero::before{background:linear-gradient(90deg,rgba(255,255,255,.99) 0%,rgba(255,255,255,.95) 42%,rgba(255,255,255,.64) 61%,rgba(255,255,255,.16) 80%),linear-gradient(180deg,rgba(255,255,255,0) 55%,rgba(255,255,255,.95) 100%)}
+      .fo-partners{grid-template-columns:1fr}
+      .fo-partner__content{grid-template-columns:220px 1fr}
+      .fo-pegasus{grid-template-columns:1fr}
+      .fo-pegasus__media{min-height:380px}
+    }
+    @media (max-width:700px){
+      .fo-shell{width:min(100% - 22px,var(--fo-max))}
+      .fo-breadcrumb{display:none}
+      .fo-hero{min-height:650px}
+      .fo-hero__media img{object-position:60% 45%}
+      .fo-hero::before{background:linear-gradient(180deg,rgba(255,255,255,.99) 0%,rgba(255,255,255,.97) 30%,rgba(255,255,255,.76) 52%,rgba(255,255,255,.18) 76%,rgba(255,255,255,.87) 100%)}
+      .fo-hero__inner{min-height:650px;padding:44px 0 120px;align-items:flex-start}
+      .fo-hero__copy{width:100%;max-width:470px}
+      .fo-hero h1{font-size:clamp(2.35rem,11vw,3.25rem);max-width:430px}
+      .fo-hero__lead{max-width:430px;font-size:.94rem;line-height:1.62}
+      .fo-stats-wrap{margin-top:-90px}
+      .fo-stats{grid-template-columns:repeat(2,minmax(0,1fr));border-radius:18px}
+      .fo-stat{grid-template-columns:40px minmax(0,1fr);padding:18px 14px;gap:10px}
+      .fo-stat__icon{width:38px;height:38px}
+      .fo-stat:nth-child(2)::after,.fo-stat:nth-child(4)::after{display:none}
+      .fo-stat:nth-child(3)::after{display:block}
+      .fo-stat:nth-child(-n+4){border-bottom:1px solid #d8e6f1}
+      .fo-stat:nth-child(4){grid-column:auto}
+      .fo-stat:nth-child(5){grid-column:1/-1}
+      .fo-stat__value{font-size:1.06rem}
+      .fo-stat__label{font-size:.73rem}
+      .fo-areas{padding-top:42px}
+      .fo-areas__heading{gap:10px}
+      .fo-areas__heading h2{font-size:1.35rem;white-space:normal;text-align:center}
+      .fo-areas__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+      .fo-area__body{padding:12px}
+      .fo-area__body h3{font-size:.84rem}
+      .fo-area__body p{font-size:.73rem}
+      .fo-tech__shell{padding:26px 12px 14px;border-radius:20px}
+      .fo-tech__globe{width:220px;height:220px;right:-95px;top:-62px}
+      .fo-tech__head{padding:0 8px}
+      .fo-tech__head h2{font-size:1.45rem}
+      .fo-tech__head h3{font-size:.99rem}
+      .fo-tech__head p{font-size:.82rem}
+      .fo-partner{padding:14px}
+      .fo-partner__content{grid-template-columns:1fr}
+      .fo-partner__brand{align-items:flex-start}
+      .fo-wordmark{font-size:1.35rem}
+      .fo-pegasus{padding:12px;gap:14px}
+      .fo-pegasus__media{min-height:270px}
+      .fo-pegasus__brand strong{font-size:1.45rem}
+      .fo-pegasus__brand span{font-size:1.12rem}
+      .fo-feature{grid-template-columns:42px 1fr;padding:9px}
+      .fo-feature__icon{width:42px;height:42px}
+      .fo-strengths{grid-template-columns:1fr}
+    }
+    @media (max-width:420px){
+      .fo-areas__grid{grid-template-columns:1fr 1fr}
+      .fo-area__media{aspect-ratio:1.15/1}
+      .fo-stat{padding:16px 11px}
+      .fo-stat__value{font-size:.98rem}
+      .fo-stat__label{font-size:.69rem}
+    }
+    @media (prefers-reduced-motion:reduce){
+      .fo-page *, .fo-page *::before, .fo-page *::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
+    }
+  </style>
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
+    "@context":"https://schema.org",
+    "@graph":[
       {
-        "@type": "Organization",
-        "@id": "https://ammnutrition.vn/#organization",
-        "name": "AMM Germany Nutrition",
-        "url": "https://ammnutrition.vn/",
-        "email": "cskh@ammnutrition.vn",
-        "telephone": "1800888626"
+        "@type":"Organization",
+        "@id":"https://ammnutrition.vn/#organization",
+        "name":"AMM Germany Nutrition",
+        "url":"https://ammnutrition.vn/",
+        "email":"cskh@ammnutrition.vn",
+        "telephone":"1800888626"
       },
       {
-        "@type": "BreadcrumbList",
-        "@id": "https://ammnutrition.vn/tong-quan-nha-may.html#breadcrumb",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://ammnutrition.vn/"},
-          {"@type": "ListItem", "position": 2, "name": "Công nghệ & Sản xuất", "item": "https://ammnutrition.vn/tong-quan-nha-may.html"},
-          {"@type": "ListItem", "position": 3, "name": "Tổng quan nhà máy", "item": "https://ammnutrition.vn/tong-quan-nha-may.html"}
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://ammnutrition.vn/"},
+          {"@type":"ListItem","position":2,"name":"Công nghệ & Sản xuất","item":"https://ammnutrition.vn/tong-quan-nha-may.html"},
+          {"@type":"ListItem","position":3,"name":"Tổng quan nhà máy","item":"https://ammnutrition.vn/tong-quan-nha-may.html"}
         ]
       },
       {
-        "@type": "WebPage",
-        "@id": "https://ammnutrition.vn/tong-quan-nha-may.html#webpage",
-        "url": "https://ammnutrition.vn/tong-quan-nha-may.html",
-        "name": "Tổng quan nhà máy AMM Germany Nutrition",
-        "description": "Khám phá quy mô, dây chuyền sản xuất, hệ thống R&D, kho nguyên liệu và năng lực kiểm soát chất lượng tại nhà máy AMM Germany Nutrition.",
-        "breadcrumb": {"@id": "https://ammnutrition.vn/tong-quan-nha-may.html#breadcrumb"},
-        "inLanguage": "vi-VN"
+        "@type":"WebPage",
+        "url":"https://ammnutrition.vn/tong-quan-nha-may.html",
+        "name":"Tổng quan nhà máy AMM Germany Nutrition",
+        "description":"Khám phá quy mô, công nghệ, dây chuyền sản xuất, hệ thống R&D và QA/QC tại nhà máy AMM Germany Nutrition.",
+        "inLanguage":"vi-VN"
       }
     ]
   }
   </script>
 </head>
-<body class="factory-overview-page">
+<body class="fo-page">
   <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
 
-  <!-- SVG icon sprite -->
-  <svg class="factory-overview-page__sprite" aria-hidden="true" width="0" height="0">
+  <svg class="fo-page__sprite" aria-hidden="true" width="0" height="0">
     <defs>
       <symbol id="fo-i-phone" viewBox="0 0 24 24"><path d="M7 3 4 5c0 8 7 15 15 15l2-3-5-3-2 2c-2.8-1.2-4.8-3.2-6-6l2-2-3-5Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/></symbol>
       <symbol id="fo-i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"/></symbol>
       <symbol id="fo-i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
       <symbol id="fo-i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
       <symbol id="fo-i-factory" viewBox="0 0 24 24"><path d="M3 21V9l6 3V9l6 3V4h4v17M3 21h18M6 16h2M11 16h2M16 16h2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/></symbol>
-      <symbol id="fo-i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m9.4 3-.7 2.1-2 .9-2-1-1.9 3.2L4.5 9v2.1L3 12.7l1.9 3.2 2-.9 2 .9.7 2.1h3.8l.7-2.1 2-.9 2 1 1.9-3.2-1.7-1.2V9.5L20 8.2 18.1 5l-2 1-2-.9-.7-2.1H9.4Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.4"/></symbol>
-      <symbol id="fo-i-worker" viewBox="0 0 24 24"><path d="M5 10h14M7 10V8a5 5 0 0 1 10 0v2M12 3v5M8 14a4 4 0 0 0 8 0M5 21c.5-3.3 2.8-5 7-5s6.5 1.7 7 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/></symbol>
-      <symbol id="fo-i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m9 14-2 7 5-3 5 3-2-7M10 9l1.3 1.3L14 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/></symbol>
-      <symbol id="fo-i-microscope" viewBox="0 0 24 24"><path d="m9 3 4 4-2 2-4-4 2-2Zm3 5-4 4a5 5 0 0 0 7 7h2M4 21h16M14 5l2-2 2 2-2 2M12 15h5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/></symbol>
-      <symbol id="fo-i-warehouse" viewBox="0 0 24 24"><path d="m3 9 9-5 9 5v11H3V9Zm3 3h12M7 15h3v5H7v-5Zm7 0h3v5h-3v-5Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"/></symbol>
-      <symbol id="fo-i-powder" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="6" ry="2.3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M6 5v14c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5V5M6 16c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
       <symbol id="fo-i-bottle" viewBox="0 0 24 24"><path d="M9 3h6v4l2 3v11H7V10l2-3V3Zm0 4h6M9 13h6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/></symbol>
-      <symbol id="fo-i-box" viewBox="0 0 24 24"><path d="m4 7 8-4 8 4-8 4-8-4Zm0 0v10l8 4 8-4V7M12 11v10" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"/></symbol>
+      <symbol id="fo-i-can" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="6" ry="2.3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M6 5v14c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5V5M6 16c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
       <symbol id="fo-i-shield" viewBox="0 0 24 24"><path d="M12 3 20 6v5c0 5.2-3.3 8.5-8 10-4.7-1.5-8-4.8-8-10V6l8-3Z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m8.5 12 2.2 2.2 4.8-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"/></symbol>
-      <symbol id="fo-i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3M8 15h8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/></symbol>
+      <symbol id="fo-i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m9.4 3-.7 2.1-2 .9-2-1-1.9 3.2L4.5 9v2.1L3 12.7l1.9 3.2 2-.9 2 .9.7 2.1h3.8l.7-2.1 2-.9 2 1 1.9-3.2-1.7-1.2V9.5L20 8.2 18.1 5l-2 1-2-.9-.7-2.1H9.4Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.4"/></symbol>
       <symbol id="fo-i-team" viewBox="0 0 24 24"><circle cx="8" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="9" r="2.3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M2.5 20c.5-4 2.5-6 5.5-6s5 2 5.5 6M14 15c4-.7 6.5 1.2 7 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"/></symbol>
+      <symbol id="fo-i-lab" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3M8 15h8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/></symbol>
+      <symbol id="fo-i-speed" viewBox="0 0 24 24"><path d="M4 17a8 8 0 1 1 16 0M12 13l4-4M8 17h8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></symbol>
+      <symbol id="fo-i-swirl" viewBox="0 0 24 24"><path d="M12 3c4 0 7 2.6 7 6 0 3.7-4 5.2-7 3.2-2.5-1.7-1.1-5 1.4-4.3 2.2.6 1.4 3.4-.3 4.5-2.8 1.9-7 1.1-8-2.1C4 7 7.6 3 12 3Zm0 18c-4 0-7-2.6-7-6 0-3.7 4-5.2 7-3.2 2.5 1.7 1.1 5-1.4 4.3-2.2-.6-1.4-3.4.3-4.5 2.8-1.9 7-1.1 8 2.1 1 3.3-2.6 7.3-7 7.3Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.45"/></symbol>
+      <symbol id="fo-i-five" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><text x="12" y="15" text-anchor="middle" font-size="9" font-weight="800" fill="currentColor">5</text></symbol>
     </defs>
   </svg>
 
-  <!-- Header hiện có -->
   <header class="site-header">
     <div class="container header-inner">
       <button class="menu-toggle" type="button" aria-label="Mở menu" aria-controls="primary-navigation" aria-expanded="false"><span></span></button>
-      <a class="brand" href="index.html" aria-label="AMM Germany Nutrition - Trang chủ"><img src="amm-logo.webp" alt="AMM Nutrition" width="467" height="331"></a>
+      <a class="brand" href="index.html" aria-label="AMM Germany Nutrition - Trang chủ"><img src="amm-logo.webp" alt="AMM Germany Nutrition" width="500" height="375"></a>
 
       <nav class="primary-nav" id="primary-navigation" aria-label="Điều hướng chính">
         <div class="nav-group"><a class="nav-link" href="index.html">TRANG CHỦ</a></div>
         <div class="nav-group"><a class="nav-link" href="index.html#about">VỀ AMM</a><button class="submenu-toggle" type="button" aria-label="Mở menu Về AMM" aria-expanded="false"></button><div class="submenu"><a href="index.html#about">Tổng quan</a><a href="index.html#pillars">Tầm nhìn – Sứ mệnh – Giá trị cốt lõi</a><a href="index.html#capacity">Năng lực & Quy mô</a><a href="index.html#sustainability">Phát triển bền vững</a></div></div>
-        <div class="nav-group"><a class="nav-link" href="giai-phap-dinh-duong.html">NGHIÊN CỨU & DINH DƯỠNG</a><button class="submenu-toggle" type="button" aria-label="Mở menu Nghiên cứu" aria-expanded="false"></button><div class="submenu"><a href="nang-luc-rd.html">Năng lực R&D</a><a href="phat-trien-cong-thuc.html">Phát triển công thức</a><a href="giai-phap-dinh-duong.html">Giải pháp dinh dưỡng</a><a href="nguyen-lieu-noi-bat.html">Nguyên liệu nổi bật</a></div></div>
-        <div class="nav-group"><a class="nav-link factory-overview-page__nav-active" href="tong-quan-nha-may.html" aria-current="page">CÔNG NGHỆ & SẢN XUẤT</a><button class="submenu-toggle" type="button" aria-label="Mở menu Công nghệ" aria-expanded="false"></button><div class="submenu"><a href="tong-quan-nha-may.html" aria-current="page">Tổng quan nhà máy</a><a href="index.html#powder-line">Dây chuyền sữa bột</a><a href="index.html#liquid-line">Dây chuyền sữa nước</a><a href="index.html#tetrapak">Công nghệ Tetra Pak</a></div></div>
-        <div class="nav-group"><a class="nav-link" href="index.html#cooperation">GIẢI PHÁP HỢP TÁC</a><button class="submenu-toggle" type="button" aria-label="Mở menu Hợp tác" aria-expanded="false"></button><div class="submenu"><a href="index.html#products">OEM/ODM & Nhãn hàng riêng</a><a href="index.html#products">Nhóm sản phẩm có thể sản xuất</a><a href="index.html#cooperation-process">Quy trình hợp tác</a><a href="index.html#projects">Đối tác & Dự án</a></div></div>
-        <div class="nav-group"><a class="nav-link" href="index.html#quality">CHẤT LƯỢNG</a><button class="submenu-toggle" type="button" aria-label="Mở menu Chất lượng" aria-expanded="false"></button><div class="submenu"><a href="index.html#qa-qc">Hệ thống QA/QC</a><a href="index.html#quality">Kiểm soát nguyên liệu & sản xuất</a><a href="index.html#quality">Kiểm nghiệm, truy xuất & lưu mẫu</a><a href="index.html#quality">Chứng nhận & hồ sơ pháp lý</a></div></div>
+        <div class="nav-group"><a class="nav-link" href="giai-phap-dinh-duong.html">NGHIÊN CỨU & DINH DƯỠNG</a><button class="submenu-toggle" type="button" aria-label="Mở menu Nghiên cứu và Dinh dưỡng" aria-expanded="false"></button><div class="submenu"><a href="nang-luc-rd.html">Năng lực R&amp;D</a><a href="phat-trien-cong-thuc.html">Phát triển công thức</a><a href="giai-phap-dinh-duong.html">Giải pháp dinh dưỡng</a><a href="nguyen-lieu-noi-bat.html">Nguyên liệu nổi bật</a></div></div>
+        <div class="nav-group"><a class="nav-link fo-nav-active" href="tong-quan-nha-may.html" aria-current="page">CÔNG NGHỆ & SẢN XUẤT</a><button class="submenu-toggle" type="button" aria-label="Mở menu Công nghệ và Sản xuất" aria-expanded="false"></button><div class="submenu"><a href="tong-quan-nha-may.html" aria-current="page">Tổng quan nhà máy</a><a href="day-chuyen-sua-bot.html">Dây chuyền sữa bột</a><a href="day-chuyen-sua-nuoc.html">Dây chuyền sữa nước</a><a href="cong-nghe-tetra-pak.html">Công nghệ Tetra Pak</a></div></div>
+        <div class="nav-group"><a class="nav-link" href="index.html#cooperation">GIẢI PHÁP HỢP TÁC</a><button class="submenu-toggle" type="button" aria-label="Mở menu Giải pháp hợp tác" aria-expanded="false"></button><div class="submenu"><a href="index.html#products">OEM/ODM & Nhãn hàng riêng</a><a href="index.html#products">Nhóm sản phẩm có thể sản xuất</a><a href="index.html#cooperation-process">Quy trình hợp tác</a></div></div>
+        <div class="nav-group"><a class="nav-link" href="index.html#quality">CHẤT LƯỢNG</a><button class="submenu-toggle" type="button" aria-label="Mở menu Chất lượng" aria-expanded="false"></button><div class="submenu"><a href="index.html#qa-qc">Hệ thống QA/QC</a><a href="index.html#quality">Kiểm soát nguyên liệu</a><a href="index.html#quality">Kiểm soát sản xuất</a><a href="index.html#quality">Kiểm nghiệm thành phẩm</a></div></div>
         <div class="nav-group"><a class="nav-link" href="index.html#news">TIN TỨC</a></div>
         <div class="nav-group"><a class="nav-link" href="index.html#contact">LIÊN HỆ</a></div>
         <div class="mobile-nav-contact"><strong>Công ty Cổ phần Quốc tế AMM – Germany Nutrition</strong><a href="tel:1800888626">Hotline: 1800 888 626</a><a href="mailto:cskh@ammnutrition.vn">cskh@ammnutrition.vn</a></div>
@@ -106,158 +319,126 @@
 
       <div class="header-tools">
         <button class="btn btn-primary header-cta" type="button" data-open-contact data-contact-type="Tư vấn hợp tác nhà máy">Đăng ký hợp tác</button>
-        <div class="language-switch" aria-label="Chọn ngôn ngữ"><a class="lang-link" href="index.html" lang="vi" aria-current="page"><img src="flag-vn.svg" alt=""><span>VI</span></a><a class="lang-link" href="index-en.html" lang="en"><img src="flag-gb.svg" alt=""><span>EN</span></a></div>
+        <div class="language-switch" aria-label="Chọn ngôn ngữ"><a class="lang-link" href="tong-quan-nha-may.html" lang="vi" aria-current="page"><img src="flag-vn.svg" alt=""><span>VI</span></a><a class="lang-link" href="en/tong-quan-nha-may.html" lang="en"><img src="flag-gb.svg" alt=""><span>EN</span></a></div>
       </div>
     </div>
     <button class="nav-backdrop" type="button" aria-label="Đóng menu"></button>
   </header>
 
-  <!-- Breadcrumb -->
-  <nav class="ns-breadcrumb" aria-label="Điều hướng phân cấp">
-    <div class="container ns-breadcrumb__inner">
-      <a href="index.html">Trang chủ</a><span aria-hidden="true">›</span>
-      <a href="tong-quan-nha-may.html">Công nghệ & Sản xuất</a><span aria-hidden="true">›</span>
-      <span class="ns-breadcrumb__current" aria-current="page">Tổng quan nhà máy</span>
-    </div>
+  <nav class="fo-breadcrumb" aria-label="Điều hướng phân cấp">
+    <div class="fo-shell fo-breadcrumb__inner"><a href="index.html">Trang chủ</a><span aria-hidden="true">›</span><a href="tong-quan-nha-may.html">Công nghệ &amp; Sản xuất</a><span aria-hidden="true">›</span><span aria-current="page">Tổng quan nhà máy</span></div>
   </nav>
 
-  <main id="main-content" class="factory-overview-page__main">
-    <!-- SECTION 1: HERO TỔNG QUAN NHÀ MÁY -->
-    <section class="factory-overview-page__hero" aria-labelledby="factory-overview-title">
-      <div class="factory-overview-page__hero-media" data-reveal="fade">
-        <img src="tong-quan-nha-may-hero.jpg" alt="Toàn cảnh nhà máy AMM Germany Nutrition" width="1536" height="864" fetchpriority="high" decoding="async">
-      </div>
-      <div class="factory-overview-page__hero-overlay" aria-hidden="true"></div>
-
-      <div class="container factory-overview-page__hero-inner">
-        <div class="factory-overview-page__hero-copy" data-reveal="left">
-          <p class="factory-overview-page__eyebrow">AMM GERMANY NUTRITION</p>
-          <h1 id="factory-overview-title"><span>TỔNG QUAN</span><span>NHÀ MÁY</span></h1>
-          <p>Nhà máy AMM được xây dựng theo tiêu chuẩn quốc tế, đáp ứng các yêu cầu khắt khe về chất lượng và an toàn thực phẩm.</p>
-        </div>
-
-        <div class="factory-overview-page__stats" aria-label="Số liệu nổi bật của nhà máy AMM" data-reveal="up">
-          <article class="factory-overview-page__stat">
-            <svg aria-hidden="true"><use href="#fo-i-factory"></use></svg>
-            <div>
-              <strong><span data-counter="32000" data-format="dot">0</span> m²</strong>
-              <p>Tổng diện tích khuôn viên nhà máy</p>
-            </div>
-          </article>
-          <article class="factory-overview-page__stat factory-overview-page__stat--capacity">
-            <svg aria-hidden="true"><use href="#fo-i-bottle"></use></svg>
-            <div>
-              <strong>
-                <span data-counter="50000000" data-format="dot">0</span>
-                <span class="factory-overview-page__stat-unit">lít/năm</span>
-              </strong>
-              <p>Công suất sữa nước</p>
-            </div>
-          </article>
-          <article class="factory-overview-page__stat factory-overview-page__stat--capacity">
-            <svg aria-hidden="true"><use href="#fo-i-powder"></use></svg>
-            <div>
-              <strong>
-                <span data-counter="300">0</span>
-                <span class="factory-overview-page__stat-unit">tấn/năm</span>
-              </strong>
-              <p>Công suất sữa bột</p>
-            </div>
-          </article>
-          <article class="factory-overview-page__stat factory-overview-page__stat--static">
-            <svg aria-hidden="true"><use href="#fo-i-award"></use></svg>
-            <div>
-              <strong>ISO 22000:2018</strong>
-              <p>Hệ thống quản lý an toàn thực phẩm</p>
-            </div>
-          </article>
+  <main id="main-content">
+    <section class="fo-hero" aria-labelledby="fo-title">
+      <div class="fo-hero__media"><img src="factory-hero.webp" alt="Toàn cảnh nhà máy AMM Germany Nutrition" width="1477" height="732" fetchpriority="high" decoding="async"></div>
+      <div class="fo-shell fo-hero__inner">
+        <div class="fo-hero__copy" data-fo-reveal="left">
+          <p class="fo-eyebrow">AMM Germany Nutrition</p>
+          <h1 id="fo-title"><span>TỔNG QUAN</span><span>NHÀ MÁY AMM</span></h1>
+          <p class="fo-hero__lead">AMM Germany Nutrition là đơn vị nghiên cứu, sản xuất và cung cấp các giải pháp dinh dưỡng khoa học, chất lượng cao, ứng dụng công nghệ hiện đại và đáp ứng tiêu chuẩn quốc tế.</p>
+          <div class="fo-hero__actions"><a class="btn btn-primary" href="#functional-areas">Tìm hiểu thêm <span aria-hidden="true">→</span></a></div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 2: CÁC KHU VỰC CHỨC NĂNG -->
-    <section class="factory-overview-page__areas" aria-labelledby="factory-areas-title">
-      <div class="container">
-        <div class="factory-overview-page__section-title" data-reveal="up">
-          <span aria-hidden="true"></span>
-          <h2 id="factory-areas-title">CÁC KHU VỰC CHỨC NĂNG</h2>
-          <span aria-hidden="true"></span>
+    <div class="fo-stats-wrap">
+      <div class="fo-shell">
+        <div class="fo-stats" aria-label="Năng lực nổi bật của nhà máy AMM" data-fo-reveal>
+          <article class="fo-stat">
+            <svg class="fo-stat__icon" aria-hidden="true"><use href="#fo-i-factory"></use></svg>
+            <div><strong class="fo-stat__value">32.347 <small>m²</small></strong><p class="fo-stat__label">Diện tích khuôn viên nhà máy</p></div>
+          </article>
+          <article class="fo-stat">
+            <svg class="fo-stat__icon" aria-hidden="true"><use href="#fo-i-bottle"></use></svg>
+            <div><strong class="fo-stat__value">50.000.000 <small>lít/năm</small></strong><p class="fo-stat__label">Công suất sữa nước</p></div>
+          </article>
+          <article class="fo-stat">
+            <svg class="fo-stat__icon" aria-hidden="true"><use href="#fo-i-can"></use></svg>
+            <div><strong class="fo-stat__value">300 <small>tấn/năm</small></strong><p class="fo-stat__label">Công suất sữa bột</p></div>
+          </article>
+          <article class="fo-stat">
+            <svg class="fo-stat__icon" aria-hidden="true"><use href="#fo-i-shield"></use></svg>
+            <div><strong class="fo-stat__value">ISO <small>22000:2018</small></strong><p class="fo-stat__label">Hệ thống quản lý an toàn thực phẩm</p></div>
+          </article>
+          <article class="fo-stat">
+            <svg class="fo-stat__icon" aria-hidden="true"><use href="#fo-i-gear"></use></svg>
+            <div><strong class="fo-stat__value">OEM/ODM</strong><p class="fo-stat__label">Giải pháp sản xuất trọn gói</p></div>
+          </article>
         </div>
+      </div>
+    </div>
 
-        <div class="factory-overview-page__area-grid">
-          <article class="factory-overview-page__area-card" data-reveal="up">
-            <div class="factory-overview-page__area-image"><img src="phong-rd.jpg" alt="Phòng nghiên cứu và phát triển của AMM" width="852" height="848" loading="lazy" decoding="async"></div>
-            <div class="factory-overview-page__area-body">
-              <div class="factory-overview-page__area-heading"><span><svg aria-hidden="true"><use href="#fo-i-microscope"></use></svg></span><h3>PHÒNG R&amp;D</h3></div>
-              <p>Nghiên cứu, phát triển và thử nghiệm các công thức sản phẩm dinh dưỡng.</p>
-            </div>
-          </article>
-
-          <article class="factory-overview-page__area-card" data-reveal="up">
-            <div class="factory-overview-page__area-image"><img src="kho-nguyen-lieu.jpg" alt="Kho nguyên liệu nhà máy AMM" width="1448" height="1086" loading="lazy" decoding="async"></div>
-            <div class="factory-overview-page__area-body">
-              <div class="factory-overview-page__area-heading"><span><svg aria-hidden="true"><use href="#fo-i-warehouse"></use></svg></span><h3>KHO NGUYÊN LIỆU</h3></div>
-              <p>Hệ thống kho đạt chuẩn, bảo quản nguyên liệu trong điều kiện tối ưu.</p>
-            </div>
-          </article>
-
-          <article class="factory-overview-page__area-card" data-reveal="up">
-            <div class="factory-overview-page__area-image"><img src="day-chuyen-sua-bot.jpg" alt="Dây chuyền sản xuất sữa bột AMM" width="768" height="432" loading="lazy" decoding="async"></div>
-            <div class="factory-overview-page__area-body">
-              <div class="factory-overview-page__area-heading"><span><svg aria-hidden="true"><use href="#fo-i-powder"></use></svg></span><h3>DÂY CHUYỀN SỮA BỘT</h3></div>
-              <p>Dây chuyền hiện đại, kiểm soát chặt chẽ nhằm bảo đảm chất lượng và độ đồng nhất của sản phẩm.</p>
-            </div>
-          </article>
-
-          <article class="factory-overview-page__area-card" data-reveal="up">
-            <div class="factory-overview-page__area-image"><img src="day-chuyen-sua-nuoc-tetra-pak.jpg" alt="Dây chuyền sữa nước Tetra Pak tại nhà máy AMM" width="1448" height="1086" loading="lazy" decoding="async"></div>
-            <div class="factory-overview-page__area-body">
-              <div class="factory-overview-page__area-heading"><span><svg aria-hidden="true"><use href="#fo-i-bottle"></use></svg></span><h3>DÂY CHUYỀN SỮA NƯỚC TETRA PAK</h3></div>
-              <p>Ứng dụng công nghệ chiết rót vô trùng Tetra Pak, bảo đảm an toàn thực phẩm và giá trị dinh dưỡng.</p>
-            </div>
-          </article>
-
-          <article class="factory-overview-page__area-card" data-reveal="up">
-            <div class="factory-overview-page__area-image"><img src="kho-thanh-pham.jpg" alt="Kho thành phẩm nhà máy AMM" width="1448" height="1086" loading="lazy" decoding="async"></div>
-            <div class="factory-overview-page__area-body">
-              <div class="factory-overview-page__area-heading"><span><svg aria-hidden="true"><use href="#fo-i-box"></use></svg></span><h3>KHO THÀNH PHẨM</h3></div>
-              <p>Lưu trữ và bảo quản thành phẩm theo tiêu chuẩn, sẵn sàng cho phân phối và xuất xưởng.</p>
-            </div>
-          </article>
+    <section class="fo-areas" id="functional-areas" aria-labelledby="functional-title">
+      <div class="fo-shell">
+        <div class="fo-areas__heading"><span aria-hidden="true"></span><h2 id="functional-title">CÁC KHU VỰC CHỨC NĂNG</h2><span aria-hidden="true"></span></div>
+        <div class="fo-areas__grid">
+          <article class="fo-area" data-fo-reveal><div class="fo-area__media"><img src="factory-campus.webp" alt="Khuôn viên nhà máy AMM" width="1740" height="904" loading="lazy" decoding="async"></div><div class="fo-area__body"><h3>KHUÔN VIÊN NHÀ MÁY</h3><p>Không gian sản xuất được tổ chức khoa học trên khuôn viên hơn 32.000 m².</p></div></article>
+          <article class="fo-area" data-fo-reveal><div class="fo-area__media"><img src="factory-powder-line.webp" alt="Dây chuyền sản xuất sữa bột AMM" width="1448" height="1086" loading="lazy" decoding="async"></div><div class="fo-area__body"><h3>DÂY CHUYỀN SỮA BỘT</h3><p>Hệ thống trộn và xử lý nguyên liệu khép kín, hướng đến độ đồng nhất cao.</p></div></article>
+          <article class="fo-area" data-fo-reveal><div class="fo-area__media"><img src="factory-liquid-line.webp" alt="Dây chuyền sản xuất sữa nước Tetra Pak tại AMM" width="1672" height="941" loading="lazy" decoding="async"></div><div class="fo-area__body"><h3>DÂY CHUYỀN SỮA NƯỚC</h3><p>Ứng dụng thiết bị Tetra Pak và quy trình tiệt trùng UHT hiện đại.</p></div></article>
+          <article class="fo-area" data-fo-reveal><div class="fo-area__media"><img src="factory-rd.webp" alt="Phòng nghiên cứu và phát triển sản phẩm tại AMM" width="852" height="848" loading="lazy" decoding="async"></div><div class="fo-area__body"><h3>PHÒNG R&amp;D</h3><p>Nghiên cứu, phát triển và thử nghiệm công thức sản phẩm dinh dưỡng.</p></div></article>
+          <article class="fo-area" data-fo-reveal><div class="fo-area__media"><img src="factory-qaqc.webp" alt="Hệ thống kiểm soát chất lượng QA QC tại AMM" width="1092" height="1440" loading="lazy" decoding="async"></div><div class="fo-area__body"><h3>HỆ THỐNG QA/QC</h3><p>Kiểm soát nguyên liệu, quá trình sản xuất và thành phẩm theo tiêu chí chặt chẽ.</p></div></article>
+          <article class="fo-area" data-fo-reveal><div class="fo-area__media"><img src="factory-finished-warehouse.webp" alt="Kho thành phẩm tại nhà máy AMM" width="1448" height="1086" loading="lazy" decoding="async"></div><div class="fo-area__body"><h3>KHO THÀNH PHẨM</h3><p>Bảo quản thành phẩm theo khu vực, sẵn sàng phân phối và xuất xưởng.</p></div></article>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 3: DẢI GIÁ TRỊ VÀ NĂNG LỰC -->
-    <section class="factory-overview-page__values" aria-label="Giá trị và năng lực nhà máy AMM">
-      <div class="container factory-overview-page__value-grid">
-        <article class="factory-overview-page__value-item" data-reveal="up">
-          <svg aria-hidden="true"><use href="#fo-i-globe"></use></svg>
-          <div><h2>TIÊU CHUẨN QUỐC TẾ</h2><p>Nhà máy áp dụng hệ thống quản lý an toàn thực phẩm ISO 22000:2018 và tuân thủ các tiêu chuẩn chất lượng liên quan.</p></div>
+    <section class="fo-tech" aria-labelledby="tech-title">
+      <div class="fo-shell fo-tech__shell">
+        <div class="fo-tech__globe" aria-hidden="true"></div>
+        <header class="fo-tech__head" data-fo-reveal>
+          <h2 id="tech-title">TỔ HỢP CÔNG NGHỆ &amp; ĐỐI TÁC CHIẾN LƯỢC TOÀN CẦU</h2>
+          <h3>Hạ tầng tiêu chuẩn Châu Âu – Định hình đẳng cấp sản xuất</h3>
+          <p>Nhà máy AMM Germany Nutrition quy tụ các hệ thống thiết bị và giải pháp công nghệ hàng đầu thế giới, kiến tạo dây chuyền sản xuất tự động hóa khép kín, đáp ứng yêu cầu nghiêm ngặt về chất lượng, độ ổn định và an toàn thực phẩm.</p>
+        </header>
+
+        <div class="fo-partners">
+          <article class="fo-partner" data-fo-reveal>
+            <div class="fo-partner__brand"><div class="fo-wordmark">Tetra Pak<small>PROTECTS WHAT'S GOOD</small></div><div class="fo-country"><span class="fo-flag fo-flag--se" aria-hidden="true"></span>Thụy Điển</div></div>
+            <div class="fo-partner__content"><div class="fo-partner__media"><img src="tetra-pak-technology.webp" alt="Hệ thống công nghệ Tetra Pak tại nhà máy AMM" width="1400" height="1050" loading="lazy" decoding="async"></div><p class="fo-partner__text">Đối tác chiến lược về công nghệ chế biến và chiết rót vô trùng cho dây chuyền sữa nước, góp phần bảo toàn chất lượng, giá trị dinh dưỡng và sự ổn định của sản phẩm.</p></div>
+          </article>
+          <article class="fo-partner" data-fo-reveal>
+            <div class="fo-partner__brand"><div class="fo-wordmark fo-wordmark--rieck">RIECKERMANN<small>MASCHINEN- UND ANLAGENBAU</small></div><div class="fo-country"><span class="fo-flag fo-flag--de" aria-hidden="true"></span>Đức</div></div>
+            <div class="fo-partner__content"><div class="fo-partner__media"><img src="rieckermann-technology.webp" alt="Thiết bị và giải pháp kỹ thuật Rieckermann tại AMM" width="1400" height="1050" loading="lazy" decoding="async"></div><p class="fo-partner__text">Hợp tác chuyên sâu trong tư vấn giải pháp kỹ thuật tổng thể, cung cấp thiết bị và chuyển giao công nghệ sản xuất chuẩn Đức, tối ưu vận hành và hiệu suất dây chuyền.</p></div>
+          </article>
+          <article class="fo-partner" data-fo-reveal>
+            <div class="fo-partner__brand"><div class="fo-wordmark fo-wordmark--dsc">DSC<small>EUROPE</small></div><div class="fo-country"><span class="fo-flag fo-flag--eu" aria-hidden="true"></span>Châu Âu</div></div>
+            <div class="fo-partner__content"><div class="fo-partner__media"><img src="dsc-mixing-system.webp" alt="Hệ thống phối trộn DSC Europe" width="768" height="432" loading="lazy" decoding="async"></div><p class="fo-partner__text">Cung cấp giải pháp hệ thống phối trộn, hỗ trợ tối ưu hiệu suất vận hành, độ ổn định, khả năng kiểm soát và năng lực sản xuất.</p></div>
+          </article>
+        </div>
+
+        <article class="fo-pegasus" data-fo-reveal>
+          <div class="fo-pegasus__media"><img src="pegasus-mixer-hd.webp" alt="Máy trộn Dinnissen Pegasus Mixer HD" width="1536" height="1024" loading="lazy" decoding="async"></div>
+          <div class="fo-pegasus__copy">
+            <p class="fo-pegasus__kicker">Công nghệ trộn phối sữa bột tiên tiến</p>
+            <div class="fo-pegasus__brand"><strong>DINNISSEN</strong><span>PEGASUS® MIXER HD</span></div>
+            <div class="fo-pegasus__origin"><span class="fo-flag fo-flag--nl" aria-hidden="true"></span>Hà Lan</div>
+            <p class="fo-pegasus__desc">Hệ thống trộn phối công suất cao ứng dụng công nghệ phi trọng lực, được thiết kế nhằm tạo độ đồng nhất nhanh, hạn chế sinh nhiệt và giảm tác động đến các thành phần dinh dưỡng nhạy cảm.</p>
+            <div class="fo-feature-list">
+              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-speed"></use></svg></span><div><h4>TRỘN SIÊU TỐC</h4><p>Độ đồng nhất cao trong thời gian ngắn, phù hợp quy mô công nghiệp.</p></div></article>
+              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-swirl"></use></svg></span><div><h4>CÔNG NGHỆ PHI TRỌNG LỰC</h4><p>Nguyên liệu chuyển động nhẹ nhàng, hạn chế sinh nhiệt và biến tính vi chất.</p></div></article>
+              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-five"></use></svg></span><div><h4>TÍCH HỢP 5-TRONG-1 &amp; CHUẨN VỆ SINH CAO</h4><p>Tích hợp nhiều công đoạn trong một hệ thống, thuận tiện vệ sinh và kiểm soát.</p></div></article>
+              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-shield"></use></svg></span><div><h4>CHỐNG LÂY NHIỄM CHÉO</h4><p>Thiết kế hướng đến tiêu chuẩn vệ sinh cao, hạn chế nguy cơ lây nhiễm giữa các mẻ.</p></div></article>
+            </div>
+          </div>
         </article>
-        <article class="factory-overview-page__value-item" data-reveal="up">
-          <svg aria-hidden="true"><use href="#fo-i-shield"></use></svg>
-          <div><h2>KIỂM SOÁT CHẤT LƯỢNG</h2><p>Quy trình kiểm soát chặt chẽ từ nguyên liệu đầu vào, quá trình sản xuất đến thành phẩm cuối cùng.</p></div>
-        </article>
-        <article class="factory-overview-page__value-item" data-reveal="up">
-          <svg aria-hidden="true"><use href="#fo-i-flask"></use></svg>
-          <div><h2>CÔNG NGHỆ HIỆN ĐẠI</h2><p>Đầu tư hệ thống thiết bị tiên tiến, tăng cường tự động hóa và bảo đảm năng suất, chất lượng ổn định.</p></div>
-        </article>
-        <article class="factory-overview-page__value-item" data-reveal="up">
-          <svg aria-hidden="true"><use href="#fo-i-team"></use></svg>
-          <div><h2>ĐỘI NGŨ CHUYÊN NGHIỆP</h2><p>Đội ngũ chuyên gia, kỹ thuật viên và nhân sự giàu kinh nghiệm, tận tâm và không ngừng sáng tạo.</p></div>
-        </article>
+
+        <div class="fo-strengths">
+          <article class="fo-strength" data-fo-reveal><div class="fo-strength__body"><div class="fo-strength__head"><svg aria-hidden="true"><use href="#fo-i-globe"></use></svg><h3>TIÊU CHUẨN QUỐC TẾ</h3></div><ul><li>ISO 22000:2018</li><li>Tiêu chuẩn an toàn thực phẩm</li><li>Hệ thống quản lý đồng bộ</li><li>Hồ sơ kiểm soát minh bạch</li></ul></div><div class="fo-strength__media"><img src="factory-award.webp" alt="Chứng nhận và thành tựu của AMM" width="1536" height="1024" loading="lazy" decoding="async"></div></article>
+          <article class="fo-strength" data-fo-reveal><div class="fo-strength__body"><div class="fo-strength__head"><svg aria-hidden="true"><use href="#fo-i-shield"></use></svg><h3>KIỂM SOÁT CHẤT LƯỢNG</h3></div><ul><li>Kiểm tra nguyên liệu đầu vào</li><li>Kiểm soát trong quá trình sản xuất</li><li>Kiểm nghiệm thành phẩm</li><li>Truy xuất và lưu mẫu</li></ul></div><div class="fo-strength__media"><img src="factory-qaqc.webp" alt="Hoạt động kiểm soát chất lượng tại AMM" width="1092" height="1440" loading="lazy" decoding="async"></div></article>
+          <article class="fo-strength" data-fo-reveal><div class="fo-strength__body"><div class="fo-strength__head"><svg aria-hidden="true"><use href="#fo-i-gear"></use></svg><h3>CÔNG NGHỆ HIỆN ĐẠI</h3></div><ul><li>Dây chuyền tự động hóa cao</li><li>Thiết bị đồng bộ, tiên tiến</li><li>Khả năng kiểm soát liên tục</li><li>Ứng dụng công nghệ 4.0</li></ul></div><div class="fo-strength__media"><img src="factory-liquid-line.webp" alt="Dây chuyền công nghệ hiện đại tại AMM" width="1672" height="941" loading="lazy" decoding="async"></div></article>
+          <article class="fo-strength" data-fo-reveal><div class="fo-strength__body"><div class="fo-strength__head"><svg aria-hidden="true"><use href="#fo-i-team"></use></svg><h3>ĐỘI NGŨ CHUYÊN NGHIỆP</h3></div><ul><li>Chuyên gia giàu kinh nghiệm</li><li>Đào tạo bài bản</li><li>Tận tâm – Trách nhiệm – Sáng tạo</li><li>Đồng hành cùng sự phát triển</li></ul></div><div class="fo-strength__media"><img src="factory-rd.webp" alt="Đội ngũ nghiên cứu và kỹ thuật AMM" width="852" height="848" loading="lazy" decoding="async"></div></article>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer hiện có -->
   <footer class="site-footer">
     <div class="container footer-main">
-      <div class="footer-brand"><div class="footer-logo-card"><img src="amm-logo.webp" alt="AMM Nutrition" width="467" height="331"></div><p>AMM nghiên cứu, sản xuất và cung cấp các giải pháp dinh dưỡng khoa học, ứng dụng công nghệ hiện đại và hướng tới hợp tác bền vững.</p></div>
+      <div class="footer-brand"><div class="footer-logo-card"><img src="amm-logo.webp" alt="AMM Germany Nutrition" width="500" height="375"></div><p>AMM nghiên cứu, sản xuất và cung cấp các giải pháp dinh dưỡng khoa học, ứng dụng công nghệ hiện đại và hướng tới hợp tác bền vững.</p></div>
       <div><h3>Về AMM</h3><div class="footer-links"><a href="index.html#about">Giới thiệu</a><a href="index.html#capacity">Năng lực & Quy mô</a><a href="tong-quan-nha-may.html">Nhà máy & Công nghệ</a><a href="index.html#quality">Chất lượng</a></div></div>
-      <div><h3>Hợp tác</h3><div class="footer-links"><a href="nang-luc-rd.html">Nghiên cứu & Phát triển</a><a href="phat-trien-cong-thuc.html">Phát triển công thức</a><a href="index.html#cooperation">OEM/ODM</a><a href="index.html#projects">Đối tác & Dự án</a><button class="btn btn-outline ns-footer__visit" type="button" data-open-contact data-contact-type="Tham quan nhà máy">Đăng ký tham quan</button></div></div>
-      <div><h3>Liên hệ</h3><div class="footer-contact-row"><div class="contact-list"><div class="contact-item"><svg aria-hidden="true"><use href="#fo-i-phone"></use></svg><a href="tel:1800888626">Hotline: 1800 888 626</a></div><div class="contact-item"><svg aria-hidden="true"><use href="#fo-i-mail"></use></svg><a href="mailto:cskh@ammnutrition.vn">cskh@ammnutrition.vn</a></div><div class="contact-item"><svg aria-hidden="true"><use href="#fo-i-globe"></use></svg><a href="https://ammnutrition.vn/">ammnutrition.vn</a></div><div class="contact-item"><svg aria-hidden="true"><use href="#fo-i-pin"></use></svg><address class="ns-footer__address">Khu công nghiệp Đồng Văn I, Phường Đồng Văn, Tỉnh Ninh Bình, Việt Nam</address></div></div><a class="footer-map" href="https://www.google.com/maps/search/?api=1&query=Khu+c%C3%B4ng+nghi%E1%BB%87p+%C4%90%E1%BB%93ng+V%C4%83n+I%2C+Ninh+B%C3%ACnh" target="_blank" rel="noopener" aria-label="Mở vị trí nhà máy AMM trên Google Maps"><iframe class="ns-footer__map-frame" title="Bản đồ vị trí nhà máy AMM" src="https://www.google.com/maps?q=Khu+c%C3%B4ng+nghi%E1%BB%87p+%C4%90%E1%BB%93ng+V%C4%83n+I%2C+Ninh+B%C3%ACnh&output=embed" width="100%" height="96" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe><span class="footer-map-link">Mở bản đồ →</span></a></div></div>
+      <div><h3>Hợp tác</h3><div class="footer-links"><a href="nang-luc-rd.html">Nghiên cứu & Phát triển</a><a href="phat-trien-cong-thuc.html">Phát triển công thức</a><a href="index.html#cooperation">OEM/ODM</a><a href="index.html#projects">Đối tác & Dự án</a><button class="btn btn-outline" type="button" data-open-contact data-contact-type="Tham quan nhà máy">Đăng ký tham quan</button></div></div>
+      <div><h3>Liên hệ</h3><div class="footer-contact-row"><div class="contact-list"><div class="contact-item"><svg aria-hidden="true"><use href="#fo-i-phone"></use></svg><a href="tel:1800888626">Hotline: 1800 888 626</a></div><div class="contact-item"><svg aria-hidden="true"><use href="#fo-i-mail"></use></svg><a href="mailto:cskh@ammnutrition.vn">cskh@ammnutrition.vn</a></div><div class="contact-item"><svg aria-hidden="true"><use href="#fo-i-globe"></use></svg><a href="https://ammnutrition.vn/">ammnutrition.vn</a></div><div class="contact-item"><svg aria-hidden="true"><use href="#fo-i-pin"></use></svg><address style="font-style:normal">Khu công nghiệp Đồng Văn I, Phường Đồng Văn, Tỉnh Ninh Bình, Việt Nam</address></div></div><a class="footer-map" href="https://www.google.com/maps/search/?api=1&query=Khu+c%C3%B4ng+nghi%E1%BB%87p+%C4%90%E1%BB%93ng+V%C4%83n+I%2C+Ninh+B%C3%ACnh" target="_blank" rel="noopener" aria-label="Mở vị trí nhà máy AMM trên Google Maps"><iframe title="Bản đồ vị trí nhà máy AMM" src="https://www.google.com/maps?q=Khu+c%C3%B4ng+nghi%E1%BB%87p+%C4%90%E1%BB%93ng+V%C4%83n+I%2C+Ninh+B%C3%ACnh&output=embed" width="100%" height="96" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe><span class="footer-map-link">Mở bản đồ →</span></a></div></div>
     </div>
     <div class="footer-bottom"><div class="container footer-bottom-inner"><span class="footer-slogan">Khoa học dinh dưỡng là nền tảng – Công nghệ tạo nên chất lượng – Hợp tác tạo nên những giá trị vươn xa.</span><span>© <span data-year></span> AMM Germany Nutrition.</span></div></div>
   </footer>
@@ -266,17 +447,95 @@
 
   <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="dialog-title">
     <div class="dialog-head"><div><p class="section-kicker">AMM Germany Nutrition</p><h2 id="dialog-title">Đăng ký tư vấn/hợp tác</h2></div><button class="dialog-close" type="button" data-close-dialog aria-label="Đóng">✕</button></div>
-    <form class="contact-form" data-contact-form data-language="vi" data-recipient="cskh@ammnutrition.vn" data-subject="Đăng ký tư vấn hợp tác nhà máy AMM" data-success-message="Ứng dụng email sẽ mở với nội dung đã điền.">
+    <form class="contact-form" data-contact-form data-recipient="cskh@ammnutrition.vn" data-subject="Đăng ký tư vấn nhà máy AMM">
       <div class="form-field"><label for="company">Tên doanh nghiệp</label><input id="company" name="company" autocomplete="organization" required></div>
-      <div class="form-field"><label for="name">Người liên hệ</label><input id="name" name="name" autocomplete="name" required></div>
+      <div class="form-field"><label for="contact-name">Người liên hệ</label><input id="contact-name" name="name" autocomplete="name" required></div>
       <div class="form-field"><label for="phone">Số điện thoại</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
       <div class="form-field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-      <div class="form-field full"><label for="inquiry">Nhu cầu hợp tác</label><select id="inquiry" name="inquiry" required><option value="">Chọn nhu cầu</option><option>Tư vấn giải pháp dinh dưỡng</option><option>Tư vấn OEM/ODM</option><option>Phát triển nhãn hàng riêng</option><option>Tham quan nhà máy</option><option>Tìm hiểu công nghệ sản xuất</option></select></div>
+      <div class="form-field full"><label for="inquiry">Nhu cầu hợp tác</label><select id="inquiry" name="inquiry" required><option value="">Chọn nhu cầu</option><option>Tư vấn OEM/ODM</option><option>Phát triển nhãn hàng riêng</option><option>Tham quan nhà máy</option><option>Tìm hiểu dây chuyền sản xuất</option></select></div>
       <div class="form-field full"><label for="message">Thông tin cần trao đổi</label><textarea id="message" name="message" placeholder="Mô tả ngắn về nhu cầu hợp tác hoặc yêu cầu tham quan nhà máy..."></textarea></div>
-      <p class="form-note">Khi gửi yêu cầu, bạn đồng ý để AMM liên hệ lại qua thông tin đã cung cấp. Biểu mẫu sử dụng ứng dụng email trên thiết bị của bạn.</p>
+      <p class="form-note">Khi gửi yêu cầu, bạn đồng ý để AMM liên hệ lại qua thông tin đã cung cấp.</p>
       <div class="form-actions"><button class="btn btn-outline" type="button" data-close-dialog>Hủy</button><button class="btn btn-primary" type="submit">Gửi yêu cầu →</button></div>
     </form>
   </dialog>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    (() => {
+      const body = document.body;
+      const menuToggle = document.querySelector('.menu-toggle');
+      const backdrop = document.querySelector('.nav-backdrop');
+      const nav = document.getElementById('primary-navigation');
+      const closeNav = () => {
+        body.classList.remove('nav-open');
+        menuToggle?.setAttribute('aria-expanded','false');
+      };
+      menuToggle?.addEventListener('click',() => {
+        const open = body.classList.toggle('nav-open');
+        menuToggle.setAttribute('aria-expanded',String(open));
+      });
+      backdrop?.addEventListener('click',closeNav);
+      nav?.querySelectorAll('.submenu-toggle').forEach(button => {
+        button.addEventListener('click',() => {
+          const group = button.closest('.nav-group');
+          const expanded = group.classList.toggle('open');
+          button.setAttribute('aria-expanded',String(expanded));
+        });
+      });
+
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!reduced && 'IntersectionObserver' in window) {
+        body.classList.add('fo-motion');
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {threshold:.12, rootMargin:'0px 0px -40px'});
+        document.querySelectorAll('[data-fo-reveal]').forEach(el => observer.observe(el));
+      } else {
+        document.querySelectorAll('[data-fo-reveal]').forEach(el => el.classList.add('is-visible'));
+      }
+
+      document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
+
+      const dialog = document.getElementById('contact-dialog');
+      document.querySelectorAll('[data-open-contact]').forEach(button => {
+        button.addEventListener('click',() => {
+          const type = button.dataset.contactType;
+          const select = dialog?.querySelector('#inquiry');
+          if (select && type) {
+            const option = [...select.options].find(item => type.toLowerCase().includes(item.text.toLowerCase().replace('tư vấn ','')));
+            if (option) select.value = option.value;
+          }
+          dialog?.showModal();
+        });
+      });
+      document.querySelectorAll('[data-close-dialog]').forEach(button => button.addEventListener('click',() => dialog?.close()));
+      dialog?.addEventListener('click',event => { if (event.target === dialog) dialog.close(); });
+
+      const form = document.querySelector('[data-contact-form]');
+      form?.addEventListener('submit',event => {
+        event.preventDefault();
+        if (!form.reportValidity()) return;
+        const data = new FormData(form);
+        const recipient = form.dataset.recipient || 'cskh@ammnutrition.vn';
+        const subject = form.dataset.subject || 'Đăng ký tư vấn AMM';
+        const lines = [
+          `Tên doanh nghiệp: ${data.get('company') || ''}`,
+          `Người liên hệ: ${data.get('name') || ''}`,
+          `Số điện thoại: ${data.get('phone') || ''}`,
+          `Email: ${data.get('email') || ''}`,
+          `Nhu cầu: ${data.get('inquiry') || ''}`,
+          '',
+          `${data.get('message') || ''}`
+        ];
+        window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
+        dialog?.close();
+      });
+    })();
+  </script>
 </body>
 </html>

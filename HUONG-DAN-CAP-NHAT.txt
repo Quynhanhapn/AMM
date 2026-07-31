@@ -1,35 +1,28 @@
-TRANG TỔNG QUAN NHÀ MÁY - AMM GERMANY NUTRITION
+TRANG TỔNG QUAN NHÀ MÁY AMM
 
-1. Upload toàn bộ các file dưới đây ra ngoài cùng, ngang hàng với index.html:
+1. Giữ nguyên site.css hiện tại của website.
+2. Upload tong-quan-nha-may.html và toàn bộ ảnh trong bộ này ra ngoài cùng,
+   ngang hàng với index.html và site.css.
+3. Ghi đè file tong-quan-nha-may.html cũ.
+4. Không cần thêm factory-overview.css hoặc factory-overview.js.
+   CSS và JavaScript riêng của trang đã nằm trực tiếp trong HTML.
 
-- tong-quan-nha-may.html
-- factory-overview.css
-- factory-overview.js
-- tong-quan-nha-may-hero.jpg
-- phong-rd.jpg
-- kho-nguyen-lieu.jpg
-- day-chuyen-sua-bot.jpg
-- day-chuyen-sua-nuoc-tetra-pak.jpg
-- kho-thanh-pham.jpg
-
-2. Giữ nguyên các file đang có của website:
-
-- site.css
-- site.js
-- amm-logo.webp
-- flag-vn.svg
-- flag-gb.svg
-- favicon.ico
-
-3. Link menu cần dùng:
-
-<a href="tong-quan-nha-may.html">Tổng quan nhà máy</a>
-
-4. Trang đã sử dụng đúng 4 phần:
-
-- Hero tổng quan nhà máy
-- Dải số liệu nổi bật
-- Các khu vực chức năng
-- Dải giá trị và năng lực nhà máy
-
-Không có carousel và không có CTA mới.
+Cấu trúc:
+index.html
+site.css
+tong-quan-nha-may.html
+amm-logo.webp
+flag-vn.svg
+flag-gb.svg
+factory-hero.webp
+factory-campus.webp
+factory-powder-line.webp
+factory-liquid-line.webp
+factory-rd.webp
+factory-qaqc.webp
+factory-finished-warehouse.webp
+factory-award.webp
+tetra-pak-technology.webp
+rieckermann-technology.webp
+dsc-mixing-system.webp
+pegasus-mixer-hd.webp
