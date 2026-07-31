@@ -37,124 +37,277 @@
   </script>
 
 <style id="ingredients-premium-overrides">
-/* Khối Colosferrin cao cấp */
+/* SECTION COLOSFERRIN – phiên bản gọn, cân ảnh và nội dung */
 .ingredients-page__feature--premium{
   overflow:hidden;
+  padding:32px 0 0!important;
   border:1px solid rgba(93,171,239,.34);
   border-radius:28px;
   background:linear-gradient(135deg,#fff 0%,#fbfdff 55%,#f1f8ff 100%);
   box-shadow:0 18px 50px rgba(11,73,145,.08);
 }
+
 .ingredients-page__feature--premium > h2{
   max-width:1280px;
-  margin:0 auto clamp(26px,3vw,42px);
+  margin:0 auto 28px;
   padding:0 24px;
   text-align:center;
   color:#063f91;
-  font-size:clamp(22px,2vw,36px);
-  line-height:1.22;
+  font-size:clamp(22px,1.85vw,34px);
+  line-height:1.2;
   font-weight:900;
   letter-spacing:-.02em;
 }
-.ingredients-page__feature--premium > h2 sup{font-size:.52em;top:-.55em;position:relative}
+
+.ingredients-page__feature--premium > h2 sup{
+  position:relative;
+  top:-.55em;
+  font-size:.52em;
+}
+
 .ingredients-page__feature-grid--premium{
   display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);
+  grid-template-columns:minmax(0,1fr) minmax(0,1.16fr);
   align-items:stretch;
   gap:0;
-  height:520px;
+  height:460px;
+  margin:0;
 }
+
 .ingredients-page__feature-visual--premium{
   position:relative;
+  min-width:0;
+  height:460px;
   overflow:hidden;
-  min-height:520px;
-  border-radius:24px 0 0 24px;
+  border-radius:0;
   background:#eaf5ff;
 }
+
 .ingredients-page__feature-visual--premium img{
-  width:100%;height:100%;display:block;object-fit:cover;object-position:center;
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
 }
+
 .ingredients-page__feature-visual--premium::after{
-  content:"";position:absolute;z-index:2;inset:0 0 0 auto;width:24%;pointer-events:none;
-  background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.62) 58%,#fff 100%);
+  content:"";
+  position:absolute;
+  z-index:2;
+  top:0;
+  right:-1px;
+  bottom:0;
+  width:18%;
+  pointer-events:none;
+  background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.55) 62%,#fff 100%);
 }
-.ingredients-page__feature-info--premium{  
-  position:relative;  isolation:isolate;  display:flex;  flex-direction:column;  justify-content:center;
-  min-width:0;  height:520px;  box-sizing:border-box;  padding:28px 32px;  overflow:hidden;
-  background:linear-gradient(    110deg,    #fff 0%,    rgba(247,252,255,.98) 55%,    rgba(233,246,255,.96) 100%  );
+
+.ingredients-page__feature-info--premium{
+  position:relative;
+  isolation:isolate;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  min-width:0;
+  height:460px;
+  box-sizing:border-box;
+  padding:30px 30px 26px;
+  overflow:hidden;
+  background:linear-gradient(110deg,#fff 0%,rgba(247,252,255,.98) 55%,rgba(233,246,255,.96) 100%);
 }
-}
+
 .ingredients-page__feature-soft-bg{
-  position:absolute;z-index:-1;inset:0;overflow:hidden;pointer-events:none;
+  position:absolute;
+  z-index:-1;
+  inset:0;
+  overflow:hidden;
+  pointer-events:none;
   background:
     radial-gradient(circle at 18% 20%,rgba(255,255,255,.95) 0 18%,transparent 45%),
     radial-gradient(circle at 92% 75%,rgba(112,193,255,.16),transparent 38%),
     linear-gradient(135deg,rgba(255,255,255,.8),rgba(225,243,255,.55));
 }
+
 .ingredients-page__feature-soft-bg::after{
-  content:"";position:absolute;right:-8%;bottom:-18%;width:72%;height:68%;opacity:.55;
+  content:"";
+  position:absolute;
+  right:-8%;
+  bottom:-22%;
+  width:68%;
+  height:72%;
+  opacity:.48;
   background:repeating-radial-gradient(ellipse at center,transparent 0 11px,rgba(70,160,230,.12) 12px 13px,transparent 14px 24px);
   transform:rotate(-11deg);
 }
+
 .ingredients-page__ingredia-logo{
-  display:block;width:min(230px,62%);height:auto;object-fit:contain;margin:0 auto clamp(28px,3vw,46px);
+  display:block;
+  width:min(230px,48%);
+  height:auto;
+  max-height:115px;
+  object-fit:contain;
+  margin:0 auto 30px;
 }
+
 .ingredients-page__feature-info--premium .ingredients-page__feature-metrics{
   width:100%;
   display:grid;
   grid-template-columns:repeat(4,minmax(0,1fr));
-  gap:12px;
+  gap:14px;
+  align-items:start;
 }
+
 .ingredients-page__feature-info--premium .ingredients-page__feature-metric{
-  min-width:0;text-align:center;display:flex;flex-direction:column;align-items:center;
+  min-width:0;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
+
 .ingredients-page__feature-info--premium .ingredients-page__feature-metric > span{
-  width:clamp(72px,5vw,96px);height:clamp(72px,5vw,96px);display:grid;place-items:center;
-  border:1.5px solid #9ed1ff;border-radius:50%;background:rgba(255,255,255,.86);
-  box-shadow:0 10px 22px rgba(28,103,178,.10);margin-bottom:15px;
+  width:76px;
+  height:76px;
+  display:grid;
+  place-items:center;
+  border:1.5px solid #9ed1ff;
+  border-radius:50%;
+  background:rgba(255,255,255,.88);
+  box-shadow:0 8px 18px rgba(28,103,178,.09);
+  margin-bottom:13px;
 }
+
 .ingredients-page__feature-info--premium .ingredients-page__feature-metric svg{
-  width:42%;height:42%;display:block;fill:none;stroke:#0861c5;stroke-width:1.8;
+  display:block;
+  width:40%;
+  height:40%;
+  fill:none;
+  stroke:#0861c5;
+  stroke-width:1.8;
 }
+
 .ingredients-page__feature-info--premium .ingredients-page__feature-flag{
-  overflow:hidden;display:grid!important;grid-template-columns:repeat(3,1fr)!important;padding:0!important;
+  overflow:hidden;
+  display:grid!important;
+  grid-template-columns:repeat(3,1fr)!important;
+  padding:0!important;
 }
-.ingredients-page__feature-info--premium .ingredients-page__feature-flag i{height:100%;display:block}
+
+.ingredients-page__feature-info--premium .ingredients-page__feature-flag i{
+  display:block;
+  height:100%;
+}
+
 .ingredients-page__feature-info--premium .ingredients-page__feature-flag i:nth-child(1){background:#123f91}
 .ingredients-page__feature-info--premium .ingredients-page__feature-flag i:nth-child(2){background:#fff}
 .ingredients-page__feature-info--premium .ingredients-page__feature-flag i:nth-child(3){background:#ef3340}
+
 .ingredients-page__feature-info--premium .ingredients-page__feature-metric strong{
-  color:#063f91;font-size:clamp(18px,1.35vw,26px);line-height:1.2;font-weight:850;
+  color:#063f91;
+  font-size:clamp(17px,1.2vw,23px);
+  line-height:1.18;
+  font-weight:850;
 }
+
 .ingredients-page__feature-info--premium .ingredients-page__feature-metric small{
-  margin-top:7px;color:#214f87;font-size:clamp(13px,.9vw,17px);line-height:1.3;
+  margin-top:6px;
+  color:#214f87;
+  font-size:clamp(13px,.85vw,16px);
+  line-height:1.3;
 }
-/* Căn chính giữa toàn bộ icon trong các vòng tròn của hero */
+
+/* Căn giữa icon trong các vòng tròn của hero */
 .ingredients-page__hero-metric .ingredients-page__metric-icon{
-  display:grid!important;place-items:center!important;overflow:hidden;
+  display:grid!important;
+  place-items:center!important;
+  overflow:hidden;
 }
 .ingredients-page__hero-metric .ingredients-page__metric-icon svg{display:block;margin:auto}
 .ingredients-page__hero-metric .ingredients-page__metric-icon--flag{
-  display:grid!important;grid-template-columns:repeat(3,1fr)!important;padding:0!important;
+  display:grid!important;
+  grid-template-columns:repeat(3,1fr)!important;
+  padding:0!important;
 }
-.ingredients-page__hero-metric .ingredients-page__metric-icon--flag i{display:block;width:100%;height:100%}
-/* CTA chỉ còn đúng 2 dòng trên desktop */
-.ingredients-page__cta-copy h2{font-size:clamp(28px,2.65vw,48px)!important;line-height:1.16!important;letter-spacing:-.025em!important}
-.ingredients-page__cta-copy h2 span{white-space:nowrap}
+.ingredients-page__hero-metric .ingredients-page__metric-icon--flag i{
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+/* CTA đúng 2 dòng trên desktop */
+.ingredients-page__cta-copy h2{
+  color:#fff!important;
+  font-size:clamp(26px,2.35vw,43px)!important;
+  line-height:1.30!important;
+  letter-spacing:-.02em!important;
+}
+.ingredients-page__cta-copy h2 span{
+  color:#fff!important;
+  white-space:normal!important;
+}
+
 @media (max-width:1100px){
-  .ingredients-page__feature-grid--premium{grid-template-columns:1fr}
-  .ingredients-page__feature-visual--premium{min-height:430px;border-radius:22px 22px 0 0}
-  .ingredients-page__feature-visual--premium::after{inset:auto 0 0;width:100%;height:20%;background:linear-gradient(180deg,transparent,#fff)}
-  .ingredients-page__feature-info--premium .ingredients-page__feature-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ingredients-page__feature--premium{padding-top:28px!important}
+  .ingredients-page__feature-grid--premium{
+    grid-template-columns:1fr;
+    height:auto;
+  }
+  .ingredients-page__feature-visual--premium{
+    height:auto;
+    aspect-ratio:1200/850;
+  }
+  .ingredients-page__feature-visual--premium::after{
+    top:auto;
+    left:0;
+    right:0;
+    bottom:-1px;
+    width:100%;
+    height:18%;
+    background:linear-gradient(180deg,transparent,#fff);
+  }
+  .ingredients-page__feature-info--premium{
+    height:auto;
+    min-height:360px;
+    padding:30px 24px 34px;
+  }
+  .ingredients-page__ingredia-logo{
+    width:min(230px,46%);
+    margin-bottom:26px;
+  }
+  .ingredients-page__feature-info--premium .ingredients-page__feature-metrics{
+    grid-template-columns:repeat(4,minmax(0,1fr));
+  }
   .ingredients-page__cta-copy h2 span{white-space:normal}
 }
-@media (max-width:640px){
-  .ingredients-page__feature--premium{border-radius:20px}
-  .ingredients-page__feature--premium > h2{font-size:22px;padding:0 14px}
-  .ingredients-page__feature-visual--premium{min-height:340px}
-  .ingredients-page__feature-info--premium{padding:30px 18px}
-  .ingredients-page__ingredia-logo{width:min(280px,75%)}
-  .ingredients-page__feature-info--premium .ingredients-page__feature-metrics{gap:22px 10px}
+
+@media (max-width:760px){
+  .ingredients-page__feature--premium{
+    padding-top:24px!important;
+    border-radius:20px;
+  }
+  .ingredients-page__feature--premium > h2{
+    margin-bottom:20px;
+    padding:0 16px;
+    font-size:22px;
+  }
+  .ingredients-page__feature-info--premium{
+    min-height:0;
+    padding:28px 18px 32px;
+  }
+  .ingredients-page__ingredia-logo{
+    width:min(220px,64%);
+    margin-bottom:24px;
+  }
+  .ingredients-page__feature-info--premium .ingredients-page__feature-metrics{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:24px 12px;
+  }
+  .ingredients-page__feature-info--premium .ingredients-page__feature-metric > span{
+    width:70px;
+    height:70px;
+    margin-bottom:11px;
+  }
   .ingredients-page__cta-copy h2{font-size:27px!important}
 }
 </style>
@@ -312,7 +465,7 @@
       <h2 id="ingredients-feature-title">COLOSFERRIN<sup>®</sup> – TINH HOA DINH DƯỠNG ĐỘC QUYỀN TỪ PHÁP</h2>
       <div class="ingredients-page__feature-grid ingredients-page__feature-grid--premium">
         <div class="ingredients-page__feature-visual ingredients-page__feature-visual--premium">
-          <img src="colosferrin-france-premium.png" width="1242" height="1242" loading="lazy" decoding="async" alt="Colosferrin cao cấp nhập khẩu độc quyền từ Pháp">
+          <img src="colosferrin-france-premium.png" width="1200" height="850" loading="lazy" decoding="async" alt="Colosferrin cao cấp nhập khẩu độc quyền từ Pháp">
         </div>
         <div class="ingredients-page__feature-info ingredients-page__feature-info--premium">
           <div class="ingredients-page__feature-soft-bg" aria-hidden="true"></div>
@@ -371,7 +524,7 @@
   <div class="container ingredients-page__cta-inner">
     <div class="ingredients-page__cta-copy">
       <p class="ingredients-page__cta-tag"><svg aria-hidden="true"><use href="#ing-i-shield"></use></svg> NGUYÊN LIỆU CHẤT LƯỢNG – NỀN TẢNG KHÁC BIỆT</p>
-      <h2 id="ingredients-cta-title">BIẾN NGUYÊN LIỆU CAO CẤP<br><span>THÀNH LỢI THẾ CẠNH TRANH CHO THƯƠNG HIỆU CỦA BẠN</span></h2>
+      <h2 id="ingredients-cta-title">BIẾN NGUYÊN LIỆU CAO CẤP<br>THÀNH LỢI THẾ CẠNH TRANH<br><span>CHO THƯƠNG HIỆU CỦA BẠN</span></h2>
       <p>AMM đồng hành cùng đối tác từ lựa chọn nguyên liệu, nghiên cứu công thức đến sản xuất thành phẩm, tạo nên những sản phẩm dinh dưỡng khác biệt và bền vững.</p>
       <div class="ingredients-page__cta-actions">
         <button class="ingredients-page__button ingredients-page__button--cta-primary" data-contact-type="Tư vấn giải pháp OEM/ODM" data-open-contact type="button">
