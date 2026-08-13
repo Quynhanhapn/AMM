@@ -550,9 +550,10 @@ p { margin: 0; }
 .footer-contact-row { display: grid; grid-template-columns: 1.3fr 1fr; gap: 14px; align-items: start; margin-top: 16px; }
 .footer-map-link { display: inline-flex; color: #9ddcff; font-weight: 750; font-size: .84rem; }
 .footer-map { display: block; border: 1px solid rgba(255,255,255,.14); border-radius: 12px; overflow: hidden; }
-.footer-map iframe { display: block; pointer-events: none; filter: grayscale(.15) brightness(.92); }
+.footer-map iframe { display: block; width: 100%; border: 0; pointer-events: none; filter: grayscale(.15) brightness(.92); }
 .footer-map .footer-map-link { display: block; margin: 0; padding: 7px 10px; font-size: .76rem; background: rgba(255,255,255,.06); }
 .footer-map:hover .footer-map-link { color: #fff; }
+.footer-visit-button { margin-top: 12px; width: auto; min-height: 38px; padding: 7px 14px; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.14); }
 .footer-bottom-inner { min-height: 62px; display: flex; align-items: center; justify-content: space-between; gap: 20px; color: #bcd4ef; font-size: .79rem; }
 .footer-slogan { color: #e2efff; }
