@@ -490,6 +490,8 @@ p { margin: 0; }
   text-align: center;
 }
 .partner-logo img { max-width: 100%; max-height: 34px; object-fit: contain; }
+.partner-logo--wide img { max-height: 30px; }
+.partner-logo--tall img { max-height: 44px; }
 .partner-logo.text-only { color: var(--navy-800); }
 .project-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 13px; align-items: stretch; }
 .project-card { display: flex; flex-direction: column; height: 100%; }

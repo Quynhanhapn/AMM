@@ -131,6 +131,8 @@
 .amm-about__partner-strip{background:#fff}
 .amm-about__partner-strip-inner{min-height:86px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px;align-items:center}
 .amm-about__partner-strip img{width:100%;max-width:200px;max-height:54px;object-fit:contain;justify-self:center;filter:saturate(.9)}
+.amm-about__partner-item{display:grid;gap:6px;justify-items:center;align-items:center}
+.amm-about__partner-item small{color:#6f8298;font-size:.58rem;font-weight:800;letter-spacing:.12em}
 .amm-about__partner-wordmark{display:grid;gap:3px;justify-items:center;color:#0a4e9f;font-size:1rem;font-weight:900;letter-spacing:.03em;text-align:center}
 .amm-about__partner-wordmark small{color:#6f8298;font-size:.58rem;font-weight:800;letter-spacing:.12em}
 

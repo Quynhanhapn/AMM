@@ -121,9 +121,11 @@
     .fo-partner__brand{min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
     .fo-wordmark{font-weight:900;letter-spacing:-.035em;line-height:1;color:#0b3f91;font-size:1.65rem}
     .fo-wordmark--rieck{color:#c62828;font-size:1.36rem;letter-spacing:-.02em}
-    .fo-wordmark--dsc{font-size:1.58rem;letter-spacing:.02em}
+    .fo-wordmark--apv{font-size:1.58rem;letter-spacing:.02em}
     .fo-wordmark small{display:block;margin-top:5px;font-size:.42em;letter-spacing:.08em;font-weight:700;color:#5b6d80}
+    .fo-partner__logo{display:block;width:min(180px,56%);max-height:44px;object-fit:contain;object-position:left center}
     .fo-country{display:flex;align-items:center;gap:8px;color:#1f3f6f;font-size:.75rem;font-weight:850;text-transform:uppercase;white-space:nowrap}
+    .fo-country__dot{width:10px;height:10px;border-radius:50%;background:#1680c8;box-shadow:0 0 0 4px #e1f2fd}
     .fo-flag{width:24px;height:16px;border:1px solid rgba(0,0,0,.08);box-shadow:0 1px 4px rgba(0,0,0,.08);flex:0 0 auto}
     .fo-flag--se{background:linear-gradient(90deg,transparent 0 29%,#f6c900 29% 39%,transparent 39%),linear-gradient(180deg,#1465a8 0 42%,#f6c900 42% 56%,#1465a8 56%)}
     .fo-flag--de{background:linear-gradient(#111 0 33.33%,#d00 33.33% 66.66%,#f4cf00 66.66%)}
@@ -133,6 +135,8 @@
     .fo-partner__content{display:grid;grid-template-columns:1.05fr .95fr;gap:14px;align-items:center}
     .fo-partner__media{aspect-ratio:1.3/1;border-radius:12px;overflow:hidden;background:#eef5fa}
     .fo-partner__media img{width:100%;height:100%;display:block;object-fit:cover}
+    .fo-partner--apv .fo-partner__media{background:linear-gradient(145deg,#f7fbfe,#eaf4fa)}
+    .fo-partner--apv .fo-partner__media img{object-fit:contain;padding:10px}
     .fo-partner__text{margin:0;color:#34495e;font-size:.81rem;line-height:1.55}
 
     .fo-pegasus{position:relative;z-index:1;display:grid;grid-template-columns:1.03fr .97fr;gap:22px;margin-top:16px;padding:18px;border:1px solid #d7e5f0;border-radius:20px;background:#fff;box-shadow:0 8px 24px rgba(7,59,130,.055)}
@@ -143,6 +147,7 @@
     .fo-pegasus__brand{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:8px}
     .fo-pegasus__brand strong{color:#1477bb;font-size:1.9rem;line-height:.95;letter-spacing:-.03em}
     .fo-pegasus__brand span{color:var(--fo-navy);font-size:1.45rem;font-weight:900;line-height:1.05}
+    .fo-pegasus__brand-logo{width:min(205px,45%);height:auto;object-fit:contain}
     .fo-pegasus__origin{display:flex;align-items:center;gap:9px;color:#203a61;font-size:.78rem;font-weight:850;text-transform:uppercase;margin-bottom:10px}
     .fo-pegasus__desc{margin:0 0 14px;color:#405469;font-size:.87rem;line-height:1.58}
     .fo-feature-list{display:grid;gap:9px}
@@ -381,7 +386,7 @@
           </article>
           <article class="fo-stat">
             <svg class="fo-stat__icon" aria-hidden="true"><use href="#fo-i-bottle"></use></svg>
-            <div><strong class="fo-stat__value"> 808.704.000 <small>lít/năm</small></strong><p class="fo-stat__label">Công suất sữa nước</p></div>
+            <div><strong class="fo-stat__value">50.000.000 <small>lít/năm</small></strong><p class="fo-stat__label">Công suất sữa nước</p></div>
           </article>
           <article class="fo-stat">
             <svg class="fo-stat__icon" aria-hidden="true"><use href="#fo-i-can"></use></svg>
@@ -437,14 +442,14 @@
 
           <article class="fo-area" id="powder-line" data-fo-reveal>
             <div class="fo-area__media">
-              <img src="day-chuyen-sua-bot.jpg" alt="Dây chuyền sản xuất sữa bột AMM" width="768" height="432" loading="lazy" decoding="async">
+              <img src="dinnissen-powder-mixer.webp" alt="Hệ thống trộn phối sữa bột Dinnissen tại AMM" width="1586" height="992" loading="lazy" decoding="async">
             </div>
             <div class="fo-area__body">
               <div class="fo-area__title">
                 <span class="fo-area__icon" aria-hidden="true"><svg><use href="#fo-i-can"></use></svg></span>
                 <h3>DÂY CHUYỀN SỮA BỘT</h3>
               </div>
-              <p>Dây chuyền hiện đại, kiểm soát chặt chẽ nhằm bảo đảm chất lượng và độ đồng nhất của sản phẩm.</p>
+              <p>Hệ thống Dinnissen hỗ trợ phối trộn đồng nhất theo mẻ, vận hành trong khu vực sản xuất được kiểm soát vệ sinh.</p>
             </div>
           </article>
 
@@ -487,31 +492,31 @@
 
         <div class="fo-partners">
           <article class="fo-partner" data-fo-reveal>
-            <div class="fo-partner__brand"><div class="fo-wordmark">Tetra Pak<small>PROTECTS WHAT'S GOOD</small></div><div class="fo-country"><span class="fo-flag fo-flag--se" aria-hidden="true"></span>Thụy Điển</div></div>
+            <div class="fo-partner__brand"><img class="fo-partner__logo" src="logo-tetrapak.png" width="489" height="149" alt="Tetra Pak"><div class="fo-country"><span class="fo-flag fo-flag--se" aria-hidden="true"></span>Thụy Điển</div></div>
             <div class="fo-partner__content"><div class="fo-partner__media"><img src="tetra-pak-technology.webp" alt="Hệ thống công nghệ Tetra Pak tại nhà máy AMM" width="1400" height="1050" loading="lazy" decoding="async"></div><p class="fo-partner__text">Đối tác chiến lược về công nghệ chế biến và chiết rót vô trùng cho dây chuyền sữa nước, góp phần bảo toàn chất lượng, giá trị dinh dưỡng và sự ổn định của sản phẩm.</p></div>
           </article>
           <article class="fo-partner" data-fo-reveal>
             <div class="fo-partner__brand"><div class="fo-wordmark fo-wordmark--rieck">RIECKERMANN<small>MASCHINEN- UND ANLAGENBAU</small></div><div class="fo-country"><span class="fo-flag fo-flag--de" aria-hidden="true"></span>Đức</div></div>
             <div class="fo-partner__content"><div class="fo-partner__media"><img src="rieckermann-technology.webp" alt="Thiết bị và giải pháp kỹ thuật Rieckermann tại AMM" width="1400" height="1050" loading="lazy" decoding="async"></div><p class="fo-partner__text">Hợp tác chuyên sâu trong tư vấn giải pháp kỹ thuật tổng thể, cung cấp thiết bị và chuyển giao công nghệ sản xuất chuẩn Đức, tối ưu vận hành và hiệu suất dây chuyền.</p></div>
           </article>
-          <article class="fo-partner" data-fo-reveal>
-            <div class="fo-partner__brand"><div class="fo-wordmark fo-wordmark--dsc">DSC<small>EUROPE</small></div><div class="fo-country"><span class="fo-flag fo-flag--eu" aria-hidden="true"></span>Châu Âu</div></div>
-            <div class="fo-partner__content"><div class="fo-partner__media"><img src="dsc-mixing-system.webp" alt="Hệ thống phối trộn DSC Europe" width="768" height="432" loading="lazy" decoding="async"></div><p class="fo-partner__text">Cung cấp giải pháp hệ thống phối trộn, hỗ trợ tối ưu hiệu suất vận hành, độ ổn định, khả năng kiểm soát và năng lực sản xuất.</p></div>
+          <article class="fo-partner fo-partner--apv" data-fo-reveal>
+            <div class="fo-partner__brand"><div class="fo-wordmark fo-wordmark--apv">APV<small>SPX FLOW</small></div><div class="fo-country"><span class="fo-country__dot" aria-hidden="true"></span>Công nghệ quốc tế</div></div>
+            <div class="fo-partner__content"><div class="fo-partner__media"><img src="apv-eq-75t-homogenizer.webp" alt="Máy đồng hóa APV EQ 75T của SPX FLOW" width="754" height="600" loading="lazy" decoding="async"></div><p class="fo-partner__text">Giải pháp đồng hóa APV cho sữa và đồ uống hỗ trợ phân tán pha lỏng, ổn định cấu trúc và độ đồng nhất của sản phẩm; thiết kế vệ sinh và phù hợp tích hợp CIP theo cấu hình.</p></div>
           </article>
         </div>
 
-        <article class="fo-pegasus" data-fo-reveal>
-          <div class="fo-pegasus__media"><img src="pegasus-mixer-hd.webp" alt="Máy trộn Dinnissen Pegasus Mixer HD" width="1536" height="1024" loading="lazy" decoding="async"></div>
+        <article class="fo-pegasus" id="dinnissen-mixing" data-fo-reveal>
+          <div class="fo-pegasus__media"><img src="dinnissen-powder-mixer.webp" alt="Hệ thống trộn phối sữa bột Dinnissen Pegasus" width="1586" height="992" loading="lazy" decoding="async"></div>
           <div class="fo-pegasus__copy">
             <p class="fo-pegasus__kicker">Công nghệ trộn phối sữa bột tiên tiến</p>
-            <div class="fo-pegasus__brand"><strong>DINNISSEN</strong><span>PEGASUS® MIXER HD</span></div>
+            <div class="fo-pegasus__brand"><img class="fo-pegasus__brand-logo" src="logo-dinnissen.png" width="643" height="168" alt="Dinnissen Process Technology"><span>HỆ THỐNG TRỘN BỘT PEGASUS®</span></div>
             <div class="fo-pegasus__origin"><span class="fo-flag fo-flag--nl" aria-hidden="true"></span>Hà Lan</div>
-            <p class="fo-pegasus__desc">Hệ thống trộn phối công suất cao ứng dụng công nghệ phi trọng lực, được thiết kế nhằm tạo độ đồng nhất nhanh, hạn chế sinh nhiệt và giảm tác động đến các thành phần dinh dưỡng nhạy cảm.</p>
+            <p class="fo-pegasus__desc">Dòng Pegasus® sử dụng hai trục cánh khuấy quay ngược chiều để tạo hỗn hợp đồng nhất nhanh. Thiết kế hướng tới xử lý nguyên liệu nhẹ nhàng, tiếp cận vệ sinh thuận tiện và kiểm soát nhất quán giữa các mẻ.</p>
             <div class="fo-feature-list">
-              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-speed"></use></svg></span><div><h4>TRỘN SIÊU TỐC</h4><p>Độ đồng nhất cao trong thời gian ngắn, phù hợp quy mô công nghiệp.</p></div></article>
-              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-swirl"></use></svg></span><div><h4>CÔNG NGHỆ PHI TRỌNG LỰC</h4><p>Nguyên liệu chuyển động nhẹ nhàng, hạn chế sinh nhiệt và biến tính vi chất.</p></div></article>
-              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-five"></use></svg></span><div><h4>TÍCH HỢP 5-TRONG-1 &amp; CHUẨN VỆ SINH CAO</h4><p>Tích hợp nhiều công đoạn trong một hệ thống, thuận tiện vệ sinh và kiểm soát.</p></div></article>
-              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-shield"></use></svg></span><div><h4>CHỐNG LÂY NHIỄM CHÉO</h4><p>Thiết kế hướng đến tiêu chuẩn vệ sinh cao, hạn chế nguy cơ lây nhiễm giữa các mẻ.</p></div></article>
+              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-speed"></use></svg></span><div><h4>TRỘN NHANH &amp; ĐỒNG NHẤT</h4><p>Dinnissen công bố thời gian trộn tham chiếu 20–50 giây; kết quả phụ thuộc nguyên liệu và cấu hình.</p></div></article>
+              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-swirl"></use></svg></span><div><h4>XỬ LÝ NGUYÊN LIỆU NHẸ NHÀNG</h4><p>Cánh khuấy và buồng trộn được thiết kế để giảm tác động không cần thiết lên sản phẩm.</p></div></article>
+              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-five"></use></svg></span><div><h4>THIẾT KẾ VỆ SINH</h4><p>Cửa tiếp cận hỗ trợ kiểm tra và vệ sinh hệ thống thuận tiện giữa các mẻ.</p></div></article>
+              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-shield"></use></svg></span><div><h4>LINH HOẠT CÔNG THỨC</h4><p>Phù hợp nhiều loại bột, hạt và vi thành phần với khối lượng, tỷ lệ khác nhau.</p></div></article>
             </div>
           </div>
         </article>
