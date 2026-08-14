@@ -143,11 +143,12 @@
     toastTimer = setTimeout(() => toast.classList.remove('show'), 3200);
   };
 
-  document.querySelector('[data-video-button]')?.addEventListener('click', (event) => {
-    const button = event.currentTarget;
-    const url = button.dataset.videoUrl;
-    if (url) window.open(url, '_blank', 'noopener');
-    else showToast(button.dataset.emptyMessage || 'Video is being updated.');
+  document.querySelectorAll('[data-video-button]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const url = button.dataset.videoUrl;
+      if (url) window.open(url, '_blank', 'noopener');
+      else showToast(button.dataset.emptyMessage || 'Video is being updated.');
+    });
   });
 
   const form = document.querySelector('[data-contact-form]');
