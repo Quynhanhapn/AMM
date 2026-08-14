@@ -268,3 +268,7 @@
   .amm-about-page *::before,
   .amm-about-page *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
+#amm-about-title{
+  font-size:clamp(1.8rem,2.6vw,2.9rem);
+  line-height:1.1;
+}
