@@ -370,17 +370,232 @@
   </nav>
 
   <main id="main-content">
-    <section class="fo-hero" aria-labelledby="fo-title">
-      <div class="fo-hero__media"><img src="factory-hero.webp" alt="Toàn cảnh nhà máy AMM Germany Nutrition" width="1477" height="732" fetchpriority="high" decoding="async"></div>
-      <div class="fo-shell fo-hero__inner">
-        <div class="fo-hero__copy" data-fo-reveal="left">
-          <p class="fo-eyebrow">AMM Germany Nutrition</p>
-          <h1 id="fo-title"><span>TỔNG QUAN</span><span>NHÀ MÁY AMM</span></h1>
-          <p class="fo-hero__lead">AMM Germany Nutrition là đơn vị nghiên cứu, sản xuất và cung cấp các giải pháp dinh dưỡng khoa học, chất lượng cao, ứng dụng công nghệ hiện đại và đáp ứng tiêu chuẩn quốc tế.</p>
-          <div class="fo-hero__actions"><a class="btn btn-primary" href="#functional-areas">Tìm hiểu thêm <span aria-hidden="true">→</span></a></div>
-        </div>
+    <style>
+/* ===== VIDEO HERO NHÀ MÁY ===== */
+
+.fo-hero__media video{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:58% 50%;
+}
+
+/* nút xem video */
+.fo-video-open{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+}
+
+.fo-video-open__icon{
+  display:grid;
+  place-items:center;
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:#fff;
+  color:#075fc8;
+  font-size:12px;
+}
+
+/* popup video */
+#factory-video-dialog{
+  width:min(1180px,calc(100% - 40px));
+  max-width:none;
+  padding:0;
+  border:0;
+  border-radius:20px;
+  overflow:visible;
+  background:#000;
+  box-shadow:0 30px 100px rgba(0,0,0,.45);
+}
+
+#factory-video-dialog::backdrop{
+  background:rgba(1,14,34,.88);
+  backdrop-filter:blur(5px);
+}
+
+.factory-video-wrap{
+  position:relative;
+  overflow:hidden;
+  border-radius:20px;
+  background:#000;
+}
+
+.factory-video-wrap video{
+  display:block;
+  width:100%;
+  max-height:85vh;
+  aspect-ratio:16/9;
+  object-fit:contain;
+  background:#000;
+}
+
+.factory-video-close{
+  position:absolute;
+  z-index:5;
+  top:14px;
+  right:14px;
+  display:grid;
+  place-items:center;
+  width:42px;
+  height:42px;
+  padding:0;
+  border:1px solid rgba(255,255,255,.5);
+  border-radius:50%;
+  color:#fff;
+  background:rgba(0,0,0,.58);
+  font-size:22px;
+  cursor:pointer;
+}
+
+.factory-video-close:hover{
+  background:#075fc8;
+}
+
+@media(max-width:700px){
+  #factory-video-dialog{
+    width:calc(100% - 18px);
+    border-radius:14px;
+  }
+
+  .factory-video-wrap{
+    border-radius:14px;
+  }
+}
+</style>
+
+
+<section class="fo-hero" aria-labelledby="fo-title">
+
+  <!-- VIDEO FLYCAM CHẠY NỀN -->
+  <div class="fo-hero__media" aria-hidden="true">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      poster="factory-hero.webp"
+    >
+      <source src="factory-flycam.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="fo-shell fo-hero__inner">
+
+    <div class="fo-hero__copy" data-fo-reveal="left">
+
+      <p class="fo-eyebrow">
+        AMM Germany Nutrition
+      </p>
+
+      <h1 id="fo-title">
+        <span>TỔNG QUAN</span>
+        <span>NHÀ MÁY AMM</span>
+      </h1>
+
+      <p class="fo-hero__lead">
+        AMM Germany Nutrition là đơn vị nghiên cứu, sản xuất và cung cấp
+        các giải pháp dinh dưỡng khoa học, chất lượng cao, ứng dụng công nghệ
+        hiện đại và đáp ứng tiêu chuẩn quốc tế.
+      </p>
+
+      <div class="fo-hero__actions">
+
+        <a class="btn btn-primary" href="#functional-areas">
+          Tìm hiểu thêm
+          <span aria-hidden="true">→</span>
+        </a>
+
+        <button
+          class="btn btn-outline fo-video-open"
+          type="button"
+          id="factory-video-open"
+        >
+          <span class="fo-video-open__icon" aria-hidden="true">▶</span>
+          Xem video nhà máy
+        </button>
+
       </div>
-    </section>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- POPUP VIDEO LỚN -->
+<dialog id="factory-video-dialog">
+
+  <div class="factory-video-wrap">
+
+    <button
+      class="factory-video-close"
+      type="button"
+      id="factory-video-close"
+      aria-label="Đóng video"
+    >
+      ×
+    </button>
+
+    <video
+      id="factory-video-player"
+      controls
+      playsinline
+      preload="metadata"
+      poster="factory-hero.webp"
+    >
+      <source src="factory-flycam.mp4" type="video/mp4">
+    </video>
+
+  </div>
+
+</dialog>
+
+
+<script>
+(() => {
+
+  const openButton = document.getElementById('factory-video-open');
+  const dialog = document.getElementById('factory-video-dialog');
+  const closeButton = document.getElementById('factory-video-close');
+  const player = document.getElementById('factory-video-player');
+
+  const openVideo = () => {
+    if (!dialog || !player) return;
+
+    dialog.showModal();
+
+    player.currentTime = 0;
+    player.muted = false;
+    player.volume = 1;
+
+    player.play().catch(() => {});
+  };
+
+  const closeVideo = () => {
+    if (!dialog || !player) return;
+
+    player.pause();
+    dialog.close();
+  };
+
+  openButton?.addEventListener('click', openVideo);
+  closeButton?.addEventListener('click', closeVideo);
+
+  dialog?.addEventListener('click', (event) => {
+    if (event.target === dialog) {
+      closeVideo();
+    }
+  });
+
+  dialog?.addEventListener('close', () => {
+    player?.pause();
+  });
+
+})();
+</script>
 
     <div class="fo-stats-wrap">
       <div class="fo-shell">
