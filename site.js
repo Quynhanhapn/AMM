@@ -4,6 +4,66 @@
   const backdrop = document.querySelector('.nav-backdrop');
   const nav = document.querySelector('.primary-nav');
 
+  // Keep the institutional navigation consistent across legacy and new pages.
+  // The site is intentionally static, so this small compatibility layer prevents
+  // older page headers from pointing back to incomplete homepage fragments.
+  if (nav && document.documentElement.lang.toLowerCase().startsWith('vi')) {
+    const routes = {
+      'TRANG CHỦ': 'index.html',
+      'VỀ AMM': 'tong-quan-amm.html',
+      'NGHIÊN CỨU & DINH DƯỠNG': 'giai-phap-dinh-duong.html',
+      'CÔNG NGHỆ & SẢN XUẤT': 'tong-quan-nha-may.html',
+      'GIẢI PHÁP HỢP TÁC': 'hop-tac-oem-odm.html',
+      'CHẤT LƯỢNG': 'he-thong-chat-luong.html',
+      'TIN TỨC': 'tin-tuc.html',
+      'LIÊN HỆ': 'lien-he.html'
+    };
+    const submenus = {
+      'VỀ AMM': [
+        ['Tổng quan', 'tong-quan-amm.html'],
+        ['Tầm nhìn – Sứ mệnh – Giá trị cốt lõi', 'tong-quan-amm.html#vision-mission'],
+        ['Những dấu ấn', 'tong-quan-amm.html#milestones'],
+        ['Hệ sinh thái phát triển', 'tong-quan-amm.html#ecosystem']
+      ],
+      'NGHIÊN CỨU & DINH DƯỠNG': [
+        ['Năng lực R&D', 'nang-luc-rd.html'],
+        ['Phát triển công thức', 'phat-trien-cong-thuc.html'],
+        ['Giải pháp dinh dưỡng', 'giai-phap-dinh-duong.html'],
+        ['Nguyên liệu nổi bật', 'nguyen-lieu-noi-bat.html']
+      ],
+      'CÔNG NGHỆ & SẢN XUẤT': [
+        ['Tổng quan nhà máy', 'tong-quan-nha-may.html'],
+        ['Dây chuyền sữa bột', 'tong-quan-nha-may.html#powder-line'],
+        ['Dây chuyền sữa nước', 'tong-quan-nha-may.html#liquid-line'],
+        ['Công nghệ Tetra Pak', 'tong-quan-nha-may.html#tetrapak-technology']
+      ],
+      'GIẢI PHÁP HỢP TÁC': [
+        ['OEM/ODM & Nhãn hàng riêng', 'hop-tac-oem-odm.html#models'],
+        ['Nhóm sản phẩm có thể sản xuất', 'hop-tac-oem-odm.html#products'],
+        ['Quy trình hợp tác', 'hop-tac-oem-odm.html#process'],
+        ['Nền tảng đồng hành', 'hop-tac-oem-odm.html#advantages']
+      ],
+      'CHẤT LƯỢNG': [
+        ['Hệ thống QA/QC', 'he-thong-chat-luong.html#system'],
+        ['Kiểm soát xuyên suốt', 'he-thong-chat-luong.html#control-flow'],
+        ['Kiểm nghiệm, truy xuất & lưu mẫu', 'he-thong-chat-luong.html#quality-gates'],
+        ['Chứng nhận & cam kết', 'he-thong-chat-luong.html#standards']
+      ]
+    };
+
+    nav.querySelectorAll(':scope > .nav-group').forEach((group) => {
+      const link = group.querySelector(':scope > .nav-link');
+      if (!link) return;
+      const label = link.textContent.replace(/\s+/g, ' ').trim().toUpperCase();
+      if (routes[label]) link.setAttribute('href', routes[label]);
+      const menu = group.querySelector(':scope > .submenu');
+      if (!menu || !submenus[label]) return;
+      menu.innerHTML = submenus[label]
+        .map(([text, href]) => `<a href="${href}">${text}</a>`)
+        .join('');
+    });
+  }
+
   const closeMenu = () => {
     body.classList.remove('nav-open');
     menuToggle?.setAttribute('aria-expanded', 'false');
@@ -83,11 +143,12 @@
     toastTimer = setTimeout(() => toast.classList.remove('show'), 3200);
   };
 
-  document.querySelector('[data-video-button]')?.addEventListener('click', (event) => {
-    const button = event.currentTarget;
-    const url = button.dataset.videoUrl;
-    if (url) window.open(url, '_blank', 'noopener');
-    else showToast(button.dataset.emptyMessage || 'Video is being updated.');
+  document.querySelectorAll('[data-video-button]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const url = button.dataset.videoUrl;
+      if (url) window.open(url, '_blank', 'noopener');
+      else showToast(button.dataset.emptyMessage || 'Video is being updated.');
+    });
   });
 
   const form = document.querySelector('[data-contact-form]');

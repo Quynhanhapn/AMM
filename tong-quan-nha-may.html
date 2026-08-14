@@ -9,7 +9,7 @@
   <meta name="theme-color" content="#073b82">
   <link rel="canonical" href="https://ammnutrition.vn/tong-quan-nha-may.html">
   <link rel="alternate" hreflang="vi" href="https://ammnutrition.vn/tong-quan-nha-may.html">
-  <link rel="alternate" hreflang="en" href="https://ammnutrition.vn/en/tong-quan-nha-may.html">
+  <link rel="alternate" hreflang="en" href="https://ammnutrition.vn/index-en.html#factory">
   <link rel="alternate" hreflang="x-default" href="https://ammnutrition.vn/tong-quan-nha-may.html">
   <link rel="preload" as="image" href="factory-hero.webp" fetchpriority="high">
 
@@ -121,9 +121,11 @@
     .fo-partner__brand{min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
     .fo-wordmark{font-weight:900;letter-spacing:-.035em;line-height:1;color:#0b3f91;font-size:1.65rem}
     .fo-wordmark--rieck{color:#c62828;font-size:1.36rem;letter-spacing:-.02em}
-    .fo-wordmark--dsc{font-size:1.58rem;letter-spacing:.02em}
+    .fo-wordmark--apv{font-size:1.58rem;letter-spacing:.02em}
     .fo-wordmark small{display:block;margin-top:5px;font-size:.42em;letter-spacing:.08em;font-weight:700;color:#5b6d80}
+    .fo-partner__logo{display:block;width:min(180px,56%);max-height:44px;object-fit:contain;object-position:left center}
     .fo-country{display:flex;align-items:center;gap:8px;color:#1f3f6f;font-size:.75rem;font-weight:850;text-transform:uppercase;white-space:nowrap}
+    .fo-country__dot{width:10px;height:10px;border-radius:50%;background:#1680c8;box-shadow:0 0 0 4px #e1f2fd}
     .fo-flag{width:24px;height:16px;border:1px solid rgba(0,0,0,.08);box-shadow:0 1px 4px rgba(0,0,0,.08);flex:0 0 auto}
     .fo-flag--se{background:linear-gradient(90deg,transparent 0 29%,#f6c900 29% 39%,transparent 39%),linear-gradient(180deg,#1465a8 0 42%,#f6c900 42% 56%,#1465a8 56%)}
     .fo-flag--de{background:linear-gradient(#111 0 33.33%,#d00 33.33% 66.66%,#f4cf00 66.66%)}
@@ -133,6 +135,8 @@
     .fo-partner__content{display:grid;grid-template-columns:1.05fr .95fr;gap:14px;align-items:center}
     .fo-partner__media{aspect-ratio:1.3/1;border-radius:12px;overflow:hidden;background:#eef5fa}
     .fo-partner__media img{width:100%;height:100%;display:block;object-fit:cover}
+    .fo-partner--apv .fo-partner__media{background:linear-gradient(145deg,#f7fbfe,#eaf4fa)}
+    .fo-partner--apv .fo-partner__media img{object-fit:contain;padding:10px}
     .fo-partner__text{margin:0;color:#34495e;font-size:.81rem;line-height:1.55}
 
     .fo-pegasus{position:relative;z-index:1;display:grid;grid-template-columns:1.03fr .97fr;gap:22px;margin-top:16px;padding:18px;border:1px solid #d7e5f0;border-radius:20px;background:#fff;box-shadow:0 8px 24px rgba(7,59,130,.055)}
@@ -143,6 +147,7 @@
     .fo-pegasus__brand{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:8px}
     .fo-pegasus__brand strong{color:#1477bb;font-size:1.9rem;line-height:.95;letter-spacing:-.03em}
     .fo-pegasus__brand span{color:var(--fo-navy);font-size:1.45rem;font-weight:900;line-height:1.05}
+    .fo-pegasus__brand-logo{width:min(205px,45%);height:auto;object-fit:contain}
     .fo-pegasus__origin{display:flex;align-items:center;gap:9px;color:#203a61;font-size:.78rem;font-weight:850;text-transform:uppercase;margin-bottom:10px}
     .fo-pegasus__desc{margin:0 0 14px;color:#405469;font-size:.87rem;line-height:1.58}
     .fo-feature-list{display:grid;gap:9px}
@@ -337,19 +342,19 @@
 
       <nav class="primary-nav" id="primary-navigation" aria-label="Điều hướng chính">
         <div class="nav-group"><a class="nav-link" href="index.html">TRANG CHỦ</a></div>
-        <div class="nav-group"><a class="nav-link" href="index.html#about">VỀ AMM</a><button class="submenu-toggle" type="button" aria-label="Mở menu Về AMM" aria-expanded="false"></button><div class="submenu"><a href="index.html#about">Tổng quan</a><a href="index.html#pillars">Tầm nhìn – Sứ mệnh – Giá trị cốt lõi</a><a href="index.html#capacity">Năng lực & Quy mô</a><a href="index.html#sustainability">Phát triển bền vững</a></div></div>
+        <div class="nav-group"><a class="nav-link" href="tong-quan-amm.html">VỀ AMM</a><button class="submenu-toggle" type="button" aria-label="Mở menu Về AMM" aria-expanded="false"></button><div class="submenu"><a href="tong-quan-amm.html">Tổng quan</a><a href="tong-quan-amm.html#vision-mission">Tầm nhìn – Sứ mệnh – Giá trị cốt lõi</a><a href="tong-quan-amm.html#milestones">Những dấu ấn</a><a href="tong-quan-amm.html#ecosystem">Hệ sinh thái phát triển</a></div></div>
         <div class="nav-group"><a class="nav-link" href="giai-phap-dinh-duong.html">NGHIÊN CỨU & DINH DƯỠNG</a><button class="submenu-toggle" type="button" aria-label="Mở menu Nghiên cứu và Dinh dưỡng" aria-expanded="false"></button><div class="submenu"><a href="nang-luc-rd.html">Năng lực R&amp;D</a><a href="phat-trien-cong-thuc.html">Phát triển công thức</a><a href="giai-phap-dinh-duong.html">Giải pháp dinh dưỡng</a><a href="nguyen-lieu-noi-bat.html">Nguyên liệu nổi bật</a></div></div>
-        <div class="nav-group"><a class="nav-link fo-nav-active" href="tong-quan-nha-may.html" aria-current="page">CÔNG NGHỆ & SẢN XUẤT</a><button class="submenu-toggle" type="button" aria-label="Mở menu Công nghệ và Sản xuất" aria-expanded="false"></button><div class="submenu"><a href="tong-quan-nha-may.html" aria-current="page">Tổng quan nhà máy</a><a href="day-chuyen-sua-bot.html">Dây chuyền sữa bột</a><a href="day-chuyen-sua-nuoc.html">Dây chuyền sữa nước</a><a href="cong-nghe-tetra-pak.html">Công nghệ Tetra Pak</a></div></div>
-        <div class="nav-group"><a class="nav-link" href="index.html#cooperation">GIẢI PHÁP HỢP TÁC</a><button class="submenu-toggle" type="button" aria-label="Mở menu Giải pháp hợp tác" aria-expanded="false"></button><div class="submenu"><a href="index.html#products">OEM/ODM & Nhãn hàng riêng</a><a href="index.html#products">Nhóm sản phẩm có thể sản xuất</a><a href="index.html#cooperation-process">Quy trình hợp tác</a></div></div>
-        <div class="nav-group"><a class="nav-link" href="index.html#quality">CHẤT LƯỢNG</a><button class="submenu-toggle" type="button" aria-label="Mở menu Chất lượng" aria-expanded="false"></button><div class="submenu"><a href="index.html#qa-qc">Hệ thống QA/QC</a><a href="index.html#quality">Kiểm soát nguyên liệu</a><a href="index.html#quality">Kiểm soát sản xuất</a><a href="index.html#quality">Kiểm nghiệm thành phẩm</a></div></div>
-        <div class="nav-group"><a class="nav-link" href="index.html#news">TIN TỨC</a></div>
-        <div class="nav-group"><a class="nav-link" href="index.html#contact">LIÊN HỆ</a></div>
+        <div class="nav-group"><a class="nav-link fo-nav-active" href="tong-quan-nha-may.html" aria-current="page">CÔNG NGHỆ & SẢN XUẤT</a><button class="submenu-toggle" type="button" aria-label="Mở menu Công nghệ và Sản xuất" aria-expanded="false"></button><div class="submenu"><a href="tong-quan-nha-may.html" aria-current="page">Tổng quan nhà máy</a><a href="#powder-line">Dây chuyền sữa bột</a><a href="#liquid-line">Dây chuyền sữa nước</a><a href="#tetrapak-technology">Công nghệ Tetra Pak</a></div></div>
+        <div class="nav-group"><a class="nav-link" href="hop-tac-oem-odm.html">GIẢI PHÁP HỢP TÁC</a></div>
+        <div class="nav-group"><a class="nav-link" href="he-thong-chat-luong.html">CHẤT LƯỢNG</a></div>
+        <div class="nav-group"><a class="nav-link" href="tin-tuc.html">TIN TỨC</a></div>
+        <div class="nav-group"><a class="nav-link" href="lien-he.html">LIÊN HỆ</a></div>
         <div class="mobile-nav-contact"><strong>Công ty Cổ phần Quốc tế AMM – Germany Nutrition</strong><a href="tel:1800888626">Hotline: 1800 888 626</a><a href="mailto:cskh@ammnutrition.vn">cskh@ammnutrition.vn</a></div>
       </nav>
 
       <div class="header-tools">
         <button class="btn btn-primary header-cta" type="button" data-open-contact data-contact-type="Tư vấn hợp tác nhà máy">Đăng ký hợp tác</button>
-        <div class="language-switch" aria-label="Chọn ngôn ngữ"><a class="lang-link" href="tong-quan-nha-may.html" lang="vi" aria-current="page"><img src="flag-vn.svg" alt=""><span>VI</span></a><a class="lang-link" href="en/tong-quan-nha-may.html" lang="en"><img src="flag-gb.svg" alt=""><span>EN</span></a></div>
+        <div class="language-switch" aria-label="Chọn ngôn ngữ"><a class="lang-link" href="tong-quan-nha-may.html" lang="vi" aria-current="page"><img src="flag-vn.svg" alt=""><span>VI</span></a><a class="lang-link" href="index-en.html#factory" lang="en"><img src="flag-gb.svg" alt=""><span>EN</span></a></div>
       </div>
     </div>
     <button class="nav-backdrop" type="button" aria-label="Đóng menu"></button>
@@ -381,7 +386,7 @@
           </article>
           <article class="fo-stat">
             <svg class="fo-stat__icon" aria-hidden="true"><use href="#fo-i-bottle"></use></svg>
-            <div><strong class="fo-stat__value"> 808.704.000 <small>lít/năm</small></strong><p class="fo-stat__label">Công suất sữa nước</p></div>
+            <div><strong class="fo-stat__value">50.000.000 <small>lít/năm</small></strong><p class="fo-stat__label">Công suất sữa nước</p></div>
           </article>
           <article class="fo-stat">
             <svg class="fo-stat__icon" aria-hidden="true"><use href="#fo-i-can"></use></svg>
@@ -435,20 +440,20 @@
             </div>
           </article>
 
-          <article class="fo-area" data-fo-reveal>
+          <article class="fo-area" id="powder-line" data-fo-reveal>
             <div class="fo-area__media">
-              <img src="day-chuyen-sua-bot.jpg" alt="Dây chuyền sản xuất sữa bột AMM" width="768" height="432" loading="lazy" decoding="async">
+              <img src="dinnissen-powder-mixer.webp" alt="Hệ thống trộn phối sữa bột Dinnissen tại AMM" width="1586" height="992" loading="lazy" decoding="async">
             </div>
             <div class="fo-area__body">
               <div class="fo-area__title">
                 <span class="fo-area__icon" aria-hidden="true"><svg><use href="#fo-i-can"></use></svg></span>
                 <h3>DÂY CHUYỀN SỮA BỘT</h3>
               </div>
-              <p>Dây chuyền hiện đại, kiểm soát chặt chẽ nhằm bảo đảm chất lượng và độ đồng nhất của sản phẩm.</p>
+              <p>Hệ thống Dinnissen hỗ trợ phối trộn đồng nhất theo mẻ, vận hành trong khu vực sản xuất được kiểm soát vệ sinh.</p>
             </div>
           </article>
 
-          <article class="fo-area" data-fo-reveal>
+          <article class="fo-area" id="liquid-line" data-fo-reveal>
             <div class="fo-area__media">
               <img src="day-chuyen-sua-nuoc-tetra-pak.jpg" alt="Dây chuyền sữa nước Tetra Pak tại nhà máy AMM" width="1448" height="1086" loading="lazy" decoding="async">
             </div>
@@ -477,7 +482,7 @@
       </div>
     </section>
 
-    <section class="fo-tech" aria-labelledby="tech-title">
+    <section class="fo-tech" id="tetrapak-technology" aria-labelledby="tech-title">
       <div class="fo-shell fo-tech__shell">
                 <header class="fo-tech__head" data-fo-reveal>
           <h2 id="tech-title">TỔ HỢP CÔNG NGHỆ &amp; ĐỐI TÁC CHIẾN LƯỢC TOÀN CẦU</h2>
@@ -487,31 +492,31 @@
 
         <div class="fo-partners">
           <article class="fo-partner" data-fo-reveal>
-            <div class="fo-partner__brand"><div class="fo-wordmark">Tetra Pak<small>PROTECTS WHAT'S GOOD</small></div><div class="fo-country"><span class="fo-flag fo-flag--se" aria-hidden="true"></span>Thụy Điển</div></div>
+            <div class="fo-partner__brand"><img class="fo-partner__logo" src="logo-tetrapak.png" width="489" height="149" alt="Tetra Pak"><div class="fo-country"><span class="fo-flag fo-flag--se" aria-hidden="true"></span>Thụy Điển</div></div>
             <div class="fo-partner__content"><div class="fo-partner__media"><img src="tetra-pak-technology.webp" alt="Hệ thống công nghệ Tetra Pak tại nhà máy AMM" width="1400" height="1050" loading="lazy" decoding="async"></div><p class="fo-partner__text">Đối tác chiến lược về công nghệ chế biến và chiết rót vô trùng cho dây chuyền sữa nước, góp phần bảo toàn chất lượng, giá trị dinh dưỡng và sự ổn định của sản phẩm.</p></div>
           </article>
           <article class="fo-partner" data-fo-reveal>
             <div class="fo-partner__brand"><div class="fo-wordmark fo-wordmark--rieck">RIECKERMANN<small>MASCHINEN- UND ANLAGENBAU</small></div><div class="fo-country"><span class="fo-flag fo-flag--de" aria-hidden="true"></span>Đức</div></div>
             <div class="fo-partner__content"><div class="fo-partner__media"><img src="rieckermann-technology.webp" alt="Thiết bị và giải pháp kỹ thuật Rieckermann tại AMM" width="1400" height="1050" loading="lazy" decoding="async"></div><p class="fo-partner__text">Hợp tác chuyên sâu trong tư vấn giải pháp kỹ thuật tổng thể, cung cấp thiết bị và chuyển giao công nghệ sản xuất chuẩn Đức, tối ưu vận hành và hiệu suất dây chuyền.</p></div>
           </article>
-          <article class="fo-partner" data-fo-reveal>
-            <div class="fo-partner__brand"><div class="fo-wordmark fo-wordmark--dsc">DSC<small>EUROPE</small></div><div class="fo-country"><span class="fo-flag fo-flag--eu" aria-hidden="true"></span>Châu Âu</div></div>
-            <div class="fo-partner__content"><div class="fo-partner__media"><img src="dsc-mixing-system.webp" alt="Hệ thống phối trộn DSC Europe" width="768" height="432" loading="lazy" decoding="async"></div><p class="fo-partner__text">Cung cấp giải pháp hệ thống phối trộn, hỗ trợ tối ưu hiệu suất vận hành, độ ổn định, khả năng kiểm soát và năng lực sản xuất.</p></div>
+          <article class="fo-partner fo-partner--apv" data-fo-reveal>
+            <div class="fo-partner__brand"><div class="fo-wordmark fo-wordmark--apv">APV<small>SPX FLOW</small></div><div class="fo-country"><span class="fo-country__dot" aria-hidden="true"></span>Công nghệ quốc tế</div></div>
+            <div class="fo-partner__content"><div class="fo-partner__media"><img src="apv-eq-75t-homogenizer.webp" alt="Máy đồng hóa APV EQ 75T của SPX FLOW" width="754" height="600" loading="lazy" decoding="async"></div><p class="fo-partner__text">Giải pháp đồng hóa APV cho sữa và đồ uống hỗ trợ phân tán pha lỏng, ổn định cấu trúc và độ đồng nhất của sản phẩm; thiết kế vệ sinh và phù hợp tích hợp CIP theo cấu hình.</p></div>
           </article>
         </div>
 
-        <article class="fo-pegasus" data-fo-reveal>
-          <div class="fo-pegasus__media"><img src="pegasus-mixer-hd.webp" alt="Máy trộn Dinnissen Pegasus Mixer HD" width="1536" height="1024" loading="lazy" decoding="async"></div>
+        <article class="fo-pegasus" id="dinnissen-mixing" data-fo-reveal>
+          <div class="fo-pegasus__media"><img src="dinnissen-powder-mixer.webp" alt="Hệ thống trộn phối sữa bột Dinnissen Pegasus" width="1586" height="992" loading="lazy" decoding="async"></div>
           <div class="fo-pegasus__copy">
             <p class="fo-pegasus__kicker">Công nghệ trộn phối sữa bột tiên tiến</p>
-            <div class="fo-pegasus__brand"><strong>DINNISSEN</strong><span>PEGASUS® MIXER HD</span></div>
+            <div class="fo-pegasus__brand"><img class="fo-pegasus__brand-logo" src="logo-dinnissen.png" width="643" height="168" alt="Dinnissen Process Technology"><span>HỆ THỐNG TRỘN BỘT PEGASUS®</span></div>
             <div class="fo-pegasus__origin"><span class="fo-flag fo-flag--nl" aria-hidden="true"></span>Hà Lan</div>
-            <p class="fo-pegasus__desc">Hệ thống trộn phối công suất cao ứng dụng công nghệ phi trọng lực, được thiết kế nhằm tạo độ đồng nhất nhanh, hạn chế sinh nhiệt và giảm tác động đến các thành phần dinh dưỡng nhạy cảm.</p>
+            <p class="fo-pegasus__desc">Dòng Pegasus® sử dụng hai trục cánh khuấy quay ngược chiều để tạo hỗn hợp đồng nhất nhanh. Thiết kế hướng tới xử lý nguyên liệu nhẹ nhàng, tiếp cận vệ sinh thuận tiện và kiểm soát nhất quán giữa các mẻ.</p>
             <div class="fo-feature-list">
-              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-speed"></use></svg></span><div><h4>TRỘN SIÊU TỐC</h4><p>Độ đồng nhất cao trong thời gian ngắn, phù hợp quy mô công nghiệp.</p></div></article>
-              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-swirl"></use></svg></span><div><h4>CÔNG NGHỆ PHI TRỌNG LỰC</h4><p>Nguyên liệu chuyển động nhẹ nhàng, hạn chế sinh nhiệt và biến tính vi chất.</p></div></article>
-              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-five"></use></svg></span><div><h4>TÍCH HỢP 5-TRONG-1 &amp; CHUẨN VỆ SINH CAO</h4><p>Tích hợp nhiều công đoạn trong một hệ thống, thuận tiện vệ sinh và kiểm soát.</p></div></article>
-              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-shield"></use></svg></span><div><h4>CHỐNG LÂY NHIỄM CHÉO</h4><p>Thiết kế hướng đến tiêu chuẩn vệ sinh cao, hạn chế nguy cơ lây nhiễm giữa các mẻ.</p></div></article>
+              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-speed"></use></svg></span><div><h4>TRỘN NHANH &amp; ĐỒNG NHẤT</h4><p>Dinnissen công bố thời gian trộn tham chiếu 20–50 giây; kết quả phụ thuộc nguyên liệu và cấu hình.</p></div></article>
+              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-swirl"></use></svg></span><div><h4>XỬ LÝ NGUYÊN LIỆU NHẸ NHÀNG</h4><p>Cánh khuấy và buồng trộn được thiết kế để giảm tác động không cần thiết lên sản phẩm.</p></div></article>
+              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-five"></use></svg></span><div><h4>THIẾT KẾ VỆ SINH</h4><p>Cửa tiếp cận hỗ trợ kiểm tra và vệ sinh hệ thống thuận tiện giữa các mẻ.</p></div></article>
+              <article class="fo-feature"><span class="fo-feature__icon"><svg aria-hidden="true"><use href="#fo-i-shield"></use></svg></span><div><h4>LINH HOẠT CÔNG THỨC</h4><p>Phù hợp nhiều loại bột, hạt và vi thành phần với khối lượng, tỷ lệ khác nhau.</p></div></article>
             </div>
           </div>
         </article>
@@ -583,9 +588,9 @@
   <footer class="site-footer">
     <div class="container footer-main">
       <div class="footer-brand"><div class="footer-logo-card"><img src="amm-logo.webp" alt="AMM Germany Nutrition" width="500" height="375"></div><p>AMM nghiên cứu, sản xuất và cung cấp các giải pháp dinh dưỡng khoa học, ứng dụng công nghệ hiện đại và hướng tới hợp tác bền vững.</p></div>
-      <div><h3>Về AMM</h3><div class="footer-links"><a href="index.html#about">Giới thiệu</a><a href="index.html#capacity">Năng lực & Quy mô</a><a href="tong-quan-nha-may.html">Nhà máy & Công nghệ</a><a href="index.html#quality">Chất lượng</a></div></div>
-      <div><h3>Hợp tác</h3><div class="footer-links"><a href="nang-luc-rd.html">Nghiên cứu & Phát triển</a><a href="phat-trien-cong-thuc.html">Phát triển công thức</a><a href="index.html#cooperation">OEM/ODM</a><a href="index.html#projects">Đối tác & Dự án</a><button class="btn btn-outline" type="button" data-open-contact data-contact-type="Tham quan nhà máy">Đăng ký tham quan</button></div></div>
-      <div><h3>Liên hệ</h3><div class="footer-contact-row"><div class="contact-list"><div class="contact-item"><svg aria-hidden="true"><use href="#fo-i-phone"></use></svg><a href="tel:1800888626">Hotline: 1800 888 626</a></div><div class="contact-item"><svg aria-hidden="true"><use href="#fo-i-mail"></use></svg><a href="mailto:cskh@ammnutrition.vn">cskh@ammnutrition.vn</a></div><div class="contact-item"><svg aria-hidden="true"><use href="#fo-i-globe"></use></svg><a href="https://ammnutrition.vn/">ammnutrition.vn</a></div><div class="contact-item"><svg aria-hidden="true"><use href="#fo-i-pin"></use></svg><address style="font-style:normal">Khu công nghiệp Đồng Văn I, Phường Đồng Văn, Tỉnh Ninh Bình, Việt Nam</address></div></div><a class="footer-map" href="https://www.google.com/maps/search/?api=1&query=Khu+c%C3%B4ng+nghi%E1%BB%87p+%C4%90%E1%BB%93ng+V%C4%83n+I%2C+Ninh+B%C3%ACnh" target="_blank" rel="noopener" aria-label="Mở vị trí nhà máy AMM trên Google Maps"><iframe title="Bản đồ vị trí nhà máy AMM" src="https://www.google.com/maps?q=Khu+c%C3%B4ng+nghi%E1%BB%87p+%C4%90%E1%BB%93ng+V%C4%83n+I%2C+Ninh+B%C3%ACnh&output=embed" width="100%" height="96" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe><span class="footer-map-link">Mở bản đồ →</span></a></div></div>
+      <div><h3>Về AMM</h3><div class="footer-links"><a href="tong-quan-amm.html">Giới thiệu</a><a href="nang-luc-rd.html">Năng lực R&amp;D</a><a href="tong-quan-nha-may.html">Nhà máy &amp; Công nghệ</a><a href="he-thong-chat-luong.html">Chất lượng</a></div></div>
+      <div><h3>Hợp tác</h3><div class="footer-links"><a href="nang-luc-rd.html">Nghiên cứu &amp; Phát triển</a><a href="phat-trien-cong-thuc.html">Phát triển công thức</a><a href="hop-tac-oem-odm.html">OEM/ODM</a><a href="tin-tuc.html">Dấu ấn &amp; Đối tác</a><button class="btn btn-outline" type="button" data-open-contact data-contact-type="Tham quan nhà máy">Đăng ký tham quan</button></div></div>
+      <div><h3>Liên hệ</h3><div class="footer-contact-row"><div class="contact-list"><div class="contact-item"><svg aria-hidden="true"><use href="#fo-i-phone"></use></svg><a href="tel:1800888626">Hotline: 1800 888 626</a></div><div class="contact-item"><svg aria-hidden="true"><use href="#fo-i-mail"></use></svg><a href="mailto:cskh@ammnutrition.vn">cskh@ammnutrition.vn</a></div><div class="contact-item"><svg aria-hidden="true"><use href="#fo-i-globe"></use></svg><a href="https://ammnutrition.vn/">ammnutrition.vn</a></div><div class="contact-item"><svg aria-hidden="true"><use href="#fo-i-pin"></use></svg><address style="font-style:normal">Khu công nghiệp Đồng Văn I, Phường Đồng Văn, Tỉnh Ninh Bình, Việt Nam</address></div></div><div class="footer-map"><iframe title="Bản đồ vị trí nhà máy AMM" src="https://www.google.com/maps?q=Khu+c%C3%B4ng+nghi%E1%BB%87p+%C4%90%E1%BB%93ng+V%C4%83n+I%2C+Ninh+B%C3%ACnh&amp;output=embed" height="96" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe><a class="footer-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Khu+c%C3%B4ng+nghi%E1%BB%87p+%C4%90%E1%BB%93ng+V%C4%83n+I%2C+Ninh+B%C3%ACnh" target="_blank" rel="noopener">Mở bản đồ →</a></div></div></div>
     </div>
     <div class="footer-bottom"><div class="container footer-bottom-inner"><span class="footer-slogan">Khoa học dinh dưỡng là nền tảng – Công nghệ tạo nên chất lượng – Hợp tác tạo nên những giá trị vươn xa.</span><span>© <span data-year></span> AMM Germany Nutrition.</span></div></div>
   </footer>
