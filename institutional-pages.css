@@ -120,10 +120,10 @@
 .ip-eyebrow { color: var(--blue-700); }
 
 .ip-hero h1 {
-  max-width: 760px;
+   max-width: 640px;
   color: inherit;
-  font-size: clamp(2.65rem, 5vw, 5.45rem);
-  line-height: 1.04;
+  font-size: clamp(2rem, 3.05vw, 3.45rem);
+  line-height: 1.08;
 }
 
 .ip-hero__lead {
