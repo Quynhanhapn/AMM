@@ -2056,4 +2056,17 @@ h3 { font-size: clamp(1rem, 1.15vw, 1.25rem); line-height: 1.25; }
 .rd-page .footer-map-frame {
   border: 0;
 }
+/* ===== FIX KHOẢNG CÁCH MENU DESKTOP ===== */
+
+.primary-nav{
+  gap:clamp(16px,1.15vw,24px);
+}
+
+.nav-group{
+  flex:0 0 auto;
+}
+
+.nav-link{
+  padding-inline:3px;
+}
 /* ===== AMM R&D PAGE — INTEGRATED STYLES END ===== */
