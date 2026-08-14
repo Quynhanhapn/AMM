@@ -580,3 +580,16 @@
     font-size:1.65rem;
   }
 }
+/* ===== TIÊU ĐỀ TRANG TIN TỨC ===== */
+
+/* Tiêu đề lớn của section */
+#news-title{
+  font-size:clamp(1.8rem,2.4vw,2.6rem);
+  line-height:1.15;
+}
+
+/* Tiêu đề từng bài tin */
+.ip-news-card h2{
+  font-size:clamp(1rem,1.15vw,1.2rem);
+  line-height:1.3;
+}
