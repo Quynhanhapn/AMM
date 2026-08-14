@@ -538,3 +538,45 @@
     font-size:1.65rem;
   }
 }
+/* ===== TIÊU ĐỀ TRANG CHẤT LƯỢNG ===== */
+
+#control-flow .ip-heading,
+#quality-gates .ip-heading,
+#standards .ip-heading{
+  max-width:1200px;
+  margin:0 auto 34px;
+  text-align:center;
+}
+
+#control-flow .ip-heading .ip-eyebrow,
+#quality-gates .ip-heading .ip-eyebrow,
+#standards .ip-heading .ip-eyebrow{
+  justify-content:center;
+}
+
+#control-flow .ip-heading h2,
+#quality-gates .ip-heading h2,
+#standards .ip-heading h2{
+  max-width:none;
+  margin-inline:auto;
+  font-size:clamp(1.8rem,2.4vw,2.6rem);
+  line-height:1.15;
+  white-space:nowrap;
+}
+
+#control-flow .ip-heading p:not(.ip-eyebrow),
+#quality-gates .ip-heading p:not(.ip-eyebrow),
+#standards .ip-heading p:not(.ip-eyebrow){
+  max-width:760px;
+  margin:14px auto 0;
+  text-align:center;
+}
+
+@media(max-width:760px){
+  #control-flow .ip-heading h2,
+  #quality-gates .ip-heading h2,
+  #standards .ip-heading h2{
+    white-space:normal;
+    font-size:1.65rem;
+  }
+}
