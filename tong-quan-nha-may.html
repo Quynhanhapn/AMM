@@ -370,25 +370,16 @@
   </nav>
 
   <main id="main-content">
-    <style>
-/* ===== VIDEO HERO NHÀ MÁY ===== */
+   <!-- ===== HERO NHÀ MÁY + VIDEO YOUTUBE ===== -->
 
-.fo-hero__media video{
-  width:100%;
-  height:100%;
-  display:block;
-  object-fit:cover;
-  object-position:58% 50%;
-}
-
-/* nút xem video */
+<style>
 .fo-video-open{
   display:inline-flex;
   align-items:center;
   gap:9px;
 }
 
-.fo-video-open__icon{
+.fo-video-play{
   display:grid;
   place-items:center;
   width:28px;
@@ -396,45 +387,47 @@
   border-radius:50%;
   background:#fff;
   color:#075fc8;
-  font-size:12px;
+  font-size:11px;
 }
 
-/* popup video */
-#factory-video-dialog{
-  width:min(1180px,calc(100% - 40px));
+#amm-factory-video{
+  width:min(1200px,calc(100% - 30px));
   max-width:none;
   padding:0;
   border:0;
   border-radius:20px;
   overflow:visible;
-  background:#000;
-  box-shadow:0 30px 100px rgba(0,0,0,.45);
+  background:transparent;
 }
 
-#factory-video-dialog::backdrop{
-  background:rgba(1,14,34,.88);
+#amm-factory-video::backdrop{
+  background:rgba(1,15,38,.90);
   backdrop-filter:blur(5px);
 }
 
-.factory-video-wrap{
+.amm-factory-video-wrap{
   position:relative;
   overflow:hidden;
   border-radius:20px;
   background:#000;
+  box-shadow:0 30px 100px rgba(0,0,0,.5);
 }
 
-.factory-video-wrap video{
+.amm-factory-video-frame{
+  width:100%;
+  aspect-ratio:16/9;
+}
+
+.amm-factory-video-frame iframe{
   display:block;
   width:100%;
-  max-height:85vh;
-  aspect-ratio:16/9;
-  object-fit:contain;
-  background:#000;
+  height:100%;
+  border:0;
 }
 
-.factory-video-close{
+.amm-factory-video-close{
   position:absolute;
-  z-index:5;
+  z-index:10;
   top:14px;
   right:14px;
   display:grid;
@@ -442,54 +435,46 @@
   width:42px;
   height:42px;
   padding:0;
-  border:1px solid rgba(255,255,255,.5);
+  border:1px solid rgba(255,255,255,.55);
   border-radius:50%;
   color:#fff;
-  background:rgba(0,0,0,.58);
-  font-size:22px;
+  background:rgba(0,0,0,.62);
+  font-size:23px;
   cursor:pointer;
 }
 
-.factory-video-close:hover{
+.amm-factory-video-close:hover{
   background:#075fc8;
 }
 
 @media(max-width:700px){
-  #factory-video-dialog{
-    width:calc(100% - 18px);
-    border-radius:14px;
+  #amm-factory-video{
+    width:calc(100% - 14px);
   }
 
-  .factory-video-wrap{
+  .amm-factory-video-wrap{
     border-radius:14px;
   }
 }
 </style>
 
-
 <section class="fo-hero" aria-labelledby="fo-title">
 
-  <!-- VIDEO FLYCAM CHẠY NỀN -->
-  <div class="fo-hero__media" aria-hidden="true">
-    <video
-      autoplay
-      muted
-      loop
-      playsinline
-      preload="metadata"
-      poster="factory-hero.webp"
+  <div class="fo-hero__media">
+    <img
+      src="factory-hero.webp"
+      alt="Toàn cảnh nhà máy AMM Germany Nutrition"
+      width="1477"
+      height="732"
+      fetchpriority="high"
+      decoding="async"
     >
-      <source src="factory-flycam.mp4" type="video/mp4">
-    </video>
   </div>
 
   <div class="fo-shell fo-hero__inner">
-
     <div class="fo-hero__copy" data-fo-reveal="left">
 
-      <p class="fo-eyebrow">
-        AMM Germany Nutrition
-      </p>
+      <p class="fo-eyebrow">AMM Germany Nutrition</p>
 
       <h1 id="fo-title">
         <span>TỔNG QUAN</span>
@@ -512,49 +497,82 @@
         <button
           class="btn btn-outline fo-video-open"
           type="button"
-          id="factory-video-open"
+          id="amm-factory-video-open"
         >
-          <span class="fo-video-open__icon" aria-hidden="true">▶</span>
+          <span class="fo-video-play" aria-hidden="true">▶</span>
           Xem video nhà máy
         </button>
 
       </div>
-
     </div>
   </div>
 </section>
 
-
-<!-- POPUP VIDEO LỚN -->
-<dialog id="factory-video-dialog">
-
-  <div class="factory-video-wrap">
+<dialog id="amm-factory-video">
+  <div class="amm-factory-video-wrap">
 
     <button
-      class="factory-video-close"
+      class="amm-factory-video-close"
       type="button"
-      id="factory-video-close"
+      id="amm-factory-video-close"
       aria-label="Đóng video"
-    >
-      ×
-    </button>
+    >×</button>
 
-    <video
-      id="factory-video-player"
-      controls
-      playsinline
-      preload="metadata"
-      poster="factory-hero.webp"
-    >
-      <source src="factory-flycam.mp4" type="video/mp4">
-    </video>
+    <div
+      class="amm-factory-video-frame"
+      id="amm-factory-video-frame"
+    ></div>
 
   </div>
-
 </dialog>
 
-
 <script>
+(() => {
+
+  const openBtn = document.getElementById('amm-factory-video-open');
+  const closeBtn = document.getElementById('amm-factory-video-close');
+  const dialog = document.getElementById('amm-factory-video');
+  const frame = document.getElementById('amm-factory-video-frame');
+
+  const videoUrl =
+    'https://www.youtube.com/embed/3ju2pDEDXPo?autoplay=1&rel=0';
+
+  function openVideo(){
+    frame.innerHTML = `
+      <iframe
+        src="${videoUrl}"
+        title="Toàn cảnh nhà máy AMM Germany Nutrition"
+        allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+        allowfullscreen>
+      </iframe>
+    `;
+
+    dialog.showModal();
+  }
+
+  function closeVideo(){
+    frame.innerHTML = '';
+
+    if(dialog.open){
+      dialog.close();
+    }
+  }
+
+  openBtn?.addEventListener('click', openVideo);
+  closeBtn?.addEventListener('click', closeVideo);
+
+  dialog?.addEventListener('click', e => {
+    if(e.target === dialog){
+      closeVideo();
+    }
+  });
+
+  dialog?.addEventListener('close', () => {
+    frame.innerHTML = '';
+  });
+
+})();
+</script>
 (() => {
 
   const openButton = document.getElementById('factory-video-open');
