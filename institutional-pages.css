@@ -100,7 +100,8 @@
 .ip-eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 14px;
   margin: 0 0 18px;
   color: #8fddff;
   font-size: .78rem;
@@ -110,12 +111,20 @@
 }
 
 .ip-hero__eyebrow::before,
-.ip-eyebrow::before {
+.ip-eyebrow::before,
+.ip-hero__eyebrow::after,
+.ip-eyebrow::after {
   content: "";
-  width: 30px;
+  width: 36px;
   border-top: 2px solid currentColor;
+  flex: 0 0 36px;
 }
-
+.ip-heading--center .ip-eyebrow::after {
+  content: "";
+  width: 36px;
+  border-top: 2px solid currentColor;
+  flex: 0 0 36px;
+}
 .ip-hero--light .ip-hero__eyebrow,
 .ip-eyebrow { color: var(--blue-700); }
 
