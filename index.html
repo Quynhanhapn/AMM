@@ -241,7 +241,141 @@ html, body { margin: 0 !important; }
         <div class="pillar-mini"><svg aria-hidden="true"><use href="#i-gear"></use></svg><span>Công nghệ tạo nên chất lượng</span></div>
         <div class="pillar-mini" id="sustainability"><svg aria-hidden="true"><use href="#i-handshake"></use></svg><span>Hợp tác bền vững tạo giá trị dài hạn</span></div>
       </div>
-     <a class="btn btn-primary" href="https://youtu.be/3ju2pDEDXPo" target="_blank" rel="noopener">Xem video nhà máy <span class="arrow">▶</span></a>
+     <button class="btn btn-primary" type="button" id="home-video-open">
+  Tìm hiểu về AMM <span class="arrow">▶</span>
+</button>
+
+<style>
+#home-factory-video{
+  width:min(1200px,calc(100% - 30px));
+  max-width:none;
+  padding:0;
+  border:0;
+  border-radius:20px;
+  overflow:visible;
+  background:transparent;
+}
+
+#home-factory-video::backdrop{
+  background:rgba(1,15,38,.90);
+  backdrop-filter:blur(5px);
+}
+
+.home-video-wrap{
+  position:relative;
+  overflow:hidden;
+  border-radius:20px;
+  background:#000;
+  box-shadow:0 30px 100px rgba(0,0,0,.5);
+}
+
+.home-video-frame{
+  width:100%;
+  aspect-ratio:16/9;
+}
+
+.home-video-frame iframe{
+  display:block;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+.home-video-close{
+  position:absolute;
+  z-index:10;
+  top:14px;
+  right:14px;
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  padding:0;
+  border:1px solid rgba(255,255,255,.55);
+  border-radius:50%;
+  background:rgba(0,0,0,.65);
+  color:#fff;
+  font-size:24px;
+  cursor:pointer;
+}
+
+.home-video-close:hover{
+  background:#075fc8;
+}
+
+@media(max-width:700px){
+  #home-factory-video{
+    width:calc(100% - 14px);
+  }
+
+  .home-video-wrap{
+    border-radius:14px;
+  }
+}
+</style>
+
+<dialog id="home-factory-video">
+  <div class="home-video-wrap">
+
+    <button
+      class="home-video-close"
+      type="button"
+      id="home-video-close"
+      aria-label="Đóng video"
+    >×</button>
+
+    <div class="home-video-frame" id="home-video-frame"></div>
+
+  </div>
+</dialog>
+
+<script>
+(() => {
+
+  const openBtn = document.getElementById('home-video-open');
+  const closeBtn = document.getElementById('home-video-close');
+  const dialog = document.getElementById('home-factory-video');
+  const frame = document.getElementById('home-video-frame');
+
+  const video =
+    'https://www.youtube.com/embed/3ju2pDEDXPo?autoplay=1&rel=0';
+
+  function openVideo(){
+    frame.innerHTML = `
+      <iframe
+        src="${video}"
+        title="Toàn cảnh nhà máy AMM Germany Nutrition"
+        allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+        allowfullscreen>
+      </iframe>
+    `;
+
+    dialog.showModal();
+  }
+
+  function closeVideo(){
+    frame.innerHTML = '';
+
+    if(dialog.open){
+      dialog.close();
+    }
+  }
+
+  openBtn?.addEventListener('click', openVideo);
+  closeBtn?.addEventListener('click', closeVideo);
+
+  dialog?.addEventListener('click', e => {
+    if(e.target === dialog){
+      closeVideo();
+    }
+  });
+
+  dialog?.addEventListener('close', () => {
+    frame.innerHTML = '';
+  });
+
+})();
+</script>
     </div>
     <figure class="overview-photo reveal"><img src="about-factory-new.png" width="1221" height="1288" alt="Toàn cảnh nhà máy AMM tại Khu công nghiệp Đồng Văn I" loading="lazy"></figure>
     <div class="capacity-panel reveal" id="capacity">
